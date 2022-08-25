@@ -1,0 +1,8 @@
+= FPGA Sound =
+
+ * Make sound from an FPGA starting from first principles
+ 
+ = Audio Filter =
+
+* Low Pass Filter, Output Scaler
+** 3 resistors, 1 capacitor
