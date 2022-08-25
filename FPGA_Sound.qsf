@@ -84,4 +84,7 @@ set_global_assignment -name VHDL_FILE "MiddleCSine/MiddleC_187-Samples.vhd"
 set_global_assignment -name VHDL_FILE Debounce.vhd
 set_global_assignment -name VHDL_FILE FPGA_Sound.vhd
 set_global_assignment -name VHDL_FILE output_files/Sound_PWM_Middle_C.vhd
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to i_play_n
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to o_Sine_Wave
+set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to o_Sq_Wave
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
