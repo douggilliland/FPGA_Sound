@@ -8,7 +8,7 @@
 * Circuit is a Low Pass Filter, Output Scaler
 ** 4 resistors, 1 capacitor per channel
 
-<img src="http://land-boards.com/blwiki/images/0/07/RETRO-FPGA-AUDIO-J3.PNG">Audio Filter/Scaler</img>
+<img src="http://land-boards.com/blwiki/images/0/07/RETRO-FPGA-AUDIO-J3.PNG"></img>
 
 * Layout on [http://land-boards.com/blwiki/index.php?title=GRID49 GRID49 card]
 
