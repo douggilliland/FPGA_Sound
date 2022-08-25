@@ -26,3 +26,5 @@ Make sound from an FPGA starting from first principles.
 * Resources
 ** 174 Logic cells
 ** 28 Registers
+
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCSine/MiddleC_Scope_Cap.png"></img>
