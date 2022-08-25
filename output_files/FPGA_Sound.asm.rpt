@@ -1,5 +1,5 @@
 Assembler report for FPGA_Sound
-Thu Aug 25 06:27:50 2022
+Thu Aug 25 06:34:47 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Aug 25 06:27:50 2022 ;
+; Assembler Status      ; Successful - Thu Aug 25 06:34:47 2022 ;
 ; Revision Name         ; FPGA_Sound                            ;
 ; Top-level Entity Name ; FPGA_Sound                            ;
 ; Family                ; Cyclone 10 LP                         ;
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Thu Aug 25 06:27:49 2022
+    Info: Processing started: Thu Aug 25 06:34:45 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off FPGA_Sound -c FPGA_Sound
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4698 megabytes
-    Info: Processing ended: Thu Aug 25 06:27:50 2022
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Thu Aug 25 06:34:47 2022
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

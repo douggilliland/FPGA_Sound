@@ -1,5 +1,5 @@
 Fitter report for FPGA_Sound
-Thu Aug 25 06:27:47 2022
+Thu Aug 25 06:34:44 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Aug 25 06:27:47 2022       ;
+; Fitter Status                      ; Successful - Thu Aug 25 06:34:43 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; FPGA_Sound                                  ;
 ; Top-level Entity Name              ; FPGA_Sound                                  ;
@@ -159,7 +159,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   1.0%      ;
+;     Processors 2-4         ;   0.9%      ;
 +----------------------------+-------------+
 
 
@@ -1000,7 +1000,7 @@ Warning (169177): 2 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2
 Info (144001): Generated suppressed messages file C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/FPGA_Sound.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 5429 megabytes
-    Info: Processing ended: Thu Aug 25 06:27:48 2022
+    Info: Processing ended: Thu Aug 25 06:34:44 2022
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:07
 

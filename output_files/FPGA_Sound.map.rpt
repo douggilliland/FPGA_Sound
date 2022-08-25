@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FPGA_Sound
-Thu Aug 25 06:27:41 2022
+Thu Aug 25 06:34:37 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -51,7 +51,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Aug 25 06:27:41 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Aug 25 06:34:37 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; FPGA_Sound                                  ;
 ; Top-level Entity Name              ; FPGA_Sound                                  ;
@@ -172,17 +172,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                          ;
-+-------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path    ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                ; Library ;
-+-------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
-; MakeSound/MiddleC_187-Samples.vhd   ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MakeSound/MiddleC_187-Samples.vhd   ;         ;
-; CounterLdCnt.vhd                    ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/CounterLdCnt.vhd                    ;         ;
-; FPGA_Sound.vhd                      ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd                      ;         ;
-; Sound_SQWave_Middle_C.vhd           ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Sound_SQWave_Middle_C.vhd           ;         ;
-; output_files/Sound_PWM_Middle_C.vhd ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/Sound_PWM_Middle_C.vhd ;         ;
-+-------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
++-----------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path        ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                    ; Library ;
++-----------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
+; MiddleCSquare/Sound_SQWave_Middle_C.vhd ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSquare/Sound_SQWave_Middle_C.vhd ;         ;
+; Counters/CounterLdCnt.vhd               ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Counters/CounterLdCnt.vhd               ;         ;
+; MiddleCSine/MiddleC_187-Samples.vhd     ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSine/MiddleC_187-Samples.vhd     ;         ;
+; FPGA_Sound.vhd                          ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd                          ;         ;
+; output_files/Sound_PWM_Middle_C.vhd     ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/Sound_PWM_Middle_C.vhd     ;         ;
++-----------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -363,31 +363,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Thu Aug 25 06:27:25 2022
+    Info: Processing started: Thu Aug 25 06:34:21 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FPGA_Sound -c FPGA_Sound
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file makesound/middlec_187-samples.vhd
-    Info (12022): Found design unit 1: MiddleCSine8Table-behavior File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MakeSound/MiddleC_187-Samples.vhd Line: 21
-    Info (12023): Found entity 1: MiddleCSine8Table File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MakeSound/MiddleC_187-Samples.vhd Line: 13
-Info (12021): Found 2 design units, including 1 entities, in source file counterldcnt.vhd
-    Info (12022): Found design unit 1: counterLdInc-behv File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/CounterLdCnt.vhd Line: 24
-    Info (12023): Found entity 1: counterLdInc File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/CounterLdCnt.vhd Line: 11
-Info (12021): Found 2 design units, including 1 entities, in source file debounce.vhd
-    Info (12022): Found design unit 1: Debouncer-struct File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Debounce.vhd Line: 21
-    Info (12023): Found entity 1: Debouncer File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Debounce.vhd Line: 12
+Info (12021): Found 2 design units, including 1 entities, in source file middlecsquare/sound_sqwave_middle_c.vhd
+    Info (12022): Found design unit 1: Sound_SQWave_Middle_C-behv File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSquare/Sound_SQWave_Middle_C.vhd Line: 21
+    Info (12023): Found entity 1: Sound_SQWave_Middle_C File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSquare/Sound_SQWave_Middle_C.vhd Line: 12
+Info (12021): Found 2 design units, including 1 entities, in source file counters/counterldcnt.vhd
+    Info (12022): Found design unit 1: counterLdInc-behv File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Counters/CounterLdCnt.vhd Line: 24
+    Info (12023): Found entity 1: counterLdInc File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Counters/CounterLdCnt.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file middlecsine/middlec_187-samples.vhd
+    Info (12022): Found design unit 1: MiddleCSine8Table-behavior File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSine/MiddleC_187-Samples.vhd Line: 21
+    Info (12023): Found entity 1: MiddleCSine8Table File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSine/MiddleC_187-Samples.vhd Line: 13
+Warning (12019): Can't analyze file -- file Debounce.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file fpga_sound.vhd
     Info (12022): Found design unit 1: FPGA_Sound-struct File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 19
     Info (12023): Found entity 1: FPGA_Sound File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file sound_sqwave_middle_c.vhd
-    Info (12022): Found design unit 1: Sound_SQWave_Middle_C-behv File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Sound_SQWave_Middle_C.vhd Line: 21
-    Info (12023): Found entity 1: Sound_SQWave_Middle_C File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Sound_SQWave_Middle_C.vhd Line: 12
 Info (12021): Found 2 design units, including 1 entities, in source file output_files/sound_pwm_middle_c.vhd
     Info (12022): Found design unit 1: Sound_PWM_Middle_C-behv File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/Sound_PWM_Middle_C.vhd Line: 25
     Info (12023): Found entity 1: Sound_PWM_Middle_C File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/Sound_PWM_Middle_C.vhd Line: 16
 Info (12127): Elaborating entity "FPGA_Sound" for the top level hierarchy
 Info (12128): Elaborating entity "Sound_SQWave_Middle_C" for hierarchy "Sound_SQWave_Middle_C:SQWCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 32
-Info (10041): Inferred latch for "o_sqOut" at Sound_SQWave_Middle_C.vhd(40) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Sound_SQWave_Middle_C.vhd Line: 40
-Info (12128): Elaborating entity "counterLdInc" for hierarchy "Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Sound_SQWave_Middle_C.vhd Line: 28
+Info (10041): Inferred latch for "o_sqOut" at Sound_SQWave_Middle_C.vhd(40) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSquare/Sound_SQWave_Middle_C.vhd Line: 40
+Info (12128): Elaborating entity "counterLdInc" for hierarchy "Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSquare/Sound_SQWave_Middle_C.vhd Line: 28
 Info (12128): Elaborating entity "Sound_PWM_Middle_C" for hierarchy "Sound_PWM_Middle_C:PWMCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 38
 Warning (10541): VHDL Signal Declaration warning at Sound_PWM_Middle_C.vhd(31): used implicit default value for signal "w_ROMAddr" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/Sound_PWM_Middle_C.vhd Line: 31
 Warning (10036): Verilog HDL or VHDL warning at Sound_PWM_Middle_C.vhd(32): object "w_ROMData" assigned a value but never read File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/Sound_PWM_Middle_C.vhd Line: 32
@@ -401,10 +399,10 @@ Info (21057): Implemented 49 device resources after synthesis - the final resour
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 45 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4820 megabytes
-    Info: Processing ended: Thu Aug 25 06:27:41 2022
+    Info: Processing ended: Thu Aug 25 06:34:37 2022
     Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Total CPU time (on all processors): 00:00:37
 
 
