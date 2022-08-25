@@ -6,5 +6,10 @@
 * 256 clocks for PWM
 * Middle C is 261.6256 Hz
 * 50,000,0000 / (256 x 256 x 3) = 254.31 Hz
+* Measured at speaker connection
 
 <img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCSine/MiddleC_Scope_Cap.png"></img>
+
+* 64 KHz mute measurement
+
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCSine/MuteNoise.png"></img>
