@@ -5,4 +5,4 @@
 * 256 samples in the table - one full wave
 * 256 clocks for PWM
 * Middle C is 261.6256 Hz
-* 50,000,0000 / (256 x 256 x 256 x 3) = 254 Hz
+* 50,000,0000 / (256 x 256 x 3) = 254 Hz
