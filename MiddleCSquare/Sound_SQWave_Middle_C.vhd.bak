@@ -1,14 +1,5 @@
 ----------------------------------------------------
 -- VHDL code for Square Wave Generator
--- Divide 50 MHz clock to generate Middle C
--- From https://en.wikipedia.org/wiki/Piano_key_frequencies
--- 	Middle C is 261.6256 Hz
--- Divisor is 50_000_000 / 261.6256 = 191_112.79
--- Can only do integer divisor, round up to 191_113
--- 191_113 dec = 2EA89 hex
--- Count from 0 to 2EA88
--- Set low at count = 0, set high at 1/2 wave (17544 hex)
--- Minimal error < 1 part in 191_112
 ----------------------------------------------------
 
 library ieee;
@@ -17,12 +8,11 @@ use  IEEE.STD_LOGIC_ARITH.all;
 use  IEEE.STD_LOGIC_UNSIGNED.all;
 
 ----------------------------------------------------
--- Sqare Wave, Middle C
 
 entity Sound_SQWave_Middle_C is
 port(	
-	i_clk_50		:	in std_logic;		-- 50 MHz
-	o_sqOut		:	out std_logic		-- Middle C square wave
+	i_clk_50		:	in std_logic;
+	o_sqOut		:	out std_logic
 );
 end Sound_SQWave_Middle_C;
 
@@ -45,7 +35,7 @@ port map (
 	o_dataOut	=> w_sqCounter
 );
 
-w_ldSQWCtr <= '1' when w_sqCounter = x"2EA88" else '0';
+w_ldSQWCtr <= '1' when w_sqCounter = x"2EA89" else '0';
 
 o_sqOut <= '1' when w_sqCounter = x"17544" else
            '0' when w_sqCounter = x"00000";
