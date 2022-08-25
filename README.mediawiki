@@ -22,3 +22,15 @@ Make sound from an FPGA starting from first principles.
 * Layout on [http://land-boards.com/blwiki/index.php?title=GRID49 GRID49 card]
 
 <img src="http://land-boards.com/blwiki/images/7/7e/GRID49_AUDIO.png"></img>
+
+== Square Wave = 
+
+* Resources
+** 42 Logic cells
+** 20 Registers
+
+== Sine Wave ==
+
+* Resources
+** 174 Logic cells
+** 27 Registers
