@@ -18,4 +18,4 @@ Make sound from an FPGA starting from first principles.
 
 * Resources
 ** 174 Logic cells
-** 27 Registers
+** 28 Registers
