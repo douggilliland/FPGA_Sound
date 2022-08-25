@@ -2,7 +2,9 @@
 
  * Make sound from an FPGA starting from first principles
  
- = Audio Filter =
+= Audio Filter =
+
+<img src="http://land-boards.com/blwiki/images/3/3f/PiceMite_VGA_Audio.PNG">Audio Filter/Scaler</img>
 
 * Low Pass Filter, Output Scaler
 ** 3 resistors, 1 capacitor
