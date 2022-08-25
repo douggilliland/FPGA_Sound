@@ -1,9 +1,10 @@
 = FPGA Sound =
 
-* Make sound from an FPGA starting from first principles
-** Start with single note - Middle C
-* Make sounds
-** [https://github.com/douggilliland/FPGA_Sound/tree/Square-Wave Square Wave build]
+Make sound from an FPGA starting from first principles.
+
+* Start with single note - Middle C
+* Make waveforms, save builds
+** [https://github.com/douggilliland/FPGA_Sound/tree/Square-Wave-Build Square Wave build]
 ** Sine Wave
 
 = Audio Filter / Scaler =
