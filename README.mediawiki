@@ -3,6 +3,7 @@
 Make sound from an FPGA starting from first principles.
 
 * Start with single note - Middle C
+* [https://www.youtube.com/watch?v=CKi78RF7vck Middle C on YouTube]
 * Make waveforms, save builds
 ** [https://github.com/douggilliland/FPGA_Sound/tree/Square-Wave-Middle-C Square Wave Middle C build]
 ** [https://github.com/douggilliland/FPGA_Sound/tree/Sine-Wave-Middle-C Sine Wave Middle C build]
