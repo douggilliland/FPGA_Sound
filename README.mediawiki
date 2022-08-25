@@ -1,14 +1,14 @@
 = FPGA Sound =
 
 * Make sound from an FPGA starting from first principles
-* FPGA has digital outputs, no analog
+** Start with single note - Middle C
 * Make sounds
 ** [https://github.com/douggilliland/FPGA_Sound/tree/Square-Wave Square Wave build]
 ** Sine Wave
 
 = Audio Filter / Scaler =
 
-* Need scaler
+* FPGA has digital outputs, no analog, need scaler
 ** Line level output neeeds 1V p-p signals
 ** FPGA output is 3.3V
 ** Use "simple" voltage divider
