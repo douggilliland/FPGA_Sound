@@ -1,13 +1,23 @@
 = FPGA Sound =
 
 * Make sound from an FPGA starting from first principles
+* FPGA has digital outputs, no analog
+* Make sounds
+** Square Wave
+** Sine Wave
 
-= Audio Filter =
+= Audio Filter / Scaler =
+
+* Need scaler
+** Line level output neeeds 1V p-p signals
+** FPGA output is 3.3V
+** Use "simple" voltage divider
+* Need filter to remove higher frequency components for PWM
+* Circuit is a Low Pass Filter, Output Scaler
+** 3 resistors, 1 capacitor
 
 <img src="http://land-boards.com/blwiki/images/3/3f/PiceMite_VGA_Audio.PNG">Audio Filter/Scaler</img>
 
-* Low Pass Filter, Output Scaler
-** 3 resistors, 1 capacitor
 * Layout on [http://land-boards.com/blwiki/index.php?title=GRID49 GRID49 card]
 
 <img src="http://land-boards.com/blwiki/images/7/7e/GRID49_AUDIO.png"></img>
