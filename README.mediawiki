@@ -1,6 +1,6 @@
 = FPGA Sound =
 
- * Make sound from an FPGA starting from first principles
+* Make sound from an FPGA starting from first principles
  
 = Audio Filter =
 
@@ -8,3 +8,6 @@
 
 * Low Pass Filter, Output Scaler
 ** 3 resistors, 1 capacitor
+* Card Layout on [ 
+
+<img src="http://land-boards.com/blwiki/images/7/7e/GRID49_AUDIO.png"></img>
