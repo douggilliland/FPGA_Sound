@@ -1,0 +1,42 @@
+-- Middle C sine wave table
+-- 50 MHz Clock
+-- 8 bit PWM samples
+-- Clock prescaler = 4, 12.5 MHz
+-- 12.5 MHz / 256 = 48828.125 KHz
+-- Middle C is 261.626 Hz
+
+library ieee;
+	use ieee.std_logic_1164.all;
+	use ieee.numeric_std.all;
+	use ieee.std_logic_unsigned.all;
+
+ENTITY MiddleCSine IS
+	PORT
+	(
+		address : in std_logic_vector(10 downto 0);
+		q : out std_logic_vector(7 downto 0)
+	);
+END MiddleCSine;
+
+architecture behavior of MiddleCSine is
+type romtable is array (0 to 186) of std_logic_vector(7 downto 0);
+constant romdata : romtable :=
+(
+127,131,136,140,144,148,152,157,161,165,169,173,177,181,185,188,192,196,
+199,203,206,209,213,216,219,222,224,227,230,232,234,237,239,241,243,244,
+246,247,249,250,251,252,252,253,253,254,254,254,254,254,253,253,252,251,
+250,249,248,247,245,243,242,240,238,236,233,231,228,226,223,220,217,214,
+211,208,204,201,197,194,190,186,183,179,175,171,167,163,159,155,150,146,
+142,138,133,129,125,121,116,112,108,104, 99, 95, 91, 87, 83, 79, 75, 71,
+ 68, 64, 60, 57, 53, 50, 46, 43, 40, 37, 34, 31, 28, 26, 23, 21, 18, 16,
+ 14, 12, 11,  9,  7,  6,  5,  4,  3,  2,  1,  1,  0,  0,  0,  0,  0,  1,
+  1,  2,  2,  3,  4,  5,  7,  8, 10, 11, 13, 15, 17, 20, 22, 24, 27, 30,
+ 32, 35, 38, 41, 45, 48, 51, 55, 58, 62, 66, 69, 73, 77, 81, 85, 89, 93,
+ 97,102,106,110,114,118,123
+);
+begin
+process (address)
+begin
+q <= romdata (to_integer(unsigned(address)));
+end process;
+end behavior;
