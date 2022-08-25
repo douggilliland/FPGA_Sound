@@ -202,7 +202,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : J2        :        :                   :      
 nCE                          : J3        :        :                   :         : 1         :                
 TDO                          : J4        : output :                   :         : 1         :                
 TMS                          : J5        : input  :                   :         : 1         :                
-i_n_reset                    : J6        : input  : 3.3-V LVTTL       :         : 2         : Y              
+i_play_n                     : J6        : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND                          : J7        : gnd    :                   :         :           :                
 GND                          : J8        : gnd    :                   :         :           :                
 GND                          : J9        : gnd    :                   :         :           :                

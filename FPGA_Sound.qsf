@@ -58,7 +58,6 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
 # Clock, reset switch
 set_location_assignment PIN_E1 -to i_clk_50
-set_location_assignment PIN_J6 -to i_n_reset
 # PS/2 keyboard
 # Serial port with RTS/CTS
 # Video
@@ -76,7 +75,6 @@ set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to i_n_reset
 set_location_assignment PIN_T10 -to o_Sq_Wave
 set_location_assignment PIN_R10 -to o_Sine_Wave
 set_global_assignment -name VHDL_FILE "MakeSound/MiddleC_187-Samples.vhd"
@@ -85,4 +83,5 @@ set_global_assignment -name VHDL_FILE Debounce.vhd
 set_global_assignment -name VHDL_FILE FPGA_Sound.vhd
 set_global_assignment -name VHDL_FILE Sound_SQWave_Middle_C.vhd
 set_global_assignment -name VHDL_FILE output_files/Sound_PWM_Middle_C.vhd
+set_location_assignment PIN_J6 -to i_play_n
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

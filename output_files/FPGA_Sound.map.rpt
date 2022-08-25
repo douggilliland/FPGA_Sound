@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FPGA_Sound
-Thu Aug 25 06:12:16 2022
+Thu Aug 25 06:27:41 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -22,10 +22,9 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
  14. Port Connectivity Checks: "Sound_PWM_Middle_C:PWMCounter|counterLdInc:PreScale_Counter"
  15. Port Connectivity Checks: "Sound_PWM_Middle_C:PWMCounter|MiddleCSine8Table:SineWaveROM"
  16. Port Connectivity Checks: "Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter"
- 17. Port Connectivity Checks: "Debouncer:debounceReset"
- 18. Post-Synthesis Netlist Statistics for Top Partition
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -52,13 +51,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Aug 25 06:12:15 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Aug 25 06:27:41 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; FPGA_Sound                                  ;
 ; Top-level Entity Name              ; FPGA_Sound                                  ;
 ; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; 44                                          ;
-;     Total combinational functions  ; 44                                          ;
+; Total logic elements               ; 45                                          ;
+;     Total combinational functions  ; 45                                          ;
 ;     Dedicated logic registers      ; 20                                          ;
 ; Total registers                    ; 20                                          ;
 ; Total pins                         ; 4                                           ;
@@ -180,7 +179,6 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
 ; MakeSound/MiddleC_187-Samples.vhd   ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MakeSound/MiddleC_187-Samples.vhd   ;         ;
 ; CounterLdCnt.vhd                    ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/CounterLdCnt.vhd                    ;         ;
-; Debounce.vhd                        ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Debounce.vhd                        ;         ;
 ; FPGA_Sound.vhd                      ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd                      ;         ;
 ; Sound_SQWave_Middle_C.vhd           ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Sound_SQWave_Middle_C.vhd           ;         ;
 ; output_files/Sound_PWM_Middle_C.vhd ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/Sound_PWM_Middle_C.vhd ;         ;
@@ -192,16 +190,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 44             ;
+; Estimated Total logic elements              ; 45             ;
 ;                                             ;                ;
-; Total combinational functions               ; 44             ;
+; Total combinational functions               ; 45             ;
 ; Logic element usage by number of LUT inputs ;                ;
 ;     -- 4 input functions                    ; 18             ;
 ;     -- 3 input functions                    ; 5              ;
-;     -- <=2 input functions                  ; 21             ;
+;     -- <=2 input functions                  ; 22             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 25             ;
+;     -- normal mode                          ; 26             ;
 ;     -- arithmetic mode                      ; 19             ;
 ;                                             ;                ;
 ; Total registers                             ; 20             ;
@@ -214,8 +212,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; i_clk_50~input ;
 ; Maximum fan-out                             ; 20             ;
-; Total fan-out                               ; 173            ;
-; Average fan-out                             ; 2.40           ;
+; Total fan-out                               ; 176            ;
+; Average fan-out                             ; 2.41           ;
 +---------------------------------------------+----------------+
 
 
@@ -224,7 +222,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                         ; Entity Name           ; Library Name ;
 +----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------+-----------------------+--------------+
-; |FPGA_Sound                            ; 44 (0)              ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |FPGA_Sound                                                                 ; FPGA_Sound            ; work         ;
+; |FPGA_Sound                            ; 45 (1)              ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |FPGA_Sound                                                                 ; FPGA_Sound            ; work         ;
 ;    |Sound_SQWave_Middle_C:SQWCounter|  ; 44 (15)             ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_SQWave_Middle_C:SQWCounter                                ; Sound_SQWave_Middle_C ; work         ;
 ;       |counterLdInc:SquareWaveCounter| ; 29 (29)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter ; counterLdInc          ; work         ;
 +----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------+-----------------------+--------------+
@@ -328,15 +326,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+---------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Debouncer:debounceReset"                                                                ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; o_pinout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -345,18 +334,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 4                           ;
 ; cycloneiii_ff         ; 20                          ;
 ;     plain             ; 20                          ;
-; cycloneiii_lcell_comb ; 45                          ;
+; cycloneiii_lcell_comb ; 46                          ;
 ;     arith             ; 19                          ;
 ;         2 data inputs ; 19                          ;
-;     normal            ; 26                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
+;     normal            ; 27                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 2                           ;
 ;         3 data inputs ; 5                           ;
 ;         4 data inputs ; 18                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.21                        ;
+; Average LUT depth     ; 3.17                        ;
 +-----------------------+-----------------------------+
 
 
@@ -375,7 +363,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Thu Aug 25 06:12:01 2022
+    Info: Processing started: Thu Aug 25 06:27:25 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FPGA_Sound -c FPGA_Sound
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file makesound/middlec_187-samples.vhd
@@ -397,32 +385,26 @@ Info (12021): Found 2 design units, including 1 entities, in source file output_
     Info (12022): Found design unit 1: Sound_PWM_Middle_C-behv File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/Sound_PWM_Middle_C.vhd Line: 25
     Info (12023): Found entity 1: Sound_PWM_Middle_C File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/Sound_PWM_Middle_C.vhd Line: 16
 Info (12127): Elaborating entity "FPGA_Sound" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at FPGA_Sound.vhd(21): object "w_reset_n" assigned a value but never read File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 21
-Info (12128): Elaborating entity "Debouncer" for hierarchy "Debouncer:debounceReset" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 24
-Info (12128): Elaborating entity "Sound_SQWave_Middle_C" for hierarchy "Sound_SQWave_Middle_C:SQWCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 31
+Info (12128): Elaborating entity "Sound_SQWave_Middle_C" for hierarchy "Sound_SQWave_Middle_C:SQWCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 32
 Info (10041): Inferred latch for "o_sqOut" at Sound_SQWave_Middle_C.vhd(40) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Sound_SQWave_Middle_C.vhd Line: 40
 Info (12128): Elaborating entity "counterLdInc" for hierarchy "Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Sound_SQWave_Middle_C.vhd Line: 28
-Info (12128): Elaborating entity "Sound_PWM_Middle_C" for hierarchy "Sound_PWM_Middle_C:PWMCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 37
+Info (12128): Elaborating entity "Sound_PWM_Middle_C" for hierarchy "Sound_PWM_Middle_C:PWMCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 38
 Warning (10541): VHDL Signal Declaration warning at Sound_PWM_Middle_C.vhd(31): used implicit default value for signal "w_ROMAddr" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/Sound_PWM_Middle_C.vhd Line: 31
 Warning (10036): Verilog HDL or VHDL warning at Sound_PWM_Middle_C.vhd(32): object "w_ROMData" assigned a value but never read File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/Sound_PWM_Middle_C.vhd Line: 32
 Info (12128): Elaborating entity "MiddleCSine8Table" for hierarchy "Sound_PWM_Middle_C:PWMCounter|MiddleCSine8Table:SineWaveROM" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/Sound_PWM_Middle_C.vhd Line: 36
 Info (12128): Elaborating entity "counterLdInc" for hierarchy "Sound_PWM_Middle_C:PWMCounter|counterLdInc:PreScale_Counter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/Sound_PWM_Middle_C.vhd Line: 42
 Info (12128): Elaborating entity "counterLdInc" for hierarchy "Sound_PWM_Middle_C:PWMCounter|counterLdInc:ROMAddrCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/Sound_PWM_Middle_C.vhd Line: 54
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "o_Sine_Wave" is stuck at VCC File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 14
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "i_n_reset" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 10
-Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 49 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 44 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4821 megabytes
-    Info: Processing ended: Thu Aug 25 06:12:16 2022
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:34
+    Info (21061): Implemented 45 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4820 megabytes
+    Info: Processing ended: Thu Aug 25 06:27:41 2022
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:38
 
 
