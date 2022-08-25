@@ -12,15 +12,15 @@ Make sound from an FPGA starting from first principles.
 
 *  FPGA clock is 50 MHz
 * Divide by counter to get note
-* Resources
-** 42 Logic cells
-** 20 Registers
 * Divisor is 50_000_000 / 261.6256 = 191_112.79
 * Can only do integer divisor, round up to 191_113
 * 191_113 dec = 2EA89 hex
 * Count from 0 to 2EA88
 * Set low at count = 0, set high at 1/2 wave (17544 hex)
 * Minimal error < 1 part in 191_112
+* Resources
+** 42 Logic cells
+** 20 Registers
 
 == Sine Wave ==
 
