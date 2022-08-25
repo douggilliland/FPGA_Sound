@@ -19,3 +19,8 @@ Make sound from an FPGA starting from first principles.
 * Resources
 ** 174 Logic cells
 ** 28 Registers
+*  FPGA clock is 50 MHz
+* Prescale 50 MHz by 3 to get to 16.667 KHz
+* 256 samples in the table - one full wave
+* 256 clocks for PWM
+* Produces 261.00 Hz
