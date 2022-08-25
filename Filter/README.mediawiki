@@ -1,1 +1,3 @@
 = PWM Filter / Line Level Scaler =
+
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/Filter/AudFilt-P18598-720px.jpg"></img>
