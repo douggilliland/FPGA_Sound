@@ -10,6 +10,8 @@ Make sound from an FPGA starting from first principles.
 
 == Square Wave ==
 
+*  FPGA clock is 50 MHz
+* Divide by counter to get note
 * Resources
 ** 42 Logic cells
 ** 20 Registers
