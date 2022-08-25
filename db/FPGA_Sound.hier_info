@@ -117,9 +117,10 @@ o_dataOut[19] <= Pre_Q[19].DB_MAX_OUTPUT_PORT_TYPE
 
 |FPGA_Sound|Sound_PWM_Middle_C:PWMCounter
 i_clk_50 => counterldinc:PreScale_Counter.i_clock
+i_clk_50 => o_PWMOut~reg0.CLK
 i_clk_50 => counterldinc:PWMCounter.i_clock
 i_clk_50 => counterldinc:ROMAddrCounter.i_clock
-o_PWMOut <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+o_PWMOut <= o_PWMOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |FPGA_Sound|Sound_PWM_Middle_C:PWMCounter|MiddleCSine8Table:SineWaveROM

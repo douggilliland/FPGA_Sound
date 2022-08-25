@@ -30,6 +30,7 @@ architecture behv of Sound_PWM_Middle_C is
 
 	signal w_ldPWMCtr			: std_logic;
 	signal w_incROMAdr		: std_logic;
+	signal w_PWMUnlatched	: std_logic;
 	signal w_PWMScaler		: std_logic_vector(10 downto 0);
 	signal w_PWMCounter		: std_logic_vector(7 downto 0);
 
@@ -84,6 +85,13 @@ port map (
 	o_dataOut	=> w_ROMAddr
 );
 
-o_PWMOut <= '1' when w_PWMCounter < w_ROMData else '0';
+w_PWMUnlatched <= '1' when w_PWMCounter < w_ROMData else '0';
+
+process(i_clk_50, w_PWMUnlatched)
+begin
+	if rising_edge(i_clk_50) then
+		o_PWMOut <= w_PWMUnlatched;
+	end if;
+end process;	
 
 end behv;

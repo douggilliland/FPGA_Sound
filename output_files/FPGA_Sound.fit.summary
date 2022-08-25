@@ -1,4 +1,4 @@
-Fitter Status : Successful - Thu Aug 25 09:20:37 2022
+Fitter Status : Successful - Thu Aug 25 12:08:36 2022
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : FPGA_Sound
 Top-level Entity Name : FPGA_Sound
@@ -7,8 +7,8 @@ Device : 10CL006YU256C8G
 Timing Models : Final
 Total logic elements : 218 / 6,272 ( 3 % )
     Total combinational functions : 218 / 6,272 ( 3 % )
-    Dedicated logic registers : 47 / 6,272 ( < 1 % )
-Total registers : 47
+    Dedicated logic registers : 48 / 6,272 ( < 1 % )
+Total registers : 48
 Total pins : 4 / 177 ( 2 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
