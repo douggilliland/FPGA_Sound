@@ -6,22 +6,7 @@ Make sound from an FPGA starting from first principles.
 * Make waveforms, save builds
 ** [https://github.com/douggilliland/FPGA_Sound/tree/Square-Wave-Middle-C Square Wave Middle C build]
 ** Sine Wave
-
-= Audio Filter / Scaler =
-
-* FPGA has digital outputs, no analog, need scaler
-** Line level output neeeds 1V p-p signals
-** FPGA output is 3.3V
-** Use "simple" voltage divider
-* Need filter to remove higher frequency components for PWM
-* Circuit is a Low Pass Filter, Output Scaler
-** 4 resistors, 1 capacitor per channel
-
-<img src="http://land-boards.com/blwiki/images/0/07/RETRO-FPGA-AUDIO-J3.PNG">Audio Filter/Scaler</img>
-
-* Layout on [http://land-boards.com/blwiki/index.php?title=GRID49 GRID49 card]
-
-<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/Filter/Filter-GRID49_WIRING_V2.png"></img>
+* [https://github.com/douggilliland/FPGA_Sound/tree/main/Filter Audio Filter]
 
 == Square Wave ==
 
