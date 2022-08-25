@@ -6,7 +6,7 @@ Make sound from an FPGA starting from first principles.
 * Make waveforms, save builds
 ** [https://github.com/douggilliland/FPGA_Sound/tree/Square-Wave-Middle-C Square Wave Middle C build]
 ** [https://github.com/douggilliland/FPGA_Sound/tree/Sine-Wave-Middle-C Sine Wave Middle C build]
-* [https://github.com/douggilliland/FPGA_Sound/tree/main/Filter Audio Filter]
+* [https://github.com/douggilliland/FPGA_Sound/tree/main/Filter Audio Filter / Scaler]
 
 == Square Wave ==
 
