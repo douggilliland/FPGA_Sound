@@ -3,7 +3,7 @@
 * Make sound from an FPGA starting from first principles
 * FPGA has digital outputs, no analog
 * Make sounds
-** Square Wave
+** [https://github.com/douggilliland/FPGA_Sound/tree/Square-Wave Square Wave build]
 ** Sine Wave
 
 = Audio Filter / Scaler =
