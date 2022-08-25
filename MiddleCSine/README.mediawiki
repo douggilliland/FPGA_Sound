@@ -6,3 +6,5 @@
 * 256 clocks for PWM
 * Middle C is 261.6256 Hz
 * 50,000,0000 / (256 x 256 x 3) = 254.31 Hz
+
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCSine/MiddleC_Scope_Cap.png"></img>
