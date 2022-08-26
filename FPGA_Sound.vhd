@@ -30,24 +30,29 @@ architecture struct of FPGA_Sound is
 	signal w_reset_n			: std_logic;
 	signal w_SQWave			: std_logic;
 	signal w_PWMSineWave		: std_logic;
+	signal w_Mute				: std_logic;
 
 begin
 
 -- Push play button to play on pin
 
-o_Sq_Wave	<= (not i_play_n) and w_SQWave;
-o_Sine_Wave	<= (not i_play_n) and w_PWMSineWave;
+w_Mute <= i_play_n;
+
+o_Sq_Wave	<=  w_SQWave;
+o_Sine_Wave	<= w_PWMSineWave;
 --o_Sine_Wave	<= w_PWMSineWave;
 
 SQWCounter : entity work.Sound_SQWave_Middle_C
 	port map (
 		i_clk_50			=> i_clk_50,
+		i_Mute			=> w_Mute,
 		o_sqOut			=> w_SQWave
 	);
 	
 PWMCounter : entity work.Sound_PWM_Middle_C
 	port map (
 		i_clk_50			=> i_clk_50,
+		i_Mute			=> w_Mute,
 		o_PWMOut			=> w_PWMSineWave
 	);
 	

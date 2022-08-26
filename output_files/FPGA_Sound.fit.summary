@@ -1,14 +1,14 @@
-Fitter Status : Successful - Thu Aug 25 12:15:50 2022
+Fitter Status : Successful - Fri Aug 26 06:07:45 2022
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : FPGA_Sound
 Top-level Entity Name : FPGA_Sound
 Family : Cyclone 10 LP
 Device : 10CL006YU256C8G
 Timing Models : Final
-Total logic elements : 218 / 6,272 ( 3 % )
-    Total combinational functions : 218 / 6,272 ( 3 % )
-    Dedicated logic registers : 48 / 6,272 ( < 1 % )
-Total registers : 48
+Total logic elements : 204 / 6,272 ( 3 % )
+    Total combinational functions : 204 / 6,272 ( 3 % )
+    Dedicated logic registers : 39 / 6,272 ( < 1 % )
+Total registers : 39
 Total pins : 4 / 177 ( 2 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )

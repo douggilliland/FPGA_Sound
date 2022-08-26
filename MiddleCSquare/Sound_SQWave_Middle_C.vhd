@@ -22,6 +22,7 @@ use  IEEE.STD_LOGIC_UNSIGNED.all;
 entity Sound_SQWave_Middle_C is
 port(	
 	i_clk_50		:	in std_logic;		-- 50 MHz
+	i_Mute		:	in std_logic;
 	o_sqOut		:	out std_logic		-- Middle C square wave
 );
 end Sound_SQWave_Middle_C;
@@ -47,7 +48,8 @@ port map (
 
 w_ldSQWCtr <= '1' when w_sqCounter = x"2EA88" else '0';
 
-o_sqOut <= '1' when w_sqCounter = x"17544" else
-           '0' when w_sqCounter = x"00000";
+o_sqOut <= 	'0' when i_Mute = '1' else
+				'1' when w_sqCounter = x"17544" else
+				'0' when w_sqCounter = x"00000";
 
 end behv;
