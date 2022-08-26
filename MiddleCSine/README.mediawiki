@@ -9,6 +9,10 @@
 * Measured at speaker connection
 * ~1V p-p
 
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCSine/Middle-C_BlockDiagram.png"></img>
+
+* Scope cap
+
 <img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCSine/MiddleC_Scope_Cap.png"></img>
 
 * 64 KHz mute measurement
