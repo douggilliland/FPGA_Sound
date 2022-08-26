@@ -7,6 +7,9 @@
 --		http://land-boards.com/blwiki/index.php?title=RETRO-65C816
 --	I/O on J1 connector
 -- Separate outputs for each implementation
+-- Squarewave
+-- Sinewave
+-- Sawtooth
 -- ------------------------------------------------------------------------------------------
 
 library ieee;
@@ -19,9 +22,10 @@ entity FPGA_Sound is
 		i_clk_50			: in std_logic;					-- 50 MHz osillator on FPGA card
 		i_play_n			: in std_logic;					-- Play pushbutton on card
 		
-		o_Sq_Wave		: out		std_logic := '0';
-		o_Sine_Wave		: out		std_logic := '0'
-		
+		o_Sq_Wave		: out		std_logic := '0';		-- Square wave
+		o_Sine_Wave		: out		std_logic := '0';		-- Sine wave
+		o_Saw_Wave		: out		std_logic := '0';		-- Sawtooth wave
+		o_Tri_Wave		: out		std_logic := '0'		-- Triangle wave		
 	);
 end FPGA_Sound;
 
@@ -30,6 +34,8 @@ architecture struct of FPGA_Sound is
 	signal w_reset_n			: std_logic;
 	signal w_SQWave			: std_logic;
 	signal w_PWMSineWave		: std_logic;
+	signal w_Saw_Wave			: std_logic;
+	signal w_Tri_Wave			: std_logic;
 	signal w_Mute				: std_logic;
 
 begin
@@ -40,7 +46,8 @@ w_Mute <= i_play_n;
 
 o_Sq_Wave	<=  w_SQWave;
 o_Sine_Wave	<= w_PWMSineWave;
---o_Sine_Wave	<= w_PWMSineWave;
+o_Saw_Wave	<= w_Saw_Wave;
+o_Tri_Wave	<= w_Tri_Wave;
 
 SQWCounter : entity work.Sound_SQWave_Middle_C
 	port map (
@@ -48,12 +55,26 @@ SQWCounter : entity work.Sound_SQWave_Middle_C
 		i_Mute			=> w_Mute,
 		o_sqOut			=> w_SQWave
 	);
-	
-PWMCounter : entity work.Sound_PWM_Middle_C
+
+SineWCounter : entity work.Sound_PWM_Middle_C
 	port map (
 		i_clk_50			=> i_clk_50,
 		i_Mute			=> w_Mute,
 		o_PWMOut			=> w_PWMSineWave
 	);
-	
+
+SawWCounter : entity work.Sound_Sawtooth_Middle_C
+	port map (
+		i_clk_50			=> i_clk_50,
+		i_Mute			=> w_Mute,
+		o_PWMOut			=> w_Saw_Wave
+	);
+
+eTriangleWCounter : entity work.Sound_Triangle_Middle_C
+	port map (
+		i_clk_50			=> i_clk_50,
+		i_Mute			=> w_Mute,
+		o_PWMOut			=> w_Tri_Wave
+	);
+
 end;

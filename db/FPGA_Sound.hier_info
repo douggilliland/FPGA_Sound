@@ -1,10 +1,16 @@
 |FPGA_Sound
 i_clk_50 => sound_sqwave_middle_c:SQWCounter.i_clk_50
-i_clk_50 => sound_pwm_middle_c:PWMCounter.i_clk_50
+i_clk_50 => sound_pwm_middle_c:SineWCounter.i_clk_50
+i_clk_50 => sound_sawtooth_middle_c:SawWCounter.i_clk_50
+i_clk_50 => sound_triangle_middle_c:eTriangleWCounter.i_clk_50
 i_play_n => sound_sqwave_middle_c:SQWCounter.i_Mute
-i_play_n => sound_pwm_middle_c:PWMCounter.i_Mute
+i_play_n => sound_pwm_middle_c:SineWCounter.i_Mute
+i_play_n => sound_sawtooth_middle_c:SawWCounter.i_Mute
+i_play_n => sound_triangle_middle_c:eTriangleWCounter.i_Mute
 o_Sq_Wave <= sound_sqwave_middle_c:SQWCounter.o_sqOut
-o_Sine_Wave <= sound_pwm_middle_c:PWMCounter.o_PWMOut
+o_Sine_Wave <= sound_pwm_middle_c:SineWCounter.o_PWMOut
+o_Saw_Wave <= sound_sawtooth_middle_c:SawWCounter.o_PWMOut
+o_Tri_Wave <= sound_triangle_middle_c:eTriangleWCounter.o_PWMOut
 
 
 |FPGA_Sound|Sound_SQWave_Middle_C:SQWCounter
@@ -117,7 +123,7 @@ o_dataOut[18] <= Pre_Q[18].DB_MAX_OUTPUT_PORT_TYPE
 o_dataOut[19] <= Pre_Q[19].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FPGA_Sound|Sound_PWM_Middle_C:PWMCounter
+|FPGA_Sound|Sound_PWM_Middle_C:SineWCounter
 i_clk_50 => counterldinc:PreScale_Counter.i_clock
 i_clk_50 => o_PWMOut~reg0.CLK
 i_clk_50 => counterldinc:PWMCounter.i_clock
@@ -127,7 +133,7 @@ i_Mute => w_PWMUnlatched.IN1
 o_PWMOut <= o_PWMOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FPGA_Sound|Sound_PWM_Middle_C:PWMCounter|MiddleCSine8Table:SineWaveROM
+|FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|MiddleCSineTable:SineWaveROM
 address[0] => Mux0.IN263
 address[0] => Mux1.IN263
 address[0] => Mux2.IN263
@@ -201,7 +207,7 @@ q[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FPGA_Sound|Sound_PWM_Middle_C:PWMCounter|counterLdInc:PreScale_Counter
+|FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter
 i_clock => Pre_Q[0].CLK
 i_clock => Pre_Q[1].CLK
 i_dataIn[0] => Pre_Q.DATAB
@@ -214,7 +220,7 @@ o_dataOut[0] <= Pre_Q[0].DB_MAX_OUTPUT_PORT_TYPE
 o_dataOut[1] <= Pre_Q[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FPGA_Sound|Sound_PWM_Middle_C:PWMCounter|counterLdInc:PWMCounter
+|FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter
 i_clock => Pre_Q[0].CLK
 i_clock => Pre_Q[1].CLK
 i_clock => Pre_Q[2].CLK
@@ -257,7 +263,225 @@ o_dataOut[6] <= Pre_Q[6].DB_MAX_OUTPUT_PORT_TYPE
 o_dataOut[7] <= Pre_Q[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FPGA_Sound|Sound_PWM_Middle_C:PWMCounter|counterLdInc:ROMAddrCounter
+|FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter
+i_clock => Pre_Q[0].CLK
+i_clock => Pre_Q[1].CLK
+i_clock => Pre_Q[2].CLK
+i_clock => Pre_Q[3].CLK
+i_clock => Pre_Q[4].CLK
+i_clock => Pre_Q[5].CLK
+i_clock => Pre_Q[6].CLK
+i_clock => Pre_Q[7].CLK
+i_dataIn[0] => Pre_Q.DATAB
+i_dataIn[1] => Pre_Q.DATAB
+i_dataIn[2] => Pre_Q.DATAB
+i_dataIn[3] => Pre_Q.DATAB
+i_dataIn[4] => Pre_Q.DATAB
+i_dataIn[5] => Pre_Q.DATAB
+i_dataIn[6] => Pre_Q.DATAB
+i_dataIn[7] => Pre_Q.DATAB
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+o_dataOut[0] <= Pre_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[1] <= Pre_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[2] <= Pre_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[3] <= Pre_Q[3].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[4] <= Pre_Q[4].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[5] <= Pre_Q[5].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[6] <= Pre_Q[6].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[7] <= Pre_Q[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FPGA_Sound|Sound_Sawtooth_Middle_C:SawWCounter
+i_clk_50 => counterldinc:PreScale_Counter.i_clock
+i_clk_50 => o_PWMOut~reg0.CLK
+i_clk_50 => counterldinc:PWMCounter.i_clock
+i_clk_50 => counterldinc:RampCounter.i_clock
+i_Mute => w_PWMUnlatched.IN1
+i_Mute => w_PWMUnlatched.IN1
+o_PWMOut <= o_PWMOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FPGA_Sound|Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PreScale_Counter
+i_clock => Pre_Q[0].CLK
+i_clock => Pre_Q[1].CLK
+i_dataIn[0] => Pre_Q.DATAB
+i_dataIn[1] => Pre_Q.DATAB
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+o_dataOut[0] <= Pre_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[1] <= Pre_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FPGA_Sound|Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter
+i_clock => Pre_Q[0].CLK
+i_clock => Pre_Q[1].CLK
+i_clock => Pre_Q[2].CLK
+i_clock => Pre_Q[3].CLK
+i_clock => Pre_Q[4].CLK
+i_clock => Pre_Q[5].CLK
+i_clock => Pre_Q[6].CLK
+i_clock => Pre_Q[7].CLK
+i_dataIn[0] => Pre_Q.DATAB
+i_dataIn[1] => Pre_Q.DATAB
+i_dataIn[2] => Pre_Q.DATAB
+i_dataIn[3] => Pre_Q.DATAB
+i_dataIn[4] => Pre_Q.DATAB
+i_dataIn[5] => Pre_Q.DATAB
+i_dataIn[6] => Pre_Q.DATAB
+i_dataIn[7] => Pre_Q.DATAB
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+o_dataOut[0] <= Pre_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[1] <= Pre_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[2] <= Pre_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[3] <= Pre_Q[3].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[4] <= Pre_Q[4].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[5] <= Pre_Q[5].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[6] <= Pre_Q[6].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[7] <= Pre_Q[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FPGA_Sound|Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter
+i_clock => Pre_Q[0].CLK
+i_clock => Pre_Q[1].CLK
+i_clock => Pre_Q[2].CLK
+i_clock => Pre_Q[3].CLK
+i_clock => Pre_Q[4].CLK
+i_clock => Pre_Q[5].CLK
+i_clock => Pre_Q[6].CLK
+i_clock => Pre_Q[7].CLK
+i_dataIn[0] => Pre_Q.DATAB
+i_dataIn[1] => Pre_Q.DATAB
+i_dataIn[2] => Pre_Q.DATAB
+i_dataIn[3] => Pre_Q.DATAB
+i_dataIn[4] => Pre_Q.DATAB
+i_dataIn[5] => Pre_Q.DATAB
+i_dataIn[6] => Pre_Q.DATAB
+i_dataIn[7] => Pre_Q.DATAB
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+o_dataOut[0] <= Pre_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[1] <= Pre_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[2] <= Pre_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[3] <= Pre_Q[3].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[4] <= Pre_Q[4].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[5] <= Pre_Q[5].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[6] <= Pre_Q[6].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[7] <= Pre_Q[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FPGA_Sound|Sound_Triangle_Middle_C:eTriangleWCounter
+i_clk_50 => counterldinc:PreScale_Counter.i_clock
+i_clk_50 => o_PWMOut~reg0.CLK
+i_clk_50 => counterldinc:PWMCounter.i_clock
+i_clk_50 => counterldinc:RampCounter.i_clock
+i_Mute => w_PWMUnlatched.IN1
+i_Mute => w_PWMUnlatched.IN1
+o_PWMOut <= o_PWMOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FPGA_Sound|Sound_Triangle_Middle_C:eTriangleWCounter|counterLdInc:PreScale_Counter
+i_clock => Pre_Q[0].CLK
+i_clock => Pre_Q[1].CLK
+i_dataIn[0] => Pre_Q.DATAB
+i_dataIn[1] => Pre_Q.DATAB
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+o_dataOut[0] <= Pre_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[1] <= Pre_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FPGA_Sound|Sound_Triangle_Middle_C:eTriangleWCounter|counterLdInc:PWMCounter
+i_clock => Pre_Q[0].CLK
+i_clock => Pre_Q[1].CLK
+i_clock => Pre_Q[2].CLK
+i_clock => Pre_Q[3].CLK
+i_clock => Pre_Q[4].CLK
+i_clock => Pre_Q[5].CLK
+i_clock => Pre_Q[6].CLK
+i_clock => Pre_Q[7].CLK
+i_dataIn[0] => Pre_Q.DATAB
+i_dataIn[1] => Pre_Q.DATAB
+i_dataIn[2] => Pre_Q.DATAB
+i_dataIn[3] => Pre_Q.DATAB
+i_dataIn[4] => Pre_Q.DATAB
+i_dataIn[5] => Pre_Q.DATAB
+i_dataIn[6] => Pre_Q.DATAB
+i_dataIn[7] => Pre_Q.DATAB
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_load => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+i_inc => Pre_Q.OUTPUTSELECT
+o_dataOut[0] <= Pre_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[1] <= Pre_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[2] <= Pre_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[3] <= Pre_Q[3].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[4] <= Pre_Q[4].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[5] <= Pre_Q[5].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[6] <= Pre_Q[6].DB_MAX_OUTPUT_PORT_TYPE
+o_dataOut[7] <= Pre_Q[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FPGA_Sound|Sound_Triangle_Middle_C:eTriangleWCounter|counterLdInc:RampCounter
 i_clock => Pre_Q[0].CLK
 i_clock => Pre_Q[1].CLK
 i_clock => Pre_Q[2].CLK

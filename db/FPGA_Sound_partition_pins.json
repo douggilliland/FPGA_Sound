@@ -12,6 +12,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "o_Saw_Wave",
+					"strict" : false
+				},
+				{
+					"name" : "o_Tri_Wave",
+					"strict" : false
+				},
+				{
 					"name" : "i_play_n",
 					"strict" : false
 				},
