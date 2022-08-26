@@ -43,7 +43,7 @@ begin
 
 -- Pre-scale counter divides 50 MHz by 3 to get 16.667 MHz
 
-w_ldPWMCtr <= '1' when w_PWMScaler =   "10" else '0';
+w_ldPWMCtr <= '1' when w_PWMScaler =   "01" else '0';
 
 PreScale_Counter : entity work.counterLdInc
 generic map (n => 2)
