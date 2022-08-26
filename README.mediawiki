@@ -25,7 +25,7 @@ Make sound from an FPGA starting from first principles.
 
 == Sine Wave Middle C ==
 
-*  FPGA clock is 50 MHz
+* FPGA clock is 50 MHz
 * Prescale 50 MHz by 3 to get to 16.667 KHz
 * 256 samples in the table - one full wave
 * 256 clocks for PWM
@@ -39,3 +39,15 @@ Make sound from an FPGA starting from first principles.
 * Scope cap
 
 <img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCSine/MiddleC_Scope_Cap.png"></img>
+
+== Sawtooth Middle C ==
+
+* FPGA clock is 50 MHz
+* Prescale 50 MHz by 3 to get to 16.667 KHz
+* Ramp values
+
+== Triangle Wave ==
+
+* FPGA clock is 50 MHz
+* Prescale 50 MHz by 2 to get to 25 KHz
+* Ramp values up/down
