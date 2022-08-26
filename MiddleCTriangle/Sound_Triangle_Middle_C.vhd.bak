@@ -32,7 +32,6 @@ architecture behv of Sound_Triangle_Middle_C is
 	signal w_ldPWMCtr			: std_logic;
 	signal w_incROMAdr		: std_logic;
 	signal w_PWMUnlatched	: std_logic;
-	signal w_Up					: std_logic;
 	signal w_PWMScaler		: std_logic_vector(1 downto 0);
 	signal w_PWMCounter		: std_logic_vector(7 downto 0);
 
@@ -69,27 +68,11 @@ port map (
 
 w_incROMAdr <= '1' when w_PWMCounter = x"ff" and w_ldPWMCtr = '1' else '0';
 
---process(i_clk_50, w_PWMUnlatched)
---begin
---	if rising_edge(i_clk_50) then
---		if w_RampVal = x"00" then
---			w_Up <= '1';
---		elsif  w_RampVal = x"ff" then
---			w_Up <= '0';
---		end if;
---	end if;
---end process;	
-
-
-w_Up <= '1' when w_RampVal = x"00" else
-        '0' when w_RampVal = x"ff";
-
-RampCounter : entity work.CounterUpDnLdCnt
+RampCounter : entity work.counterLdInc
 generic map (n => 8)
 port map (
 	i_clock		=> i_clk_50,
 	i_dataIn		=> x"00",
-	i_up			=> w_Up,
 	i_load		=> '0',
 	i_inc			=> w_incROMAdr,
 	o_dataOut	=> w_RampVal
