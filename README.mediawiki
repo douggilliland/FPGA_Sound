@@ -46,7 +46,7 @@ Make sound from an FPGA starting from first principles.
 * Prescale 50 MHz by 3 to get to 16.667 KHz
 * Ramp values
 
-== Triangle Wave ==
+== Triangle Wave Not Middle C ==
 
 * FPGA clock is 50 MHz
 * Prescale 50 MHz by 2 to get to 25 KHz
