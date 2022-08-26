@@ -17,6 +17,6 @@
 
 * 64 KHz mute measurement
 * ~0.1V p-p, well above audio frequency = inaudible with amplifier turned up
-* Idle at 0x7F so eliminate DC "clicking"
+* Mute input causes idle at 0x7F to eliminate DC "clicking"
 
 <img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCSine/MuteNoise.png"></img>
