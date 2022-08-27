@@ -1,5 +1,5 @@
 Fitter report for FPGA_Sound
-Fri Aug 26 19:26:54 2022
+Sat Aug 27 05:24:47 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Aug 26 19:26:54 2022       ;
+; Fitter Status                      ; Successful - Sat Aug 27 05:24:47 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; FPGA_Sound                                  ;
 ; Top-level Entity Name              ; FPGA_Sound                                  ;
@@ -1032,7 +1032,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.18 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1043,9 +1043,9 @@ Warning (169177): 2 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2
     Info (169178): Pin i_clk_50 uses I/O standard 3.3-V LVTTL at E1 File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 22
 Info (144001): Generated suppressed messages file C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/output_files/FPGA_Sound.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5446 megabytes
-    Info: Processing ended: Fri Aug 26 19:26:54 2022
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 5434 megabytes
+    Info: Processing ended: Sat Aug 27 05:24:48 2022
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:08
 
 

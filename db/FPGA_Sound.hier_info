@@ -15,9 +15,9 @@ o_Tri_Wave <= sound_triangle_middle_c:eTriangleWCounter.o_PWMOut
 
 |FPGA_Sound|Sound_SQWave_Middle_C:SQWCounter
 i_clk_50 => counterldinc:SquareWaveCounter.i_clock
-i_Mute => o_sqOut.IN1
-i_Mute => o_sqOut.OUTPUTSELECT
-o_sqOut <= o_sqOut$latch.DB_MAX_OUTPUT_PORT_TYPE
+i_Mute => w_SQWave.IN1
+i_Mute => w_SQWave.OUTPUTSELECT
+o_sqOut <= w_SQWave.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |FPGA_Sound|Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter

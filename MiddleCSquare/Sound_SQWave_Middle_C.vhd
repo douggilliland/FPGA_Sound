@@ -32,6 +32,7 @@ end Sound_SQWave_Middle_C;
 architecture behv of Sound_SQWave_Middle_C is		 	  
 
 	signal w_ldSQWCtr			: std_logic;
+	signal w_SQWave			: std_logic;
 	signal w_sqCounter		: std_logic_vector(19 downto 0);
 
 begin
@@ -48,7 +49,9 @@ port map (
 
 w_ldSQWCtr <= '1' when w_sqCounter = x"2EA88" else '0';
 
-o_sqOut <= 	'0' when i_Mute = '1' else
+o_sqOut <= w_SQWave;
+
+w_SQWave	<= '0' when i_Mute = '1' else
 				'1' when w_sqCounter = x"17544" else
 				'0' when w_sqCounter = x"00000";
 
