@@ -28,7 +28,8 @@ entity FPGA_Sound is
 		o_Sine_Wave		: out		std_logic := '0';		-- Sine wave
 		o_Saw_Wave		: out		std_logic := '0';		-- Sawtooth wave
 		o_Tri_Wave		: out		std_logic := '0';		-- Triangle wave
-		o_Square_Scale	: out		std_logic := '0'		-- Square wave Grand Piano scale
+		o_Square_Scale	: out		std_logic := '0';		-- Square wave Grand Piano scale
+		o_Sine_Scale	: out		std_logic := '0'		-- Sine wave Grand Piano scale
 	);
 end FPGA_Sound;
 
@@ -40,6 +41,7 @@ architecture struct of FPGA_Sound is
 	signal w_Saw_Wave			: std_logic;
 	signal w_Tri_Wave			: std_logic;
 	signal w_SqScale_Wave	: std_logic;
+	signal w_SineScale_Wave	: std_logic;
 	signal w_Mute				: std_logic;
 	signal w_NoteCounter		: std_logic_vector(6 downto 0);
 
@@ -54,6 +56,7 @@ o_Sine_Wave		<= w_PWMSineWave;
 o_Saw_Wave		<= w_Saw_Wave;
 o_Tri_Wave		<= w_Tri_Wave;
 o_Square_Scale	<= w_SqScale_Wave;
+o_Sine_Scale	<= w_SineScale_Wave;
 
 -- Middle C square wave
 SQWCounter : entity work.Sound_SQWave_Middle_C
@@ -94,6 +97,15 @@ SquareScale : entity work.Sound_Square_Scale
 		i_Mute			=> w_Mute,
 		i_pianoNote		=> w_NoteCounter,	-- Piano key index
 		o_PWMOut			=> w_SqScale_Wave
+	);
+
+-- Sine wave4 generator with piano key index as input
+SineScale : entity work.Sound_Sine_Scale
+	port map (
+		i_clk_50			=> i_clk_50,
+		i_Mute			=> w_Mute,
+		i_pianoNote		=> w_NoteCounter,	-- Piano key index
+		o_PWMOut			=> w_SineScale_Wave
 	);
 
 -- Step through Grand Piano scale 1 note every second

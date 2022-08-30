@@ -24,6 +24,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "o_Sine_Scale",
+					"strict" : false
+				},
+				{
 					"name" : "i_play_n",
 					"strict" : false
 				},

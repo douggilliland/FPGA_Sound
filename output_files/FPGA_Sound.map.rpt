@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FPGA_Sound
-Tue Aug 30 07:46:45 2022
+Tue Aug 30 17:49:26 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -28,24 +28,30 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
  20. Parameter Settings for User Entity Instance: Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter
  21. Parameter Settings for User Entity Instance: Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter
  22. Parameter Settings for User Entity Instance: Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter
- 23. Parameter Settings for User Entity Instance: NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter
- 24. Parameter Settings for User Entity Instance: NoteStepper:NoteSteps|counterLdInc:Note_Counter
- 25. Port Connectivity Checks: "NoteStepper:NoteSteps|counterLdInc:Note_Counter"
- 26. Port Connectivity Checks: "NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter"
- 27. Port Connectivity Checks: "Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter"
- 28. Port Connectivity Checks: "Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter"
- 29. Port Connectivity Checks: "Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter"
- 30. Port Connectivity Checks: "Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PreScale_Counter"
- 31. Port Connectivity Checks: "Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter"
- 32. Port Connectivity Checks: "Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter"
- 33. Port Connectivity Checks: "Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PreScale_Counter"
- 34. Port Connectivity Checks: "Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter"
- 35. Port Connectivity Checks: "Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter"
- 36. Port Connectivity Checks: "Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter"
- 37. Port Connectivity Checks: "Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter"
- 38. Post-Synthesis Netlist Statistics for Top Partition
- 39. Elapsed Time Per Partition
- 40. Analysis & Synthesis Messages
+ 23. Parameter Settings for User Entity Instance: Sound_Sine_Scale:SineScale|counterLdInc:PreScale_Counter
+ 24. Parameter Settings for User Entity Instance: Sound_Sine_Scale:SineScale|counterLdInc:SineWave_Counter
+ 25. Parameter Settings for User Entity Instance: Sound_Sine_Scale:SineScale|counterLdInc:PWM_Counter
+ 26. Parameter Settings for User Entity Instance: NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter
+ 27. Parameter Settings for User Entity Instance: NoteStepper:NoteSteps|counterLdInc:Note_Counter
+ 28. Port Connectivity Checks: "NoteStepper:NoteSteps|counterLdInc:Note_Counter"
+ 29. Port Connectivity Checks: "NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter"
+ 30. Port Connectivity Checks: "Sound_Sine_Scale:SineScale|counterLdInc:PWM_Counter"
+ 31. Port Connectivity Checks: "Sound_Sine_Scale:SineScale|counterLdInc:SineWave_Counter"
+ 32. Port Connectivity Checks: "Sound_Sine_Scale:SineScale|counterLdInc:PreScale_Counter"
+ 33. Port Connectivity Checks: "Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter"
+ 34. Port Connectivity Checks: "Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter"
+ 35. Port Connectivity Checks: "Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter"
+ 36. Port Connectivity Checks: "Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PreScale_Counter"
+ 37. Port Connectivity Checks: "Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter"
+ 38. Port Connectivity Checks: "Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter"
+ 39. Port Connectivity Checks: "Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PreScale_Counter"
+ 40. Port Connectivity Checks: "Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter"
+ 41. Port Connectivity Checks: "Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter"
+ 42. Port Connectivity Checks: "Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter"
+ 43. Port Connectivity Checks: "Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter"
+ 44. Post-Synthesis Netlist Statistics for Top Partition
+ 45. Elapsed Time Per Partition
+ 46. Analysis & Synthesis Messages
 
 
 
@@ -72,16 +78,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Aug 30 07:46:45 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Aug 30 17:49:26 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; FPGA_Sound                                  ;
 ; Top-level Entity Name              ; FPGA_Sound                                  ;
 ; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; 494                                         ;
-;     Total combinational functions  ; 494                                         ;
-;     Dedicated logic registers      ; 111                                         ;
-; Total registers                    ; 111                                         ;
-; Total pins                         ; 7                                           ;
+; Total logic elements               ; 767                                         ;
+;     Total combinational functions  ; 767                                         ;
+;     Dedicated logic registers      ; 142                                         ;
+; Total registers                    ; 142                                         ;
+; Total pins                         ; 8                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -189,7 +195,9 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -209,6 +217,8 @@ https://fpgasoftware.intel.com/eula.
 ; MiddleCTriangle/Sound_Triangle_Middle_C.vhd ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCTriangle/Sound_Triangle_Middle_C.vhd ;         ;
 ; Counters/CounterUpDnLdCnt.vhd               ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Counters/CounterUpDnLdCnt.vhd               ;         ;
 ; NoteStepper.vhd                             ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/NoteStepper.vhd                             ;         ;
+; ScaleSine/NoteSineCounterTable.vhd          ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/NoteSineCounterTable.vhd          ;         ;
+; ScaleSine/Sound_Sine_Scale.vhd              ; yes             ; User VHDL File  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/Sound_Sine_Scale.vhd              ;         ;
 +---------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------+---------+
 
 
@@ -217,58 +227,62 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 494            ;
+; Estimated Total logic elements              ; 767            ;
 ;                                             ;                ;
-; Total combinational functions               ; 494            ;
+; Total combinational functions               ; 767            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 304            ;
-;     -- 3 input functions                    ; 59             ;
-;     -- <=2 input functions                  ; 131            ;
+;     -- 4 input functions                    ; 527            ;
+;     -- 3 input functions                    ; 75             ;
+;     -- <=2 input functions                  ; 165            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 380            ;
-;     -- arithmetic mode                      ; 114            ;
+;     -- normal mode                          ; 619            ;
+;     -- arithmetic mode                      ; 148            ;
 ;                                             ;                ;
-; Total registers                             ; 111            ;
-;     -- Dedicated logic registers            ; 111            ;
+; Total registers                             ; 142            ;
+;     -- Dedicated logic registers            ; 142            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
-; I/O pins                                    ; 7              ;
+; I/O pins                                    ; 8              ;
 ;                                             ;                ;
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; i_clk_50~input ;
-; Maximum fan-out                             ; 111            ;
-; Total fan-out                               ; 1950           ;
-; Average fan-out                             ; 3.15           ;
+; Maximum fan-out                             ; 142            ;
+; Total fan-out                               ; 3042           ;
+; Average fan-out                             ; 3.29           ;
 +---------------------------------------------+----------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                  ;
-+----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+-------------------------+--------------+
-; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                               ; Entity Name             ; Library Name ;
-+----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+-------------------------+--------------+
-; |FPGA_Sound                                  ; 494 (0)             ; 111 (0)                   ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |FPGA_Sound                                                                       ; FPGA_Sound              ; work         ;
-;    |NoteStepper:NoteSteps|                   ; 64 (11)             ; 32 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|NoteStepper:NoteSteps                                                 ; NoteStepper             ; work         ;
-;       |counterLdInc:Note1Hz_Counter|         ; 37 (37)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter                    ; counterLdInc            ; work         ;
-;       |counterLdInc:Note_Counter|            ; 16 (16)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|NoteStepper:NoteSteps|counterLdInc:Note_Counter                       ; counterLdInc            ; work         ;
-;    |Sound_PWM_Middle_C:SineWCounter|         ; 161 (13)            ; 19 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_PWM_Middle_C:SineWCounter                                       ; Sound_PWM_Middle_C      ; work         ;
-;       |MiddleCSineTable:SineWaveROM|         ; 130 (130)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|MiddleCSineTable:SineWaveROM          ; MiddleCSineTable        ; work         ;
-;       |counterLdInc:PWMCounter|              ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter               ; counterLdInc            ; work         ;
-;       |counterLdInc:PreScale_Counter|        ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter         ; counterLdInc            ; work         ;
-;       |counterLdInc:ROMAddrCounter|          ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter           ; counterLdInc            ; work         ;
-;    |Sound_SQWave_Middle_C:SQWCounter|        ; 43 (14)             ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_SQWave_Middle_C:SQWCounter                                      ; Sound_SQWave_Middle_C   ; work         ;
-;       |counterLdInc:SquareWaveCounter|       ; 29 (29)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter       ; counterLdInc            ; work         ;
-;    |Sound_Sawtooth_Middle_C:SawWCounter|     ; 9 (9)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sawtooth_Middle_C:SawWCounter                                   ; Sound_Sawtooth_Middle_C ; work         ;
-;    |Sound_Square_Scale:SquareScale|          ; 180 (9)             ; 21 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Square_Scale:SquareScale                                        ; Sound_Square_Scale      ; work         ;
-;       |SoundTable01:SoundTable|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Square_Scale:SquareScale|SoundTable01:SoundTable                ; SoundTable01            ; work         ;
-;       |counterLdInc:PreScale_Counter|        ; 168 (168)           ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter          ; counterLdInc            ; work         ;
-;    |Sound_Triangle_Middle_C:TriangleMiddleC| ; 37 (19)             ; 18 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Triangle_Middle_C:TriangleMiddleC                               ; Sound_Triangle_Middle_C ; work         ;
-;       |CounterUpDnLdCnt:RampCounter|         ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter  ; CounterUpDnLdCnt        ; work         ;
-;       |counterLdInc:PWMCounter|              ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter       ; counterLdInc            ; work         ;
-;       |counterLdInc:PreScale_Counter|        ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PreScale_Counter ; counterLdInc            ; work         ;
-+----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+-------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                    ;
++-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+-------------------------+--------------+
+; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                              ; Entity Name             ; Library Name ;
++-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+-------------------------+--------------+
+; |FPGA_Sound                                     ; 767 (0)             ; 142 (0)                   ; 0           ; 0            ; 0       ; 0         ; 8    ; 0            ; |FPGA_Sound                                                                      ; FPGA_Sound              ; work         ;
+;    |NoteStepper:NoteSteps|                      ; 62 (11)             ; 32 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|NoteStepper:NoteSteps                                                ; NoteStepper             ; work         ;
+;       |counterLdInc:Note1Hz_Counter|            ; 37 (37)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter                   ; counterLdInc            ; work         ;
+;       |counterLdInc:Note_Counter|               ; 14 (14)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|NoteStepper:NoteSteps|counterLdInc:Note_Counter                      ; counterLdInc            ; work         ;
+;    |Sound_PWM_Middle_C:SineWCounter|            ; 161 (13)            ; 19 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_PWM_Middle_C:SineWCounter                                      ; Sound_PWM_Middle_C      ; work         ;
+;       |MiddleCSineTable:SineWaveROM|            ; 130 (130)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|MiddleCSineTable:SineWaveROM         ; MiddleCSineTable        ; work         ;
+;       |counterLdInc:PWMCounter|                 ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter              ; counterLdInc            ; work         ;
+;       |counterLdInc:PreScale_Counter|           ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter        ; counterLdInc            ; work         ;
+;       |counterLdInc:ROMAddrCounter|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter          ; counterLdInc            ; work         ;
+;    |Sound_SQWave_Middle_C:SQWCounter|           ; 43 (14)             ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_SQWave_Middle_C:SQWCounter                                     ; Sound_SQWave_Middle_C   ; work         ;
+;       |counterLdInc:SquareWaveCounter|          ; 29 (29)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter      ; counterLdInc            ; work         ;
+;    |Sound_Sawtooth_Middle_C:SawWCounter|        ; 9 (9)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sawtooth_Middle_C:SawWCounter                                  ; Sound_Sawtooth_Middle_C ; work         ;
+;    |Sound_Sine_Scale:SineScale|                 ; 280 (25)            ; 32 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sine_Scale:SineScale                                           ; Sound_Sine_Scale        ; work         ;
+;       |MiddleCSineTable:SineWaveROM|            ; 130 (130)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sine_Scale:SineScale|MiddleCSineTable:SineWaveROM              ; MiddleCSineTable        ; work         ;
+;       |NoteSineCounterTable:NoteSineSoundTable| ; 93 (93)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sine_Scale:SineScale|NoteSineCounterTable:NoteSineSoundTable   ; NoteSineCounterTable    ; work         ;
+;       |counterLdInc:PWM_Counter|                ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sine_Scale:SineScale|counterLdInc:PWM_Counter                  ; counterLdInc            ; work         ;
+;       |counterLdInc:PreScale_Counter|           ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sine_Scale:SineScale|counterLdInc:PreScale_Counter             ; counterLdInc            ; work         ;
+;       |counterLdInc:SineWave_Counter|           ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sine_Scale:SineScale|counterLdInc:SineWave_Counter             ; counterLdInc            ; work         ;
+;    |Sound_Square_Scale:SquareScale|             ; 176 (9)             ; 21 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Square_Scale:SquareScale                                       ; Sound_Square_Scale      ; work         ;
+;       |counterLdInc:PreScale_Counter|           ; 167 (167)           ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter         ; counterLdInc            ; work         ;
+;    |Sound_Triangle_Middle_C:TriangleMiddleC|    ; 36 (19)             ; 17 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Triangle_Middle_C:TriangleMiddleC                              ; Sound_Triangle_Middle_C ; work         ;
+;       |CounterUpDnLdCnt:RampCounter|            ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter ; CounterUpDnLdCnt        ; work         ;
+;       |counterLdInc:PWMCounter|                 ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter      ; counterLdInc            ; work         ;
++-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -284,33 +298,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                          ;
-+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-; Register name                                                                  ; Reason for Removal                                                                         ;
-+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[7]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[7]               ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[6]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[6]               ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[5]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[5]               ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[4]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[4]               ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[3]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[3]               ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[2]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[2]               ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[1]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[1]               ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[0]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[0]               ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[7]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[7]           ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[6]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[6]           ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[5]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[5]           ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[4]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[4]           ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[3]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[3]           ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[2]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[2]           ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[1]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[1]           ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[0]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[0]           ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PreScale_Counter|Pre_Q[1]     ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter|Pre_Q[1]         ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PreScale_Counter|Pre_Q[0]     ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter|Pre_Q[0]         ;
-; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[0]                    ; Merged with Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PreScale_Counter|Pre_Q[0] ;
-; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PreScale_Counter|Pre_Q[1] ; Stuck at GND due to stuck port data_in                                                     ;
-; Total Number of Removed Registers = 20                                         ;                                                                                            ;
-+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                  ;
++--------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+; Register name                                                                  ; Reason for Removal                                                                 ;
++--------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[7]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[7]       ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[6]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[6]       ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[5]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[5]       ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[4]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[4]       ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[3]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[3]       ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[2]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[2]       ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[1]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[1]       ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[0]           ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[0]       ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[7]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[7]   ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[6]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[6]   ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[5]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[5]   ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[4]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[4]   ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[3]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[3]   ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[2]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[2]   ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[1]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[1]   ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[0]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[0]   ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PreScale_Counter|Pre_Q[1]     ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter|Pre_Q[1] ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PreScale_Counter|Pre_Q[0]     ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter|Pre_Q[0] ;
+; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PreScale_Counter|Pre_Q[0] ; Merged with Sound_Sine_Scale:SineScale|counterLdInc:PWM_Counter|Pre_Q[0]           ;
+; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[0]                    ; Merged with Sound_Sine_Scale:SineScale|counterLdInc:PWM_Counter|Pre_Q[0]           ;
+; Sound_Sine_Scale:SineScale|counterLdInc:PWM_Counter|Pre_Q[8,9]                 ; Lost fanout                                                                        ;
+; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PreScale_Counter|Pre_Q[1] ; Stuck at GND due to stuck port data_in                                             ;
+; Total Number of Removed Registers = 23                                         ;                                                                                    ;
++--------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -318,12 +334,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 111   ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 142   ;
+; Number of registers using Synchronous Clear  ; 16    ;
 ; Number of registers using Synchronous Load   ; 20    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 29    ;
+; Number of registers using Clock Enable       ; 36    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -334,7 +350,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |FPGA_Sound|NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[6]              ;
-; 88:1               ; 19 bits   ; 1102 LEs      ; 1102 LEs             ; 0 LEs                  ; Yes        ; |FPGA_Sound|Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0] ;
+; 88:1               ; 19 bits   ; 1102 LEs      ; 1102 LEs             ; 0 LEs                  ; Yes        ; |FPGA_Sound|Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[2] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
 
 
@@ -448,6 +464,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Sound_Sine_Scale:SineScale|counterLdInc:PreScale_Counter ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Sound_Sine_Scale:SineScale|counterLdInc:SineWave_Counter ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Sound_Sine_Scale:SineScale|counterLdInc:PWM_Counter ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter ;
 +----------------+-------+------------------------------------------------------------------------+
@@ -490,6 +536,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; i_datain ; Input ; Info     ; Stuck at GND                                     ;
 ; i_inc    ; Input ; Info     ; Stuck at VCC                                     ;
 +----------+-------+----------+--------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Sound_Sine_Scale:SineScale|counterLdInc:PWM_Counter"                                           ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; i_datain        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_load          ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_inc           ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_dataout[9..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Sound_Sine_Scale:SineScale|counterLdInc:SineWave_Counter" ;
++----------+-------+----------+--------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                ;
++----------+-------+----------+--------------------------------------------------------+
+; i_datain ; Input ; Info     ; Stuck at GND                                           ;
+; i_load   ; Input ; Info     ; Stuck at GND                                           ;
++----------+-------+----------+--------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Sound_Sine_Scale:SineScale|counterLdInc:PreScale_Counter" ;
++----------+-------+----------+--------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                ;
++----------+-------+----------+--------------------------------------------------------+
+; i_datain ; Input ; Info     ; Stuck at GND                                           ;
+; i_inc    ; Input ; Info     ; Stuck at VCC                                           ;
++----------+-------+----------+--------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------+
@@ -606,23 +684,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 7                           ;
-; cycloneiii_ff         ; 111                         ;
-;     ENA               ; 29                          ;
+; boundary_port         ; 8                           ;
+; cycloneiii_ff         ; 142                         ;
+;     ENA               ; 36                          ;
+;     SCLR              ; 16                          ;
 ;     SLD               ; 20                          ;
-;     plain             ; 62                          ;
-; cycloneiii_lcell_comb ; 494                         ;
-;     arith             ; 114                         ;
-;         2 data inputs ; 83                          ;
-;         3 data inputs ; 31                          ;
-;     normal            ; 380                         ;
-;         1 data inputs ; 8                           ;
-;         2 data inputs ; 40                          ;
-;         3 data inputs ; 28                          ;
-;         4 data inputs ; 304                         ;
+;     plain             ; 70                          ;
+; cycloneiii_lcell_comb ; 768                         ;
+;     arith             ; 148                         ;
+;         2 data inputs ; 108                         ;
+;         3 data inputs ; 40                          ;
+;     normal            ; 620                         ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 46                          ;
+;         3 data inputs ; 35                          ;
+;         4 data inputs ; 527                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.60                        ;
-; Average LUT depth     ; 3.98                        ;
+; Max LUT depth         ; 8.60                        ;
+; Average LUT depth     ; 4.58                        ;
 +-----------------------+-----------------------------+
 
 
@@ -631,7 +710,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -641,7 +720,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue Aug 30 07:46:15 2022
+    Info: Processing started: Tue Aug 30 17:49:04 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FPGA_Sound -c FPGA_Sound
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file scalesquare/soundtable01.vhd
@@ -664,7 +743,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file counter
     Info (12023): Found entity 1: counterLdInc File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Counters/CounterLdCnt.vhd Line: 11
 Warning (12019): Can't analyze file -- file Debounce.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file fpga_sound.vhd
-    Info (12022): Found design unit 1: FPGA_Sound-struct File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 35
+    Info (12022): Found design unit 1: FPGA_Sound-struct File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 36
     Info (12023): Found entity 1: FPGA_Sound File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 22
 Info (12021): Found 2 design units, including 1 entities, in source file middlecsine/middlec_256-samples.vhd
     Info (12022): Found design unit 1: MiddleCSineTable-behavior File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSine/MiddleC_256-Samples.vhd Line: 20
@@ -676,36 +755,47 @@ Info (12021): Found 2 design units, including 1 entities, in source file counter
     Info (12022): Found design unit 1: CounterUpDnLdCnt-behv File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Counters/CounterUpDnLdCnt.vhd Line: 25
     Info (12023): Found entity 1: CounterUpDnLdCnt File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Counters/CounterUpDnLdCnt.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file notestepper.vhd
-    Info (12022): Found design unit 1: NoteStepper-struct File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/NoteStepper.vhd Line: 20
+    Info (12022): Found design unit 1: NoteStepper-struct File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/NoteStepper.vhd Line: 19
     Info (12023): Found entity 1: NoteStepper File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/NoteStepper.vhd Line: 12
+Info (12021): Found 2 design units, including 1 entities, in source file scalesine/notesinecountertable.vhd
+    Info (12022): Found design unit 1: NoteSineCounterTable-behavior File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/NoteSineCounterTable.vhd Line: 20
+    Info (12023): Found entity 1: NoteSineCounterTable File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/NoteSineCounterTable.vhd Line: 12
+Info (12021): Found 2 design units, including 1 entities, in source file scalesine/sound_sine_scale.vhd
+    Info (12022): Found design unit 1: Sound_Sine_Scale-behv File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/Sound_Sine_Scale.vhd Line: 31
+    Info (12023): Found entity 1: Sound_Sine_Scale File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/Sound_Sine_Scale.vhd Line: 20
 Info (12127): Elaborating entity "FPGA_Sound" for the top level hierarchy
-Info (12128): Elaborating entity "Sound_SQWave_Middle_C" for hierarchy "Sound_SQWave_Middle_C:SQWCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 59
+Info (12128): Elaborating entity "Sound_SQWave_Middle_C" for hierarchy "Sound_SQWave_Middle_C:SQWCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 62
 Info (10041): Inferred latch for "w_SQWave" at Sound_SQWave_Middle_C.vhd(54) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSquare/Sound_SQWave_Middle_C.vhd Line: 54
 Info (12128): Elaborating entity "counterLdInc" for hierarchy "Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSquare/Sound_SQWave_Middle_C.vhd Line: 40
-Info (12128): Elaborating entity "Sound_PWM_Middle_C" for hierarchy "Sound_PWM_Middle_C:SineWCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 67
+Info (12128): Elaborating entity "Sound_PWM_Middle_C" for hierarchy "Sound_PWM_Middle_C:SineWCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 70
 Info (12128): Elaborating entity "MiddleCSineTable" for hierarchy "Sound_PWM_Middle_C:SineWCounter|MiddleCSineTable:SineWaveROM" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSine/Sound_PWM_Middle_C.vhd Line: 48
 Info (12128): Elaborating entity "counterLdInc" for hierarchy "Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSine/Sound_PWM_Middle_C.vhd Line: 58
 Info (12128): Elaborating entity "counterLdInc" for hierarchy "Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSine/Sound_PWM_Middle_C.vhd Line: 70
-Info (12128): Elaborating entity "Sound_Sawtooth_Middle_C" for hierarchy "Sound_Sawtooth_Middle_C:SawWCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 75
-Info (12128): Elaborating entity "Sound_Triangle_Middle_C" for hierarchy "Sound_Triangle_Middle_C:TriangleMiddleC" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 83
+Info (12128): Elaborating entity "Sound_Sawtooth_Middle_C" for hierarchy "Sound_Sawtooth_Middle_C:SawWCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 78
+Info (12128): Elaborating entity "Sound_Triangle_Middle_C" for hierarchy "Sound_Triangle_Middle_C:TriangleMiddleC" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 86
 Info (10041): Inferred latch for "w_Up" at Sound_Triangle_Middle_C.vhd(84) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCTriangle/Sound_Triangle_Middle_C.vhd Line: 84
 Info (12128): Elaborating entity "CounterUpDnLdCnt" for hierarchy "Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCTriangle/Sound_Triangle_Middle_C.vhd Line: 87
-Info (12128): Elaborating entity "Sound_Square_Scale" for hierarchy "Sound_Square_Scale:SquareScale" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 91
-Info (12128): Elaborating entity "SoundTable01" for hierarchy "Sound_Square_Scale:SquareScale|SoundTable01:SoundTable" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSquare/Sound_Square_Scale.vhd Line: 42
-Info (12128): Elaborating entity "NoteStepper" for hierarchy "NoteStepper:NoteSteps" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 100
-Info (12128): Elaborating entity "counterLdInc" for hierarchy "NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/NoteStepper.vhd Line: 34
-Info (12128): Elaborating entity "counterLdInc" for hierarchy "NoteStepper:NoteSteps|counterLdInc:Note_Counter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/NoteStepper.vhd Line: 48
+Info (12128): Elaborating entity "Sound_Square_Scale" for hierarchy "Sound_Square_Scale:SquareScale" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 94
+Info (12128): Elaborating entity "SoundTable01" for hierarchy "Sound_Square_Scale:SquareScale|SoundTable01:NoteSquareSoundTable" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSquare/Sound_Square_Scale.vhd Line: 42
+Info (12128): Elaborating entity "Sound_Sine_Scale" for hierarchy "Sound_Sine_Scale:SineScale" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 103
+Info (12128): Elaborating entity "NoteSineCounterTable" for hierarchy "Sound_Sine_Scale:SineScale|NoteSineCounterTable:NoteSineSoundTable" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/Sound_Sine_Scale.vhd Line: 45
+Info (12128): Elaborating entity "counterLdInc" for hierarchy "Sound_Sine_Scale:SineScale|counterLdInc:PreScale_Counter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/Sound_Sine_Scale.vhd Line: 55
+Info (12128): Elaborating entity "counterLdInc" for hierarchy "Sound_Sine_Scale:SineScale|counterLdInc:PWM_Counter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/Sound_Sine_Scale.vhd Line: 81
+Info (12128): Elaborating entity "NoteStepper" for hierarchy "NoteStepper:NoteSteps" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 112
+Info (12128): Elaborating entity "counterLdInc" for hierarchy "NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/NoteStepper.vhd Line: 33
+Info (12128): Elaborating entity "counterLdInc" for hierarchy "NoteStepper:NoteSteps|counterLdInc:Note_Counter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/NoteStepper.vhd Line: 47
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 501 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 775 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 494 logic cells
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 767 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Tue Aug 30 07:46:45 2022
-    Info: Elapsed time: 00:00:30
-    Info: Total CPU time (on all processors): 00:00:42
+    Info: Processing ended: Tue Aug 30 17:49:26 2022
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:44
 
 

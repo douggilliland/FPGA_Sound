@@ -39,7 +39,7 @@ architecture behv of Sound_Square_Scale is
 
 begin
 
-SoundTable : entity work.SoundTable01
+NoteSquareSoundTable : entity work.SoundTable01
 	port map (
 		address			=> i_pianoNote,
 		q					=> w_PWMScaleVals
