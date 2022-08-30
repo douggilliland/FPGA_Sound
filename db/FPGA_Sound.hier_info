@@ -808,6 +808,7 @@ o_dataOut[19] <= Pre_Q[19].DB_MAX_OUTPUT_PORT_TYPE
 
 |FPGA_Sound|Sound_Sine_Scale:SineScale
 i_clk_50 => counterldinc:PreScale_Counter.i_clock
+i_clk_50 => o_PWMOut~reg0.CLK
 i_clk_50 => counterldinc:SineWave_Counter.i_clock
 i_clk_50 => counterldinc:PWM_Counter.i_clock
 i_Mute => o_PWMOut.IN1
@@ -818,7 +819,7 @@ i_pianoNote[3] => notesinecountertable:NoteSineSoundTable.address[3]
 i_pianoNote[4] => notesinecountertable:NoteSineSoundTable.address[4]
 i_pianoNote[5] => notesinecountertable:NoteSineSoundTable.address[5]
 i_pianoNote[6] => notesinecountertable:NoteSineSoundTable.address[6]
-o_PWMOut <= o_PWMOut.DB_MAX_OUTPUT_PORT_TYPE
+o_PWMOut <= o_PWMOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |FPGA_Sound|Sound_Sine_Scale:SineScale|NoteSineCounterTable:NoteSineSoundTable

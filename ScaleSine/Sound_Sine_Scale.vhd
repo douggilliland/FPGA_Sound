@@ -90,6 +90,13 @@ port map (
 
 w_PWMUnlatched <= '0' when w_PWMCt(7 downto 0) < w_ROMData else '1';
 
-o_PWMOut <= w_PWMUnlatched and not i_Mute;
+--o_PWMOut <= w_PWMUnlatched and not i_Mute;
+
+process(i_clk_50, w_PWMUnlatched)
+begin
+	if rising_edge(i_clk_50) then
+		o_PWMOut <= w_PWMUnlatched and not i_Mute;
+	end if;
+end process;	
 
 end behv;
