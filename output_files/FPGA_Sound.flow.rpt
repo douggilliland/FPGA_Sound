@@ -1,5 +1,5 @@
 Flow report for FPGA_Sound
-Sat Aug 27 05:24:54 2022
+Mon Aug 29 20:25:57 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Aug 27 05:24:50 2022       ;
+; Flow Status                        ; Successful - Mon Aug 29 20:25:54 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; FPGA_Sound                                  ;
 ; Top-level Entity Name              ; FPGA_Sound                                  ;
 ; Family                             ; Cyclone 10 LP                               ;
 ; Device                             ; 10CL006YU256C8G                             ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 252 / 6,272 ( 4 % )                         ;
-;     Total combinational functions  ; 252 / 6,272 ( 4 % )                         ;
-;     Dedicated logic registers      ; 58 / 6,272 ( < 1 % )                        ;
-; Total registers                    ; 58                                          ;
-; Total pins                         ; 6 / 177 ( 3 % )                             ;
+; Total logic elements               ; 494 / 6,272 ( 8 % )                         ;
+;     Total combinational functions  ; 494 / 6,272 ( 8 % )                         ;
+;     Dedicated logic registers      ; 111 / 6,272 ( 2 % )                         ;
+; Total registers                    ; 111                                         ;
+; Total pins                         ; 7 / 177 ( 4 % )                             ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/27/2022 05:24:19 ;
+; Start date & time ; 08/29/2022 20:25:25 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; FPGA_Sound          ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589187.166159225820856         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 10995770589187.166181912423236         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NUM_PARALLEL_PROCESSORS             ; All                                    ; --            ; --          ; --         ;
@@ -99,11 +99,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 4824 MB             ; 00:00:39                           ;
-; Fitter               ; 00:00:09     ; 1.0                     ; 5434 MB             ; 00:00:07                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4703 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4766 MB             ; 00:00:02                           ;
-; Total                ; 00:00:33     ; --                      ; --                  ; 00:00:49                           ;
+; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 4828 MB             ; 00:00:41                           ;
+; Fitter               ; 00:00:07     ; 1.1                     ; 5442 MB             ; 00:00:08                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4691 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4770 MB             ; 00:00:02                           ;
+; Total                ; 00:00:30     ; --                      ; --                  ; 00:00:52                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

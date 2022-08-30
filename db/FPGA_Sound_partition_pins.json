@@ -20,6 +20,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "o_Square_Scale",
+					"strict" : false
+				},
+				{
 					"name" : "i_play_n",
 					"strict" : false
 				},
