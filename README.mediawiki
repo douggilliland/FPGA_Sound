@@ -53,6 +53,8 @@ Make sound from an FPGA starting from first principles.
 
 == Sawtooth Middle C ==
 
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCSawtooth/Sawtooth-MiddleC_BlockDiagram.png"></img>
+
 * FPGA clock is 50 MHz
 * Prescale 50 MHz by 3 to get to 16.667 KHz
 * Ramp values
