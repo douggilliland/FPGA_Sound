@@ -1,5 +1,7 @@
 = FPGA Sound =
 
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/SoundGen_Top_BlockDiagram.PNG"></img>
+
 Make sound from an FPGA starting from first principles.
 
 * Start with single note - Middle C
@@ -11,6 +13,8 @@ Make sound from an FPGA starting from first principles.
 * [https://github.com/douggilliland/FPGA_Sound/tree/main/ScaleSquare Square Wave Grand Piano]
 
 == Square Wave Middle C ==
+
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCSquare/Square-MiddleC_BlockDiagram.png"></img>
 
 *  FPGA clock is 50 MHz
 * Divide by counter to get note
@@ -25,6 +29,8 @@ Make sound from an FPGA starting from first principles.
 ** 20 Registers
 
 == Sine Wave Middle C ==
+
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCSine/SoundGen_MiddleC_BlockDiagram.PNG"></img>
 
 * FPGA clock is 50 MHz
 * Prescale 50 MHz by 3 to get to 16.667 KHz
@@ -51,6 +57,8 @@ Make sound from an FPGA starting from first principles.
 
 == Triangle Wave Not Middle C ==
 
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCTriangle/Triangle-MiddleC_BlockDiagram.png"></img>
+
 * FPGA clock is 50 MHz
 * Prescale 50 MHz by 2 to get to 25 MHz
 * Ramp values up/down
@@ -58,6 +66,8 @@ Make sound from an FPGA starting from first principles.
 <img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCTriangle/TriangleScopeCap.png"></img>
 
 == Grand Piano Scale Square Wave ==
+
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/ScaleSquare/SquareScale_BlockDiagram.png"></img>
 
 * 87 keys
 * 7 bit note select value
