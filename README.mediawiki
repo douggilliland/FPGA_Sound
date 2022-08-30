@@ -1,5 +1,7 @@
 = FPGA Sound =
 
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/SoundGen_Top_BlockDiagram.PNG"></img>
+
 Make sound from an FPGA starting from first principles.
 
 * Start with single note - Middle C
@@ -7,10 +9,16 @@ Make sound from an FPGA starting from first principles.
 * Make waveforms, save builds
 ** [https://github.com/douggilliland/FPGA_Sound/tree/Square-Wave-Middle-C Square Wave Middle C build]
 ** [https://github.com/douggilliland/FPGA_Sound/tree/Sine-Wave-Middle-C Sine Wave Middle C build]
+** [https://github.com/douggilliland/FPGA_Sound/tree/main/MiddleCSawtooth Sawtooth wave Middle C build]
+** [https://github.com/douggilliland/FPGA_Sound/tree/main/MiddleCTriangle Triangle wave Middle C build]
+** [https://github.com/douggilliland/FPGA_Sound/tree/main/ScaleSquare Grand Piano Square wave build]
+** [https://github.com/douggilliland/FPGA_Sound/tree/main/ScaleSine Grand Piano Sine wave build]
 * [https://github.com/douggilliland/FPGA_Sound/tree/main/Filter Audio Filter / Scaler]
 * [https://github.com/douggilliland/FPGA_Sound/tree/main/ScaleSquare Square Wave Grand Piano]
 
 == Square Wave Middle C ==
+
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCSquare/Square-MiddleC_BlockDiagram.png"></img>
 
 *  FPGA clock is 50 MHz
 * Divide by counter to get note
@@ -21,10 +29,12 @@ Make sound from an FPGA starting from first principles.
 * Set low at count = 0, set high at 1/2 wave (17544 hex)
 * Minimal error < 1 part in 191_112
 * Resources
-** 42 Logic cells
+** 43 Logic cells
 ** 20 Registers
 
 == Sine Wave Middle C ==
+
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCSine/SoundGen_MiddleC_BlockDiagram.PNG"></img>
 
 * FPGA clock is 50 MHz
 * Prescale 50 MHz by 3 to get to 16.667 KHz
@@ -32,8 +42,8 @@ Make sound from an FPGA starting from first principles.
 * 256 clocks for PWM
 * Produces 254.31 Hz
 * Resources
-** 174 Logic cells
-** 28 Registers
+** 161 Logic cells
+** 19 Registers
 
 <img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCSine/Middle-C_BlockDiagram.png"></img>
 
@@ -46,18 +56,28 @@ Make sound from an FPGA starting from first principles.
 * FPGA clock is 50 MHz
 * Prescale 50 MHz by 3 to get to 16.667 KHz
 * Ramp values
+* Resources
+** 9 Logic cells
+** 1 Registers
 
 <img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCSawtooth/SawtoothScopeCap.png"></img>
 
 == Triangle Wave Not Middle C ==
 
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCTriangle/Triangle-MiddleC_BlockDiagram.png"></img>
+
 * FPGA clock is 50 MHz
 * Prescale 50 MHz by 2 to get to 25 MHz
 * Ramp values up/down
+* Resources
+** 36 Logic cells
+** 17 Registers
 
 <img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCTriangle/TriangleScopeCap.png"></img>
 
 == Grand Piano Scale Square Wave ==
+
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/ScaleSquare/SquareScale_BlockDiagram.png"></img>
 
 * 87 keys
 * 7 bit note select value
@@ -65,6 +85,9 @@ Make sound from an FPGA starting from first principles.
 * Runs at 2x note frequency and has toggle for every other terminal count
 * Preload counter and terrminal count at 0xFFFFF
 * [https://github.com/land-boards/lb-Python-Code/tree/master/pyCSVtoROM Python code to create divisors ROM VHDL table]
+* Resources
+** 182 Logic cells
+** 21 Registers
 
 == Grand Piano Scale Sine Wave ==
 
@@ -77,6 +100,9 @@ Make sound from an FPGA starting from first principles.
 * Carrier 48 KHz
 * 8-bit address, 8-bit data sine wave table
 * Scope cap
+* Resources
+** 275 Logic cells
+** 33 Registers
 
 <img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/ScaleSine/Scale_Sine_Cap.png"></img>
 
@@ -85,3 +111,6 @@ Make sound from an FPGA starting from first principles.
 * 87 keys
 * 7 bit note select value
 * Increment through notes one note every second
+* Resources
+** 62 Logic cells
+** 32 Registers
