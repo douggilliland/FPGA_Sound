@@ -1,0 +1,25 @@
+-- ------------------------------------------------------------------------------------------
+-- Note Scale Counter
+-- ------------------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+use  IEEE.STD_LOGIC_ARITH.all;
+use  IEEE.STD_LOGIC_UNSIGNED.all;
+
+entity NoteStepper is
+	port(
+		i_clk_50			: in std_logic;									-- 50 MHz osillator on FPGA card
+		
+		o_Note			: out		std_logic_vector(6 downto 0)		-- Note Number
+	);
+end NoteStepper;
+
+architecture struct of NoteStepper is
+
+	signal w_reset_n			: std_logic;
+
+begin
+
+
+end;
