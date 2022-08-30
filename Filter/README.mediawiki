@@ -4,7 +4,7 @@
 ** Line level output neeeds 1V p-p signals
 ** FPGA output is 3.3V
 ** Use "simple" voltage divider
-* Need filter to remove higher frequency components for PWM
+* Needs low pass filter to remove higher frequency components for PWM
 * Circuit is a Low Pass Filter, Output Scaler
 ** 4 resistors, 1 capacitor per channel
 
