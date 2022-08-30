@@ -55,3 +55,10 @@ Make sound from an FPGA starting from first principles.
 * Ramp values up/down
 
 <img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/MiddleCTriangle/TriangleScopeCap.png"></img>
+
+== Grand Piano Scale Square Wave ==
+
+* 87 keys
+* 7 bit note select value
+* Counter divides 50 MHz by 20 bit load value
+* Runs at 2x note frequency and has toggle for every other terminal count
