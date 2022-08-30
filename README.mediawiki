@@ -68,6 +68,8 @@ Make sound from an FPGA starting from first principles.
 
 == Grand Piano Scale Sine Wave ==
 
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/ScaleSine/Scale_Sine_BlkDiagram.png"></img>
+
 * 87 keys
 * 7 bit note select value
 * PWM pulse - 8-bit counter
