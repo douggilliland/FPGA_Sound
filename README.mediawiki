@@ -71,9 +71,12 @@ Make sound from an FPGA starting from first principles.
 * 87 keys
 * 7 bit note select value
 * PWM pulse - 8-bit counter
-* Counter with preloads based on 256 times note frequency
+* Counter with preloads based on 256 times note frequency [https://github.com/douggilliland/FPGA_Sound/blob/main/ScaleSine/Piano.xls table]
 * Carrier 48 KHz
 * 8-bit address, 8-bit data sine wave table
+* Scope cap
+
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/ScaleSine/Scale_Sine_Cap.png"></img>
 
 == Note Counter ==
 
