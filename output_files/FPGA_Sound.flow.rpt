@@ -1,5 +1,5 @@
 Flow report for FPGA_Sound
-Tue Aug 30 19:07:04 2022
+Tue Aug 30 19:46:13 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Aug 30 19:07:01 2022       ;
+; Flow Status                        ; Successful - Tue Aug 30 19:46:10 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; FPGA_Sound                                  ;
 ; Top-level Entity Name              ; FPGA_Sound                                  ;
@@ -103,7 +103,10 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; 00:00:09     ; 1.1                     ; 5443 MB             ; 00:00:11                           ;
 ; Assembler            ; 00:00:01     ; 1.0                     ; 4694 MB             ; 00:00:01                           ;
 ; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4782 MB             ; 00:00:02                           ;
-; Total                ; 00:00:34     ; --                      ; --                  ; 00:00:59                           ;
+; Fitter               ; 00:00:09     ; 1.1                     ; 5443 MB             ; 00:00:11                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4694 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4782 MB             ; 00:00:02                           ;
+; Total                ; 00:00:46     ; --                      ; --                  ; 00:01:13                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,6 +119,9 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; DESKTOP-2UF8LNB  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; DESKTOP-2UF8LNB  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; DESKTOP-2UF8LNB  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-2UF8LNB  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-2UF8LNB  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-2UF8LNB  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -124,6 +130,9 @@ https://fpgasoftware.intel.com/eula.
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off FPGA_Sound -c FPGA_Sound
 quartus_fit --read_settings_files=off --write_settings_files=off FPGA_Sound -c FPGA_Sound
+quartus_asm --read_settings_files=off --write_settings_files=off FPGA_Sound -c FPGA_Sound
+quartus_sta FPGA_Sound -c FPGA_Sound
+quartus_fit --read_settings_files=on --write_settings_files=off FPGA_Sound -c FPGA_Sound
 quartus_asm --read_settings_files=off --write_settings_files=off FPGA_Sound -c FPGA_Sound
 quartus_sta FPGA_Sound -c FPGA_Sound
 
