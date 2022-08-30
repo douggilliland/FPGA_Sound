@@ -65,3 +65,9 @@ Make sound from an FPGA starting from first principles.
 * Runs at 2x note frequency and has toggle for every other terminal count
 * Preload counter and terrminal count at 0xFFFFF
 * [https://github.com/land-boards/lb-Python-Code/tree/master/pyCSVtoROM Python code to create divisors ROM VHDL table]
+
+== Note Counter ==
+
+* 87 keys
+* 7 bit note select value
+* Increment through notes one note every second
