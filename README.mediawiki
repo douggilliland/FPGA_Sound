@@ -63,3 +63,4 @@ Make sound from an FPGA starting from first principles.
 * 7 bit note select value
 * Counter divides 50 MHz by 20 bit load value
 * Runs at 2x note frequency and has toggle for every other terminal count
+* [https://github.com/land-boards/lb-Python-Code/tree/master/pyCSVtoROM Python code to create divisors ROM VHDL table]
