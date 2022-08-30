@@ -7,9 +7,11 @@
 --		http://land-boards.com/blwiki/index.php?title=RETRO-65C816
 --	I/O on J1 connector
 -- Separate outputs for each implementation
--- Squarewave
--- Sinewave
--- Sawtooth
+-- Squarewave - Middle C
+-- Sinewave - Middle C
+-- Sawtooth - Middle C
+-- Triangle - Middle C
+-- Squarewave - Grand Piano scale
 -- ------------------------------------------------------------------------------------------
 
 library ieee;
@@ -20,13 +22,13 @@ use  IEEE.STD_LOGIC_UNSIGNED.all;
 entity FPGA_Sound is
 	port(
 		i_clk_50			: in std_logic;					-- 50 MHz osillator on FPGA card
-		i_play_n			: in std_logic;					-- Play pushbutton on card
+		i_play_n			: in std_logic;					-- Play pushbutton on card (mute when not pressed)
 		
 		o_Sq_Wave		: out		std_logic := '0';		-- Square wave
 		o_Sine_Wave		: out		std_logic := '0';		-- Sine wave
 		o_Saw_Wave		: out		std_logic := '0';		-- Sawtooth wave
 		o_Tri_Wave		: out		std_logic := '0';		-- Triangle wave
-		o_Square_Scale	: out		std_logic := '0'		-- Triangle scale
+		o_Square_Scale	: out		std_logic := '0'		-- Square wave Grand Piano scale
 	);
 end FPGA_Sound;
 
@@ -47,11 +49,11 @@ begin
 
 w_Mute <= i_play_n;
 
-o_Sq_Wave	<=  w_SQWave;
-o_Sine_Wave	<= w_PWMSineWave;
-o_Saw_Wave	<= w_Saw_Wave;
-o_Tri_Wave	<= w_Tri_Wave;
-o_Square_Scale <= w_SqScale_Wave;
+o_Sq_Wave		<=  w_SQWave;
+o_Sine_Wave		<= w_PWMSineWave;
+o_Saw_Wave		<= w_Saw_Wave;
+o_Tri_Wave		<= w_Tri_Wave;
+o_Square_Scale	<= w_SqScale_Wave;
 
 -- Middle C square wave
 SQWCounter : entity work.Sound_SQWave_Middle_C
@@ -94,10 +96,10 @@ SquareScale : entity work.Sound_Square_Scale
 		o_PWMOut			=> w_SqScale_Wave
 	);
 
+-- Step through Grand Piano scale 1 note every second
 NoteSteps : entity work.NoteStepper
 	port map (
-		i_clk_50			=> i_clk_50,
-		
+		i_clk_50			=> i_clk_50,		
 		o_Note			=> w_NoteCounter	-- Piano key index
 	);
 

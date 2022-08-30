@@ -1,5 +1,5 @@
 Timing Analyzer report for FPGA_Sound
-Tue Aug 30 06:57:09 2022
+Tue Aug 30 07:47:04 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -99,12 +99,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.07        ;
+; Average used               ; 1.08        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   2.4%      ;
+;     Processors 2-4         ;   2.5%      ;
 +----------------------------+-------------+
 
 
@@ -249,12 +249,12 @@ No paths to report.
 ; -3.789 ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[3]                       ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[4]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.071     ; 4.719      ;
 ; -3.789 ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[2]                       ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[14] ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.081     ; 4.709      ;
 ; -3.788 ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[0]                       ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[12] ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.081     ; 4.708      ;
-; -3.786 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[7]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.541     ; 4.246      ;
-; -3.786 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.541     ; 4.246      ;
-; -3.786 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[3]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.541     ; 4.246      ;
 ; -3.786 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[6]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.541     ; 4.246      ;
-; -3.786 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[2]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.541     ; 4.246      ;
+; -3.786 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[7]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.541     ; 4.246      ;
+; -3.786 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[3]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.541     ; 4.246      ;
+; -3.786 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.541     ; 4.246      ;
 ; -3.786 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[5]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.541     ; 4.246      ;
+; -3.786 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[2]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.541     ; 4.246      ;
 ; -3.786 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[4]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.541     ; 4.246      ;
 ; -3.786 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[9]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.541     ; 4.246      ;
 ; -3.785 ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[10]                   ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[1]               ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.071     ; 4.715      ;
@@ -340,11 +340,11 @@ No paths to report.
 ; 0.763 ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[6]      ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[6]      ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.082      ; 1.057      ;
 ; 0.763 ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[3]                   ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[3]                   ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.081      ; 1.056      ;
 ; 0.764 ; Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter|Pre_Q[2] ; Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter|Pre_Q[2] ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.081      ; 1.057      ;
-; 0.764 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]         ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]         ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.081      ; 1.057      ;
 ; 0.764 ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[16]     ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[16]     ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.081      ; 1.057      ;
 ; 0.764 ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[12]     ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[12]     ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.081      ; 1.057      ;
 ; 0.764 ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[2]      ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[2]      ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.082      ; 1.058      ;
 ; 0.764 ; Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[6]              ; Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[6]              ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.081      ; 1.057      ;
+; 0.764 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]         ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]         ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.081      ; 1.057      ;
 ; 0.767 ; Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[7]              ; Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[7]              ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.081      ; 1.060      ;
 ; 0.767 ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[18]     ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[18]     ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.081      ; 1.060      ;
 ; 0.767 ; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter|Pre_Q[3]      ; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter|Pre_Q[3]      ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.080      ; 1.059      ;
@@ -381,9 +381,9 @@ No paths to report.
 ; 1.097 ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[10]                  ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[11]                  ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.081      ; 1.390      ;
 ; 1.097 ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[5]      ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[6]      ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.082      ; 1.391      ;
 ; 1.098 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[7]         ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]         ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.081      ; 1.391      ;
-; 1.098 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[11]        ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[12]        ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.081      ; 1.391      ;
 ; 1.098 ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[8]                   ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[9]                   ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.081      ; 1.391      ;
 ; 1.098 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[5]         ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[6]         ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.081      ; 1.391      ;
+; 1.098 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[11]        ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[12]        ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.081      ; 1.391      ;
 ; 1.099 ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[1]      ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[2]      ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.082      ; 1.393      ;
 +-------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
@@ -517,10 +517,10 @@ No paths to report.
 ; -3.524 ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[11]                   ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[2]               ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.064     ; 4.462      ;
 ; -3.522 ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[4]                    ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[2]               ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.064     ; 4.460      ;
 ; -3.515 ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[3]                    ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[0]               ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.064     ; 4.453      ;
-; -3.515 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[7]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.502     ; 4.015      ;
-; -3.515 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[6]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.502     ; 4.015      ;
 ; -3.515 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.502     ; 4.015      ;
 ; -3.515 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[5]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.502     ; 4.015      ;
+; -3.515 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[6]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.502     ; 4.015      ;
+; -3.515 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[7]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.502     ; 4.015      ;
 ; -3.515 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[3]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.502     ; 4.015      ;
 ; -3.515 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[2]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.502     ; 4.015      ;
 ; -3.515 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[4]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.502     ; 4.015      ;
@@ -546,8 +546,8 @@ No paths to report.
 ; -3.470 ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[4]                       ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[13] ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.070     ; 4.402      ;
 ; -3.433 ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[7]                    ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[5]               ; i_clk_50     ; i_clk_50    ; 1.000        ; 0.384      ; 4.819      ;
 ; -3.426 ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[2]                    ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[2]               ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.064     ; 4.364      ;
+; -3.419 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[1]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[5]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.502     ; 3.919      ;
 ; -3.419 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[1]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[6]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.502     ; 3.919      ;
-; -3.419 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[1]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.502     ; 3.919      ;
 +--------+--------------------------------------------------------------------------------+------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -612,10 +612,10 @@ No paths to report.
 ; 0.709 ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[10]     ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[10]     ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 0.977      ;
 ; 0.709 ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[8]      ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[8]      ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 0.977      ;
 ; 0.709 ; Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[6]              ; Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[6]              ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 0.977      ;
-; 0.710 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]         ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]         ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 0.978      ;
 ; 0.710 ; Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[7]              ; Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[7]              ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 0.978      ;
 ; 0.710 ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[12]     ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[12]     ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 0.978      ;
 ; 0.710 ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[6]      ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[6]      ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 0.978      ;
+; 0.710 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]         ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]         ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 0.978      ;
 ; 0.711 ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[2]      ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[2]      ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 0.979      ;
 ; 0.712 ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[18]     ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[18]     ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 0.980      ;
 ; 0.713 ; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter|Pre_Q[3]      ; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter|Pre_Q[3]      ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.072      ; 0.980      ;
@@ -623,9 +623,9 @@ No paths to report.
 ; 0.715 ; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter|Pre_Q[4]      ; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter|Pre_Q[4]      ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.072      ; 0.982      ;
 ; 0.720 ; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter|Pre_Q[5]      ; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter|Pre_Q[5]      ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.072      ; 0.987      ;
 ; 0.721 ; Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter|Pre_Q[5] ; Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter|Pre_Q[5] ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.072      ; 0.988      ;
-; 0.726 ; Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter|Pre_Q[4] ; Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter|Pre_Q[4] ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.072      ; 0.993      ;
 ; 0.726 ; Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter|Pre_Q[7] ; Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter|Pre_Q[7] ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.072      ; 0.993      ;
 ; 0.726 ; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter|Pre_Q[1]      ; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter|Pre_Q[1]      ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.072      ; 0.993      ;
+; 0.726 ; Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter|Pre_Q[4] ; Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter|Pre_Q[4] ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.072      ; 0.993      ;
 ; 0.730 ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[1]                   ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[1]                   ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.072      ; 0.997      ;
 ; 0.731 ; Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter|Pre_Q[0]        ; Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[0]              ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 0.999      ;
 ; 0.732 ; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter|Pre_Q[0]      ; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter|Pre_Q[1]      ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.072      ; 0.999      ;
@@ -651,9 +651,9 @@ No paths to report.
 ; 0.992 ; Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[7]              ; Sound_Sawtooth_Middle_C:SawWCounter|o_PWMOut                                  ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 1.260      ;
 ; 0.995 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]         ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[1]         ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.091      ; 1.281      ;
 ; 1.012 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[5]         ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[6]         ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 1.280      ;
+; 1.013 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[7]         ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]         ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 1.281      ;
 ; 1.013 ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[8]                   ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[9]                   ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.072      ; 1.280      ;
 ; 1.013 ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[5]      ; Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter|Pre_Q[6]      ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 1.281      ;
-; 1.013 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[7]         ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]         ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 1.281      ;
 ; 1.013 ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[10]                  ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[11]                  ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.072      ; 1.280      ;
 ; 1.013 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[15]        ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[16]        ; i_clk_50     ; i_clk_50    ; 0.000        ; 0.073      ; 1.281      ;
 +-------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
@@ -771,14 +771,14 @@ No paths to report.
 ; -1.089 ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[5]                    ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[2]               ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.027     ; 2.049      ;
 ; -1.080 ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[1]                       ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[9]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.032     ; 2.035      ;
 ; -1.078 ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[0]                       ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[9]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.032     ; 2.033      ;
-; -1.078 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[6]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.225     ; 1.840      ;
 ; -1.078 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[3]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.225     ; 1.840      ;
-; -1.078 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[5]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.225     ; 1.840      ;
+; -1.078 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[6]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.225     ; 1.840      ;
 ; -1.078 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[7]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.225     ; 1.840      ;
-; -1.078 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.225     ; 1.840      ;
+; -1.078 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[5]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.225     ; 1.840      ;
 ; -1.078 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[2]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.225     ; 1.840      ;
 ; -1.078 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[4]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.225     ; 1.840      ;
 ; -1.078 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[9]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.225     ; 1.840      ;
+; -1.078 ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[8]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.225     ; 1.840      ;
 ; -1.076 ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[1]                       ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[7]  ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.032     ; 2.031      ;
 ; -1.074 ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[0]                       ; Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[13] ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.037     ; 2.024      ;
 ; -1.067 ; NoteStepper:NoteSteps|counterLdInc:Note1Hz_Counter|Pre_Q[3]                    ; NoteStepper:NoteSteps|counterLdInc:Note_Counter|Pre_Q[4]               ; i_clk_50     ; i_clk_50    ; 1.000        ; -0.027     ; 2.027      ;
@@ -1112,7 +1112,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue Aug 30 06:57:06 2022
+    Info: Processing started: Tue Aug 30 07:47:01 2022
 Info: Command: quartus_sta FPGA_Sound -c FPGA_Sound
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1184,8 +1184,8 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4762 megabytes
-    Info: Processing ended: Tue Aug 30 06:57:09 2022
+    Info: Peak virtual memory: 4767 megabytes
+    Info: Processing ended: Tue Aug 30 07:47:04 2022
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
