@@ -45,7 +45,7 @@ begin
 -- Sine wave ROM table
 -- Contains PWM width (0-255)
 
-SineWaveROM : ENTITY work.MiddleCSineTable
+SineWaveROM : ENTITY work.SineTable_256
 	PORT map (
 		address	=> w_ROMAddr,
 		q 			=> w_ROMData

@@ -140,7 +140,7 @@ i_Mute => w_PWMUnlatched.IN1
 o_PWMOut <= o_PWMOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|MiddleCSineTable:SineWaveROM
+|FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|SineTable_256:SineWaveROM
 address[0] => Mux0.IN263
 address[0] => Mux1.IN263
 address[0] => Mux2.IN263
@@ -807,22 +807,24 @@ o_dataOut[19] <= Pre_Q[19].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |FPGA_Sound|Sound_Sine_Scale:SineScale
-i_clk_50 => counterldinc:PreScale_Counter.i_clock
+i_clk_50 => counterldinc:Note_Ctr.i_clock
 i_clk_50 => o_PWMOut~reg0.CLK
-i_clk_50 => counterldinc:SineWave_Counter.i_clock
-i_clk_50 => counterldinc:PWM_Counter.i_clock
-i_Mute => o_PWMOut.IN1
-i_pianoNote[0] => notesinecountertable:NoteSineSoundTable.address[0]
-i_pianoNote[1] => notesinecountertable:NoteSineSoundTable.address[1]
-i_pianoNote[2] => notesinecountertable:NoteSineSoundTable.address[2]
-i_pianoNote[3] => notesinecountertable:NoteSineSoundTable.address[3]
-i_pianoNote[4] => notesinecountertable:NoteSineSoundTable.address[4]
-i_pianoNote[5] => notesinecountertable:NoteSineSoundTable.address[5]
-i_pianoNote[6] => notesinecountertable:NoteSineSoundTable.address[6]
+i_clk_50 => counterldinc:Sine_Ctr.i_clock
+i_clk_50 => outreg_nbits:RegHoldTableVal.clock
+i_clk_50 => counterldinc:PWM_Ctr.i_clock
+i_Mute => w_PWMUnlatched.IN1
+i_Mute => w_PWMUnlatched.IN1
+i_pianoNote[0] => notesinecountertable:NoteScalerTable.address[0]
+i_pianoNote[1] => notesinecountertable:NoteScalerTable.address[1]
+i_pianoNote[2] => notesinecountertable:NoteScalerTable.address[2]
+i_pianoNote[3] => notesinecountertable:NoteScalerTable.address[3]
+i_pianoNote[4] => notesinecountertable:NoteScalerTable.address[4]
+i_pianoNote[5] => notesinecountertable:NoteScalerTable.address[5]
+i_pianoNote[6] => notesinecountertable:NoteScalerTable.address[6]
 o_PWMOut <= o_PWMOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FPGA_Sound|Sound_Sine_Scale:SineScale|NoteSineCounterTable:NoteSineSoundTable
+|FPGA_Sound|Sound_Sine_Scale:SineScale|NoteSineCounterTable:NoteScalerTable
 address[0] => Mux1.IN134
 address[0] => Mux2.IN134
 address[0] => Mux3.IN134
@@ -931,7 +933,7 @@ q[14] <= <GND>
 q[15] <= <GND>
 
 
-|FPGA_Sound|Sound_Sine_Scale:SineScale|counterLdInc:PreScale_Counter
+|FPGA_Sound|Sound_Sine_Scale:SineScale|counterLdInc:Note_Ctr
 i_clock => Pre_Q[0].CLK
 i_clock => Pre_Q[1].CLK
 i_clock => Pre_Q[2].CLK
@@ -1014,7 +1016,7 @@ o_dataOut[14] <= Pre_Q[14].DB_MAX_OUTPUT_PORT_TYPE
 o_dataOut[15] <= Pre_Q[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FPGA_Sound|Sound_Sine_Scale:SineScale|counterLdInc:SineWave_Counter
+|FPGA_Sound|Sound_Sine_Scale:SineScale|counterLdInc:Sine_Ctr
 i_clock => Pre_Q[0].CLK
 i_clock => Pre_Q[1].CLK
 i_clock => Pre_Q[2].CLK
@@ -1057,7 +1059,42 @@ o_dataOut[6] <= Pre_Q[6].DB_MAX_OUTPUT_PORT_TYPE
 o_dataOut[7] <= Pre_Q[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FPGA_Sound|Sound_Sine_Scale:SineScale|MiddleCSineTable:SineWaveROM
+|FPGA_Sound|Sound_Sine_Scale:SineScale|OutReg_Nbits:RegHoldTableVal
+dataIn[0] => Q_tmp[0].DATAIN
+dataIn[1] => Q_tmp[1].DATAIN
+dataIn[2] => Q_tmp[2].DATAIN
+dataIn[3] => Q_tmp[3].DATAIN
+dataIn[4] => Q_tmp[4].DATAIN
+dataIn[5] => Q_tmp[5].DATAIN
+dataIn[6] => Q_tmp[6].DATAIN
+dataIn[7] => Q_tmp[7].DATAIN
+clock => Q_tmp[0].CLK
+clock => Q_tmp[1].CLK
+clock => Q_tmp[2].CLK
+clock => Q_tmp[3].CLK
+clock => Q_tmp[4].CLK
+clock => Q_tmp[5].CLK
+clock => Q_tmp[6].CLK
+clock => Q_tmp[7].CLK
+load => Q_tmp[0].ENA
+load => Q_tmp[1].ENA
+load => Q_tmp[2].ENA
+load => Q_tmp[3].ENA
+load => Q_tmp[4].ENA
+load => Q_tmp[5].ENA
+load => Q_tmp[6].ENA
+load => Q_tmp[7].ENA
+regOut[0] <= Q_tmp[0].DB_MAX_OUTPUT_PORT_TYPE
+regOut[1] <= Q_tmp[1].DB_MAX_OUTPUT_PORT_TYPE
+regOut[2] <= Q_tmp[2].DB_MAX_OUTPUT_PORT_TYPE
+regOut[3] <= Q_tmp[3].DB_MAX_OUTPUT_PORT_TYPE
+regOut[4] <= Q_tmp[4].DB_MAX_OUTPUT_PORT_TYPE
+regOut[5] <= Q_tmp[5].DB_MAX_OUTPUT_PORT_TYPE
+regOut[6] <= Q_tmp[6].DB_MAX_OUTPUT_PORT_TYPE
+regOut[7] <= Q_tmp[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FPGA_Sound|Sound_Sine_Scale:SineScale|SineTable_256:SineTblROM
 address[0] => Mux0.IN263
 address[0] => Mux1.IN263
 address[0] => Mux2.IN263
@@ -1131,7 +1168,7 @@ q[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|FPGA_Sound|Sound_Sine_Scale:SineScale|counterLdInc:PWM_Counter
+|FPGA_Sound|Sound_Sine_Scale:SineScale|counterLdInc:PWM_Ctr
 i_clock => Pre_Q[0].CLK
 i_clock => Pre_Q[1].CLK
 i_clock => Pre_Q[2].CLK

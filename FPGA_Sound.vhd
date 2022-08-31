@@ -12,6 +12,7 @@
 -- Sawtooth - Middle C
 -- Triangle - Middle C
 -- Squarewave - Grand Piano scale
+-- Sinewave - Grand Piano scale
 -- ------------------------------------------------------------------------------------------
 
 library ieee;

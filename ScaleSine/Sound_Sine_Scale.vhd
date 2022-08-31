@@ -31,28 +31,27 @@ end Sound_Sine_Scale;
 architecture behv of Sound_Sine_Scale is		 	  
 
 	signal w_ldPWMCtr			: std_logic;
-	signal w_incROMAdr		: std_logic;
 	signal w_PWMUnlatched	: std_logic;
-	signal w_Up					: std_logic;
+	signal NoteHoldReg		: std_logic;
 	signal w_SineSampleCt	: std_logic_vector(7 downto 0);
 	signal w_ROMData			: std_logic_vector(7 downto 0);
 	signal w_PWMCt				: std_logic_vector(9 downto 0);
 	signal w_PWMScaler		: std_logic_vector(15 downto 0);
 	signal w_PWMScaleVals	: std_logic_vector(15 downto 0);
+	signal SineTblAddr		: std_logic_vector(7 downto 0);
 
 begin
 
-NoteSineSoundTable : entity work.NoteSineCounterTable
+NoteScalerTable : entity work.NoteSineCounterTable
 	port map (
-		address			=> i_pianoNote,
-		q					=> w_PWMScaleVals
+		address	=> i_pianoNote,
+		q			=> w_PWMScaleVals
 	);
 
 -- Note counter
 
 w_ldPWMCtr <= '1' when w_PWMScaler = w_PWMScaleVals else '0';
-
-PreScale_Counter : entity work.counterLdInc
+Note_Ctr : entity work.counterLdInc
 generic map (n => 16)
 port map (
 	i_clock		=> i_clk_50,
@@ -62,7 +61,7 @@ port map (
 	o_dataOut	=> w_PWMScaler
 );
 
-SineWave_Counter : entity work.counterLdInc
+Sine_Ctr : entity work.counterLdInc
 generic map (n => 8)
 port map (
 	i_clock		=> i_clk_50,
@@ -72,13 +71,23 @@ port map (
 	o_dataOut	=> w_SineSampleCt
 );
 
-SineWaveROM : ENTITY work.MiddleCSineTable
+NoteHoldReg <= '1' when w_PWMCt = "1111111111" else '0';
+RegHoldTableVal : entity work.OutReg_Nbits
+generic map (n => 8)
+	port map (	
+		dataIn	=> w_SineSampleCt,
+		clock		=> i_clk_50,
+		load		=> NoteHoldReg,
+		regOut	=> SineTblAddr
+	);
+
+SineTblROM : ENTITY work.SineTable_256
 	PORT map (
-		address	=> w_SineSampleCt,
+		address	=> SineTblAddr,
 		q 			=> w_ROMData
 	);
 
-PWM_Counter : entity work.counterLdInc
+PWM_Ctr : entity work.counterLdInc
 generic map (n => 10)
 port map (
 	i_clock		=> i_clk_50,
@@ -88,14 +97,16 @@ port map (
 	o_dataOut	=> w_PWMCt
 );
 
-w_PWMUnlatched <= '0' when w_PWMCt(7 downto 0) < w_ROMData else '1';
+w_PWMUnlatched <= '0' when ((w_PWMCt(9 downto 2) < w_ROMData) and (i_Mute = '0')) else		-- Do the pulse
+                  '0' when ((w_PWMCt(9) = '0') and (i_Mute = '1')) else							-- Mute = 50/50 duty cycle to set AC zero
+						'1';
 
 --o_PWMOut <= w_PWMUnlatched and not i_Mute;
 
 process(i_clk_50, w_PWMUnlatched)
 begin
 	if rising_edge(i_clk_50) then
-		o_PWMOut <= w_PWMUnlatched and not i_Mute;
+		o_PWMOut <= w_PWMUnlatched;
 	end if;
 end process;	
 
