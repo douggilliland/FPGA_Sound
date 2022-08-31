@@ -14,7 +14,6 @@ Make sound from an FPGA starting from first principles.
 ** [https://github.com/douggilliland/FPGA_Sound/tree/main/ScaleSquare Grand Piano Square wave build]
 ** [https://github.com/douggilliland/FPGA_Sound/tree/main/ScaleSine Grand Piano Sine wave build]
 * [https://github.com/douggilliland/FPGA_Sound/tree/main/Filter Audio Filter / Scaler]
-* [https://github.com/douggilliland/FPGA_Sound/tree/main/ScaleSquare Square Wave Grand Piano]
 
 == Square Wave Middle C ==
 
