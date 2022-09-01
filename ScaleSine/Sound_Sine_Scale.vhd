@@ -1,13 +1,25 @@
 ----------------------------------------------------
--- VHDL code for Triangle Wave Generator
--- Creates Middle C
--- FPGA clock is 50 MHz
--- Prescale 50 MHz by 3 to get to 16.667 KHz
--- 256 samples in the table - one full wave
--- 256 clocks for PWM
--- Produces 261.00 Hz
+-- VHDL code for Sine Wave Generator
+-- Creates Grand Piano scale frequencies
+-- PWM
+--		FPGA clock is 50 MHz
+--		PWM runs at 50/4 = 12.5 MHz (clock divided by 4)
+--		256 clocks at 12.5 MH = 48.8 KHz
+-- Sine wave waveform 
+-- 	Clock runs independently from PWM side
+--		256 samples in the table - one full wave
+--		50 MHz / 256 counts = 195.3125 KHz
+--		Scaler runs at 195.3125 KHz divided by note frequency
+--		Example
+--			C4 (Middle C) is 261.5256 Hz with a divisor of 746.53
+--			A0 is 27.5 Hs with a divisor of 7102.27
+--			B7 is 3951.06 Hz with a divisor of 49.43
+--	Sine wave table is sampled every PWM cycle (48.8 KHz)
 -- output filter
 --		https://github.com/douggilliland/FPGA_Sound/tree/main/Filter
+--
+--	Doug Gilliland, 2022
+--
 ----------------------------------------------------
 
 library ieee;
@@ -30,62 +42,25 @@ end Sound_Sine_Scale;
 
 architecture behv of Sound_Sine_Scale is		 	  
 
-	signal w_ldPWMCtr			: std_logic;
-	signal w_PWMUnlatched	: std_logic;
-	signal NoteHoldReg		: std_logic;
-	signal w_SineSampleCt	: std_logic_vector(7 downto 0);
-	signal w_ROMData			: std_logic_vector(7 downto 0);
-	signal w_PWMCt				: std_logic_vector(9 downto 0);
-	signal w_PWMScaler		: std_logic_vector(15 downto 0);
-	signal w_PWMScaleVals	: std_logic_vector(15 downto 0);
-	signal SineTblAddr		: std_logic_vector(7 downto 0);
+	signal w_PWMUnlatched		: std_logic;
+	signal w_NoteHoldReg			: std_logic;
+	signal w_SineSampleLatched	: std_logic_vector(7 downto 0);
+	signal w_PWMCt					: std_logic_vector(9 downto 0);
+	signal w_SineTblAddr			: std_logic_vector(7 downto 0);
 
 begin
 
-NoteScalerTable : entity work.NoteSineCounterTable
-	port map (
-		address	=> i_pianoNote,
-		q			=> w_PWMScaleVals
-	);
-
--- Note counter
-
-w_ldPWMCtr <= '1' when w_PWMScaler = w_PWMScaleVals else '0';
-Note_Ctr : entity work.counterLdInc
-generic map (n => 16)
-port map (
-	i_clock		=> i_clk_50,
-	i_dataIn		=> x"0000",
-	i_load		=> w_ldPWMCtr,
-	i_inc			=> '1',
-	o_dataOut	=> w_PWMScaler
+-- Generate sine wave scale outputs
+sineCounter : entity work.ScaleSineGen
+port map (	
+	i_clk_50			=> i_clk_50,
+	i_SampleHold	=> w_NoteHoldReg,
+	i_pianoNote		=> i_pianoNote,
+	o_SineWaveData	=> w_SineSampleLatched
 );
 
-Sine_Ctr : entity work.counterLdInc
-generic map (n => 8)
-port map (
-	i_clock		=> i_clk_50,
-	i_dataIn		=> x"00",
-	i_load		=> '0',
-	i_inc			=> w_ldPWMCtr,
-	o_dataOut	=> w_SineSampleCt
-);
-
-NoteHoldReg <= '1' when w_PWMCt = "1111111111" else '0';
-RegHoldTableVal : entity work.OutReg_Nbits
-generic map (n => 8)
-	port map (	
-		dataIn	=> w_SineSampleCt,
-		clock		=> i_clk_50,
-		load		=> NoteHoldReg,
-		regOut	=> SineTblAddr
-	);
-
-SineTblROM : ENTITY work.SineTable_256
-	PORT map (
-		address	=> SineTblAddr,
-		q 			=> w_ROMData
-	);
+----------------------------------------------------
+-- PWM
 
 PWM_Ctr : entity work.counterLdInc
 generic map (n => 10)
@@ -97,11 +72,11 @@ port map (
 	o_dataOut	=> w_PWMCt
 );
 
-w_PWMUnlatched <= '0' when ((w_PWMCt(9 downto 2) < w_ROMData) and (i_Mute = '0')) else		-- Do the pulse
+w_PWMUnlatched <= '0' when ((w_PWMCt(9 downto 2) < w_SineSampleLatched) and (i_Mute = '0')) else		-- Do the pulse
                   '0' when ((w_PWMCt(9) = '0') and (i_Mute = '1')) else							-- Mute = 50/50 duty cycle to set AC zero
 						'1';
 
---o_PWMOut <= w_PWMUnlatched and not i_Mute;
+w_NoteHoldReg <= '1' when w_PWMCt = "1111111111" else '0';
 
 process(i_clk_50, w_PWMUnlatched)
 begin

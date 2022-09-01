@@ -89,6 +89,7 @@ set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to o_Sine_Scale
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to o_Saw_Wave
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to o_Square_Scale
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to o_Tri_Wave
+set_global_assignment -name VHDL_FILE ScaleSine/ScaleSineGen.vhd
 set_global_assignment -name VHDL_FILE MiddleCSine/SineTable_256.vhd
 set_global_assignment -name VHDL_FILE Registers/OutReg_Nbits.vhd
 set_global_assignment -name VHDL_FILE ScaleSquare/SoundTable01.VHD
