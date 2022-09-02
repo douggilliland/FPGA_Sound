@@ -90,9 +90,13 @@ Make sound from an FPGA starting from first principles.
 ** 182 Logic cells
 ** 21 Registers
 
-== Grand Piano Scale Sine Wave ==
+== Grand Piano Scale Sine Wave Generator ==
 
 <img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/ScaleSine/Scale_Sine_BlkDiagram.png"></img>
+
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/ScaleSine/SineWaveGen_BlkDiagram.png"></img>
+
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/ScaleSine/PWM_BlkDiagram.png"></img>
 
 * 87 keys
 * 7 bit note select value
@@ -106,6 +110,13 @@ Make sound from an FPGA starting from first principles.
 ** 33 Registers
 
 <img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/ScaleSine/Scale_Sine_Cap.png"></img>
+
+== Polyphonic Sound Generator ==
+
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/PolySound/Poly_BlockDiagram.PNG"></img>
+
+* Four of Grand Piano Scale Sine Wave Generators
+* 2 Notes on Left output, 2 on right
 
 == Note Counter ==
 
