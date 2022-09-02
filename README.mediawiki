@@ -117,6 +117,9 @@ Make sound from an FPGA starting from first principles.
 
 * Four of Grand Piano Scale Sine Wave Generators
 * 2 Notes on Left output, 2 on right
+* Resources
+** 522 Logic cells
+** 108 Registers
 
 == Note Counter ==
 
