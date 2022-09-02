@@ -28,6 +28,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "o_PolyLeft",
+					"strict" : false
+				},
+				{
+					"name" : "o_PolyRight",
+					"strict" : false
+				},
+				{
 					"name" : "i_play_n",
 					"strict" : false
 				},

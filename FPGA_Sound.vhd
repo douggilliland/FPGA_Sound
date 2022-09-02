@@ -30,7 +30,9 @@ entity FPGA_Sound is
 		o_Saw_Wave		: out		std_logic := '0';		-- Sawtooth wave
 		o_Tri_Wave		: out		std_logic := '0';		-- Triangle wave
 		o_Square_Scale	: out		std_logic := '0';		-- Square wave Grand Piano scale
-		o_Sine_Scale	: out		std_logic := '0'		-- Sine wave Grand Piano scale
+		o_Sine_Scale	: out		std_logic := '0';		-- Sine wave Grand Piano scale
+		o_PolyLeft		: out		std_logic := '0';		-- Polyphonic sound left
+		o_PolyRight		: out		std_logic := '0'		-- Polyphonic sound right
 	);
 end FPGA_Sound;
 
@@ -44,7 +46,7 @@ architecture struct of FPGA_Sound is
 	signal w_SqScale_Wave	: std_logic;
 	signal w_SineScale_Wave	: std_logic;
 	signal w_Mute				: std_logic;
-	signal w_NoteCounter		: std_logic_vector(6 downto 0);
+	signal w_NoteCounterL1	: std_logic_vector(6 downto 0);
 
 begin
 
@@ -96,7 +98,7 @@ SquareScale : entity work.Sound_Square_Scale
 	port map (
 		i_clk_50			=> i_clk_50,
 		i_Mute			=> w_Mute,
-		i_pianoNote		=> w_NoteCounter,	-- Piano key index
+		i_pianoNote		=> w_NoteCounterL1,	-- Piano key index
 		o_PWMOut			=> w_SqScale_Wave
 	);
 
@@ -105,15 +107,29 @@ SineScale : entity work.Sound_Sine_Scale
 	port map (
 		i_clk_50			=> i_clk_50,
 		i_Mute			=> w_Mute,
-		i_pianoNote		=> w_NoteCounter,	-- Piano key index
+		i_pianoNoteL1	=> w_NoteCounterL1,	-- Piano key index
 		o_PWMOut			=> w_SineScale_Wave
 	);
 
 -- Step through Grand Piano scale 1 note every second
-NoteSteps : entity work.NoteStepper
+NoteStepsL1 : entity work.NoteStepper
 	port map (
-		i_clk_50			=> i_clk_50,		
-		o_Note			=> w_NoteCounter	-- Piano key index
+		i_clk_50			=> i_clk_50,
+		i_StartNote		=> "0100101",
+		i_EndNote		=> "0110000",
+		o_Note			=> w_NoteCounterL1	-- Piano key index
 	);
 
+PolySound : entity work.PolySound_Sine_Scale
+port map (	
+	i_clk_50			=> i_clk_50,
+	i_Mute			=> w_Mute,
+	i_pianoNoteL1	=> "0100101",
+	i_pianoNoteL2	=> "0100110",
+	i_pianoNoteR1	=> "0100111",
+	i_pianoNoteR2	=> "0101000",
+	o_PWMOutL		=> o_PolyLeft,
+	o_PWMOutR		=> o_PolyRight
+);
+	
 end;

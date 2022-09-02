@@ -31,10 +31,10 @@ use  IEEE.STD_LOGIC_UNSIGNED.all;
 
 entity Sound_Sine_Scale is
 port(	
-	i_clk_50		:	in std_logic;
-	i_Mute		:	in std_logic;
-	i_pianoNote	:	in std_logic_vector(6 downto 0);
-	o_PWMOut		:	out std_logic
+	i_clk_50			:	in std_logic;
+	i_Mute			:	in std_logic;
+	i_pianoNoteL1	:	in std_logic_vector(6 downto 0);
+	o_PWMOut			:	out std_logic
 );
 end Sound_Sine_Scale;
 
@@ -42,11 +42,10 @@ end Sound_Sine_Scale;
 
 architecture behv of Sound_Sine_Scale is		 	  
 
-	signal w_PWMUnlatched		: std_logic;
 	signal w_NoteHoldReg			: std_logic;
+	signal w_PWMUnlatched		: std_logic;
 	signal w_SineSampleLatched	: std_logic_vector(7 downto 0);
-	signal w_PWMCt					: std_logic_vector(9 downto 0);
-	signal w_SineTblAddr			: std_logic_vector(7 downto 0);
+	signal w_PWMCt					: std_logic_vector(7 downto 0);
 
 begin
 
@@ -55,28 +54,24 @@ sineCounter : entity work.ScaleSineGen
 port map (	
 	i_clk_50			=> i_clk_50,
 	i_SampleHold	=> w_NoteHoldReg,
-	i_pianoNote		=> i_pianoNote,
+	i_pianoNote		=> i_pianoNoteL1,
 	o_SineWaveData	=> w_SineSampleLatched
+);
+
+PWM : entity work.PWM_Counter
+port map (	
+	i_clk_50			=> i_clk_50,
+	o_PWMCt			=> w_PWMCt,
+	o_NoteHoldReg	=> w_NoteHoldReg
 );
 
 ----------------------------------------------------
 -- PWM
 
-PWM_Ctr : entity work.counterLdInc
-generic map (n => 10)
-port map (
-	i_clock		=> i_clk_50,
-	i_dataIn		=> "00"&x"00",
-	i_load		=> '0',
-	i_inc			=> '1',
-	o_dataOut	=> w_PWMCt
-);
 
-w_PWMUnlatched <= '0' when ((w_PWMCt(9 downto 2) < w_SineSampleLatched) and (i_Mute = '0')) else		-- Do the pulse
-                  '0' when ((w_PWMCt(9) = '0') and (i_Mute = '1')) else							-- Mute = 50/50 duty cycle to set AC zero
+w_PWMUnlatched <= '0' when ((w_PWMCt < w_SineSampleLatched) and (i_Mute = '0')) else		-- Do the pulse
+                  '0' when ((w_PWMCt(7) = '0') and (i_Mute = '1')) else							-- Mute = 50/50 duty cycle to set AC zero
 						'1';
-
-w_NoteHoldReg <= '1' when w_PWMCt = "1111111111" else '0';
 
 process(i_clk_50, w_PWMUnlatched)
 begin
