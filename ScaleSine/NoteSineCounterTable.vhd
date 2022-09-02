@@ -18,9 +18,10 @@ ENTITY NoteSineCounterTable IS
 END NoteSineCounterTable;
 
 architecture behavior of NoteSineCounterTable is
-type romtable is array (0 to 86) of std_logic_vector(15 downto 0);
+type romtable is array (0 to 87) of std_logic_vector(15 downto 0);
 constant romdata : romtable :=
 (
+x"1BBD",	-- used as no note flag
 x"1BBD",
 x"1A2F",
 x"18B6",

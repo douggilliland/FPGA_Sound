@@ -1,8 +1,8 @@
 ----------------------------------------------------
 --	PolyPolySound_Sine_Scale
 -- VHDL code for Polyphonic Sine Wave Generator
---		Two channels
---		Two notes per channel
+--	Two channels
+--	Two notes per channel
 -- Creates Grand Piano scale frequencies
 -- PWM
 --		FPGA clock is 50 MHz
@@ -59,10 +59,6 @@ architecture behv of PolySound_Sine_Scale is
 	signal w_SineSampleLatchedR2	: std_logic_vector(7 downto 0);
 	signal w_SineSampleLatchedR	: std_logic_vector(8 downto 0);
 	signal w_PWMCt						: std_logic_vector(7 downto 0);
-	signal w_MuteL1					: std_logic;
-	signal w_MuteL2					: std_logic;
-	signal w_MuteR1					: std_logic;
-	signal w_MuteR2					: std_logic;
 
 begin
 
@@ -109,17 +105,10 @@ port map (
 	o_NoteHoldReg	=> w_NoteHoldReg
 );
 
-w_MuteL1 <= '1' when i_Mute = '1'  else
-				'1' when i_pianoNoteL1 = x"00" else
-				'0';
+----------------------------------------------------
+-- PWM
 
-w_MuteL2 <= '1' when i_Mute = '1'  else
-				'1' when i_pianoNoteL2 = x"00" else
-				'0';
-
-w_SineSampleLatchedL <= (('0'&w_SineSampleLatchedL1) + ('0'&w_SineSampleLatchedL2)) when ((w_MuteL1 = '0') and (w_MuteL2 = '0')) else
-								(w_SineSampleLatchedL1&'0') when (w_MuteL2 = '1') else
-								(w_SineSampleLatchedL2&'0') when (w_MuteL1 = '1');
+w_SineSampleLatchedL <= (('0'&w_SineSampleLatchedL1) + ('0'&w_SineSampleLatchedL2));
 
 w_PWMUnlatchedL <=	'0' when ((w_PWMCt < w_SineSampleLatchedL(8 downto 1)) and (i_Mute = '0')) else		-- Do the pulse
 							'0' when ((w_PWMCt(7) = '0') and (i_Mute = '1')) else							-- Mute = 50/50 duty cycle to set AC zero
@@ -132,18 +121,7 @@ begin
 	end if;
 end process;	
 
-w_MuteR1 <= '1' when i_Mute = '1'  else
-				'1' when i_pianoNoteR1 = x"00" else
-				'0';
-
-w_MuteR2 <= '1' when i_Mute = '1'  else
-				'1' when i_pianoNoteR2 = x"00" else
-				'0';
-
-w_SineSampleLatchedR <= (('0'&w_SineSampleLatchedR1) + ('0'&w_SineSampleLatchedR2)) when ((w_MuteR1 = '0') and (w_MuteR2 = '0')) else
-								(w_SineSampleLatchedR1&'0') when (w_MuteR2 = '1') else
-								(w_SineSampleLatchedR2&'0') when (w_MuteR1 = '1');
-
+w_SineSampleLatchedR <= ('0'&w_SineSampleLatchedR1) + ('0'&w_SineSampleLatchedR2);
 
 w_PWMUnlatchedR <=	'0' when ((w_PWMCt < w_SineSampleLatchedR(8 downto 1)) and (i_Mute = '0')) else		-- Do the pulse
 							'0' when ((w_PWMCt(7) = '0') and (i_Mute = '1')) else							-- Mute = 50/50 duty cycle to set AC zero
