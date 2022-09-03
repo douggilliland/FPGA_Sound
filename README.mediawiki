@@ -122,6 +122,14 @@ Make sound from an FPGA starting from first principles.
 ** 522 Logic cells
 ** 108 Registers
 
+== ROM Player ==
+
+* Read ROM file
+* ROM file is 32-bits wide with 8 bits per note
+* Spreadsheet
+** Music on one tab in notes
+** Lookup table on 2nd tab to map notes to values
+
 == Note Counter ==
 
 * 87 keys
