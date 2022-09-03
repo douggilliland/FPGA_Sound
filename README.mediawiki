@@ -13,6 +13,7 @@ Make sound from an FPGA starting from first principles.
 ** [https://github.com/douggilliland/FPGA_Sound/tree/main/MiddleCTriangle Triangle wave Middle C]
 ** [https://github.com/douggilliland/FPGA_Sound/tree/main/ScaleSquare Grand Piano Square wave]
 ** https://github.com/douggilliland/FPGA_Sound/blob/Piano-scale-sine/README.mediawiki Grand Piano Sine wave]
+** [https://github.com/douggilliland/FPGA_Sound/tree/main/ROM_Player ROM Player]
 * [https://github.com/douggilliland/FPGA_Sound/tree/main/Filter Audio Filter / Scaler]
 
 == Square Wave Middle C ==
@@ -120,6 +121,17 @@ Make sound from an FPGA starting from first principles.
 * Resources
 ** 522 Logic cells
 ** 108 Registers
+
+== ROM Player ==
+
+* Read ROM file
+* ROM file is 32-bits wide with 8 bits per note
+* Spreadsheet
+** Music on one tab in notes
+** Lookup table on 2nd tab to map notes to values
+* Plays 4 notes on Polyphonic Sound Generator
+* [https://github.com/douggilliland/FPGA_Sound/blob/main/Music/JesusLovesMe.xls Example song]
+* Copy/paste into [https://github.com/douggilliland/FPGA_Sound/blob/main/Music/VHDL/JesusLovesMe.vhd ROM file]
 
 == Note Counter ==
 
