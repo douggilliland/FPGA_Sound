@@ -26,7 +26,7 @@ architecture struct of ROM_Player is
 	signal w_1HzTC				: std_logic;
 	
 	signal w_1HzCounter		: std_logic_vector(25 downto 0);
-	signal w_NoteCounter		: std_logic_vector(4 downto 0);
+	signal w_NoteCounter		: std_logic_vector(5 downto 0);
 
 	signal w_NoteValue		: std_logic_vector(31 downto 0);
 
@@ -48,13 +48,13 @@ port map (
 );
 
 -- Count through octave around Middle C
-w_NoteTC <= '1' when w_NoteCounter = "11000" else		-- Note to play
+w_NoteTC <= '1' when w_NoteCounter = "111111" else		-- Note to play
 				'0';
 Note_Counter : entity work.counterLdInc
-generic map (n => 5)
+generic map (n => 6)
 port map (
 	i_clock		=> i_clk_50,
-	i_dataIn		=> "00000",		-- pre-load with first not to play on scale
+	i_dataIn		=> "000000",		-- pre-load with first not to play on scale
 	i_load		=> w_NoteTC,
 	i_inc			=> w_1HzTC,
 	o_dataOut	=> w_NoteCounter

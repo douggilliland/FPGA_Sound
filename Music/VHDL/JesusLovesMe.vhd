@@ -11,16 +11,16 @@ library ieee;
 ENTITY JesusLovesMe IS
 	PORT
 	(
-		address : in std_logic_vector(4 downto 0);
+		address : in std_logic_vector(5 downto 0);
 		q : out std_logic_vector(31 downto 0)
 	);
 END JesusLovesMe;
 
 architecture behavior of JesusLovesMe is
-type romtable is array (0 to 31) of std_logic_vector(31 downto 0);
+type romtable is array (0 to 63) of std_logic_vector(31 downto 0);
 constant romdata : romtable :=
 (
-x"2F32271F",
+x"322F271F",
 x"00000000",
 x"2C2F271F",
 x"00000000",
@@ -29,13 +29,45 @@ x"00000000",
 x"2D2A271B",
 x"00000000",
 x"00000000",
+x"2F2C271F",
+x"00000000",
+x"2F32271F",
+x"00000000",
+x"2F32271D",
+x"2F32271D",
+x"00000000",
+x"00000000",
+x"34312518",
+x"00000000",
+x"34312518",
+x"00000000",
+x"37342518",
+x"00000000",
+x"3430251C",
+x"00000000",
+x"3431251F",
+x"00000000",
+x"322F271F",
+x"00000000",
+x"322F271F",
+x"322F271F",
+x"00000000",
+x"00000000",
+x"322F271F",
+x"00000000",
 x"2C2F271F",
 x"00000000",
-x"2F32271F",
+x"2C2F271F",
+x"00000000",
+x"2D2A271B",
+x"00000000",
+x"00000000",
+x"2F2C271F",
 x"00000000",
 x"2F32271F",
-x"2F32271F",
 x"00000000",
+x"2F32271D",
+x"2F32271D",
 x"00000000",
 x"00000000",
 x"00000000",
