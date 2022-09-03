@@ -130,6 +130,8 @@ Make sound from an FPGA starting from first principles.
 ** Music on one tab in notes
 ** Lookup table on 2nd tab to map notes to values
 * Plays 4 notes on Polyphonic Sound Generator
+* [https://github.com/douggilliland/FPGA_Sound/blob/main/Music/JesusLovesMe.xls Example song]
+* Copy/paste into [https://github.com/douggilliland/FPGA_Sound/blob/main/Music/VHDL/JesusLovesMe.vhd ROM file]
 
 == Note Counter ==
 
