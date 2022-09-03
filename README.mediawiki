@@ -124,6 +124,8 @@ Make sound from an FPGA starting from first principles.
 
 == ROM Player ==
 
+<img src="https://raw.githubusercontent.com/douggilliland/FPGA_Sound/main/ROM_Player/ROM_Player_BlockDiagram.PNG"></img>
+
 * Read ROM file
 * ROM file is 32-bits wide with 8 bits per note
 * Spreadsheet
