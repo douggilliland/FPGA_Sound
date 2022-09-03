@@ -1,8 +1,9 @@
 -- Note Divisor Table
 -- 50 MHz Clock
--- 8 bit Wave samples
--- Divisor table has values ( 50 MHz / ( 256 * note_freq ) ) - 1
--- 256 samples contain entire sine wave
+-- Piano keys
+--		https://en.wikipedia.org/wiki/Piano_key_frequencies
+-- Note divisor table has counter terminal values ( 50 MHz / ( 256 * note_freq ) ) - 1
+-- Note = 0 is a flag to mute
 
 library ieee;
 	use ieee.std_logic_1164.all;

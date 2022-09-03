@@ -1,8 +1,6 @@
--- Middle C sine wave table
--- 50 MHz Clock
+-- Sine wave table
 -- 8 bit PWM samples
 -- 256 samples contain entire sine wave
--- Middle C is 261.626 Hz
 
 library ieee;
 	use ieee.std_logic_1164.all;

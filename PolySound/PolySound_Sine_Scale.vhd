@@ -117,7 +117,8 @@ w_MuteL2 <= '1' when i_Mute = '1'  else
 				'1' when i_pianoNoteL2 = x"00" else
 				'0';
 
-w_SineSampleLatchedL <= (('0'&w_SineSampleLatchedL1) + ('0'&w_SineSampleLatchedL2)) when ((w_MuteL1 = '0') and (w_MuteL2 = '0')) else
+w_SineSampleLatchedL <= '1'&x"7E" when ((w_MuteL1 = '1') and (w_MuteL2 = '1')) else
+								(('0'&w_SineSampleLatchedL1) + ('0'&w_SineSampleLatchedL2)) when ((w_MuteL1 = '0') and (w_MuteL2 = '0')) else
 								(w_SineSampleLatchedL1&'0') when (w_MuteL2 = '1') else
 								(w_SineSampleLatchedL2&'0') when (w_MuteL1 = '1');
 
@@ -140,7 +141,8 @@ w_MuteR2 <= '1' when i_Mute = '1'  else
 				'1' when i_pianoNoteR2 = x"00" else
 				'0';
 
-w_SineSampleLatchedR <= (('0'&w_SineSampleLatchedR1) + ('0'&w_SineSampleLatchedR2)) when ((w_MuteR1 = '0') and (w_MuteR2 = '0')) else
+w_SineSampleLatchedR <= '1'&x"7E" when ((w_MuteR1 = '1') and (w_MuteR2 = '1')) else
+								(('0'&w_SineSampleLatchedR1) + ('0'&w_SineSampleLatchedR2)) when ((w_MuteR1 = '0') and (w_MuteR2 = '0')) else
 								(w_SineSampleLatchedR1&'0') when (w_MuteR2 = '1') else
 								(w_SineSampleLatchedR2&'0') when (w_MuteR1 = '1');
 

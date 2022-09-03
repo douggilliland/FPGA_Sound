@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FPGA_Sound
-Fri Sep  2 07:30:29 2022
+Fri Sep  2 16:24:15 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -19,75 +19,64 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
  11. General Register Statistics
  12. Registers Packed Into Inferred Megafunctions
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_b011:auto_generated
- 15. Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_c011:auto_generated
- 16. Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_d011:auto_generated
- 17. Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_e011:auto_generated
- 18. Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_f011:auto_generated
- 19. Parameter Settings for User Entity Instance: Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter
- 20. Parameter Settings for User Entity Instance: Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter
- 21. Parameter Settings for User Entity Instance: Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter
- 22. Parameter Settings for User Entity Instance: Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter
- 23. Parameter Settings for User Entity Instance: Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PreScale_Counter
- 24. Parameter Settings for User Entity Instance: Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter
- 25. Parameter Settings for User Entity Instance: Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter
- 26. Parameter Settings for User Entity Instance: Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PreScale_Counter
- 27. Parameter Settings for User Entity Instance: Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter
- 28. Parameter Settings for User Entity Instance: Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter
- 29. Parameter Settings for User Entity Instance: Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter
- 30. Parameter Settings for User Entity Instance: Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr
- 31. Parameter Settings for User Entity Instance: Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr
- 32. Parameter Settings for User Entity Instance: Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|OutReg_Nbits:RegHoldTableVal
- 33. Parameter Settings for User Entity Instance: Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr
- 34. Parameter Settings for User Entity Instance: NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter
- 35. Parameter Settings for User Entity Instance: NoteStepper:NoteStepsL1|counterLdInc:Note_Counter
- 36. Parameter Settings for User Entity Instance: NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter
- 37. Parameter Settings for User Entity Instance: NoteStepper:NoteStepsL2|counterLdInc:Note_Counter
- 38. Parameter Settings for User Entity Instance: NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter
- 39. Parameter Settings for User Entity Instance: NoteStepper:NoteStepsR1|counterLdInc:Note_Counter
- 40. Parameter Settings for User Entity Instance: NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter
- 41. Parameter Settings for User Entity Instance: NoteStepper:NoteStepsR2|counterLdInc:Note_Counter
- 42. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr
- 43. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr
- 44. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|OutReg_Nbits:RegHoldTableVal
- 45. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|counterLdInc:Note_Ctr
- 46. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|counterLdInc:Sine_Ctr
- 47. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|OutReg_Nbits:RegHoldTableVal
- 48. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|counterLdInc:Note_Ctr
- 49. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|counterLdInc:Sine_Ctr
- 50. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|OutReg_Nbits:RegHoldTableVal
- 51. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|counterLdInc:Note_Ctr
- 52. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|counterLdInc:Sine_Ctr
- 53. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|OutReg_Nbits:RegHoldTableVal
- 54. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr
- 55. Parameter Settings for Inferred Entity Instance: Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0
- 56. Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0
- 57. Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0
- 58. Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0
- 59. Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0
- 60. altsyncram Parameter Settings by Entity Instance
- 61. Port Connectivity Checks: "NoteStepper:NoteStepsR2"
- 62. Port Connectivity Checks: "NoteStepper:NoteStepsR1"
- 63. Port Connectivity Checks: "NoteStepper:NoteStepsL2"
- 64. Port Connectivity Checks: "NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter"
- 65. Port Connectivity Checks: "NoteStepper:NoteStepsL1"
- 66. Port Connectivity Checks: "Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr"
- 67. Port Connectivity Checks: "Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr"
- 68. Port Connectivity Checks: "Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr"
- 69. Port Connectivity Checks: "Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter"
- 70. Port Connectivity Checks: "Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter"
- 71. Port Connectivity Checks: "Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter"
- 72. Port Connectivity Checks: "Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PreScale_Counter"
- 73. Port Connectivity Checks: "Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter"
- 74. Port Connectivity Checks: "Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter"
- 75. Port Connectivity Checks: "Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PreScale_Counter"
- 76. Port Connectivity Checks: "Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter"
- 77. Port Connectivity Checks: "Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter"
- 78. Port Connectivity Checks: "Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter"
- 79. Port Connectivity Checks: "Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter"
- 80. Post-Synthesis Netlist Statistics for Top Partition
- 81. Elapsed Time Per Partition
- 82. Analysis & Synthesis Messages
+ 14. Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_b011:auto_generated
+ 15. Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_c011:auto_generated
+ 16. Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_d011:auto_generated
+ 17. Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_e011:auto_generated
+ 18. Parameter Settings for User Entity Instance: Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter
+ 19. Parameter Settings for User Entity Instance: Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter
+ 20. Parameter Settings for User Entity Instance: Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter
+ 21. Parameter Settings for User Entity Instance: Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter
+ 22. Parameter Settings for User Entity Instance: Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PreScale_Counter
+ 23. Parameter Settings for User Entity Instance: Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter
+ 24. Parameter Settings for User Entity Instance: Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter
+ 25. Parameter Settings for User Entity Instance: Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PreScale_Counter
+ 26. Parameter Settings for User Entity Instance: Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter
+ 27. Parameter Settings for User Entity Instance: Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter
+ 28. Parameter Settings for User Entity Instance: Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter
+ 29. Parameter Settings for User Entity Instance: Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr
+ 30. Parameter Settings for User Entity Instance: Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr
+ 31. Parameter Settings for User Entity Instance: Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|OutReg_Nbits:RegHoldTableVal
+ 32. Parameter Settings for User Entity Instance: Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr
+ 33. Parameter Settings for User Entity Instance: ROM_Player:Player|counterLdInc:Note1Hz_Counter
+ 34. Parameter Settings for User Entity Instance: ROM_Player:Player|counterLdInc:Note_Counter
+ 35. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr
+ 36. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr
+ 37. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|OutReg_Nbits:RegHoldTableVal
+ 38. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|counterLdInc:Note_Ctr
+ 39. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|counterLdInc:Sine_Ctr
+ 40. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|OutReg_Nbits:RegHoldTableVal
+ 41. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|counterLdInc:Note_Ctr
+ 42. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|counterLdInc:Sine_Ctr
+ 43. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|OutReg_Nbits:RegHoldTableVal
+ 44. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|counterLdInc:Note_Ctr
+ 45. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|counterLdInc:Sine_Ctr
+ 46. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|OutReg_Nbits:RegHoldTableVal
+ 47. Parameter Settings for User Entity Instance: PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr
+ 48. Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0
+ 49. Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0
+ 50. Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0
+ 51. Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0
+ 52. altsyncram Parameter Settings by Entity Instance
+ 53. Port Connectivity Checks: "ROM_Player:Player|counterLdInc:Note_Counter"
+ 54. Port Connectivity Checks: "ROM_Player:Player|counterLdInc:Note1Hz_Counter"
+ 55. Port Connectivity Checks: "Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr"
+ 56. Port Connectivity Checks: "Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr"
+ 57. Port Connectivity Checks: "Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr"
+ 58. Port Connectivity Checks: "Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter"
+ 59. Port Connectivity Checks: "Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter"
+ 60. Port Connectivity Checks: "Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter"
+ 61. Port Connectivity Checks: "Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PreScale_Counter"
+ 62. Port Connectivity Checks: "Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter"
+ 63. Port Connectivity Checks: "Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter"
+ 64. Port Connectivity Checks: "Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PreScale_Counter"
+ 65. Port Connectivity Checks: "Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter"
+ 66. Port Connectivity Checks: "Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter"
+ 67. Port Connectivity Checks: "Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter"
+ 68. Port Connectivity Checks: "Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter"
+ 69. Post-Synthesis Netlist Statistics for Top Partition
+ 70. Elapsed Time Per Partition
+ 71. Analysis & Synthesis Messages
 
 
 
@@ -114,18 +103,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep  2 07:30:29 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep  2 16:24:14 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; FPGA_Sound                                  ;
 ; Top-level Entity Name              ; FPGA_Sound                                  ;
 ; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; 1,149                                       ;
-;     Total combinational functions  ; 1,149                                       ;
-;     Dedicated logic registers      ; 234                                         ;
-; Total registers                    ; 234                                         ;
+; Total logic elements               ; 604                                         ;
+;     Total combinational functions  ; 604                                         ;
+;     Dedicated logic registers      ; 218                                         ;
+; Total registers                    ; 218                                         ;
 ; Total pins                         ; 10                                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 10,240                                      ;
+; Total memory bits                  ; 8,192                                       ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
@@ -255,10 +244,11 @@ https://fpgasoftware.intel.com/eula.
 ; FPGA_Sound.vhd                              ; yes             ; User VHDL File               ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd                              ;         ;
 ; MiddleCTriangle/Sound_Triangle_Middle_C.vhd ; yes             ; User VHDL File               ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCTriangle/Sound_Triangle_Middle_C.vhd ;         ;
 ; Counters/CounterUpDnLdCnt.vhd               ; yes             ; User VHDL File               ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Counters/CounterUpDnLdCnt.vhd               ;         ;
-; NoteStepper.vhd                             ; yes             ; User VHDL File               ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/NoteStepper.vhd                             ;         ;
 ; ScaleSine/NoteSineCounterTable.vhd          ; yes             ; User VHDL File               ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/NoteSineCounterTable.vhd          ;         ;
 ; ScaleSine/Sound_Sine_Scale.vhd              ; yes             ; User VHDL File               ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/Sound_Sine_Scale.vhd              ;         ;
 ; PWM_Counter.vhd                             ; yes             ; User VHDL File               ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PWM_Counter.vhd                             ;         ;
+; Music/VHDL/JesusLovesMe.vhd                 ; yes             ; User VHDL File               ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Music/VHDL/JesusLovesMe.vhd                 ;         ;
+; ROM_Player/ROM_Player.vhd                   ; yes             ; User VHDL File               ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ROM_Player/ROM_Player.vhd                   ;         ;
 ; altsyncram.tdf                              ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf                               ;         ;
 ; stratix_ram_block.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/stratix_ram_block.inc                        ;         ;
 ; lpm_mux.inc                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.inc                                  ;         ;
@@ -272,7 +262,6 @@ https://fpgasoftware.intel.com/eula.
 ; db/altsyncram_c011.tdf                      ; yes             ; Auto-Generated Megafunction  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/db/altsyncram_c011.tdf                      ;         ;
 ; db/altsyncram_d011.tdf                      ; yes             ; Auto-Generated Megafunction  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/db/altsyncram_d011.tdf                      ;         ;
 ; db/altsyncram_e011.tdf                      ; yes             ; Auto-Generated Megafunction  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/db/altsyncram_e011.tdf                      ;         ;
-; db/altsyncram_f011.tdf                      ; yes             ; Auto-Generated Megafunction  ; C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/db/altsyncram_f011.tdf                      ;         ;
 +---------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------+---------+
 
 
@@ -281,31 +270,31 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 1,149          ;
+; Estimated Total logic elements              ; 604            ;
 ;                                             ;                ;
-; Total combinational functions               ; 1149           ;
+; Total combinational functions               ; 604            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 760            ;
-;     -- 3 input functions                    ; 123            ;
-;     -- <=2 input functions                  ; 266            ;
+;     -- 4 input functions                    ; 287            ;
+;     -- 3 input functions                    ; 93             ;
+;     -- <=2 input functions                  ; 224            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 888            ;
-;     -- arithmetic mode                      ; 261            ;
+;     -- normal mode                          ; 362            ;
+;     -- arithmetic mode                      ; 242            ;
 ;                                             ;                ;
-; Total registers                             ; 234            ;
-;     -- Dedicated logic registers            ; 234            ;
+; Total registers                             ; 218            ;
+;     -- Dedicated logic registers            ; 218            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 10             ;
-; Total memory bits                           ; 10240          ;
+; Total memory bits                           ; 8192           ;
 ;                                             ;                ;
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; i_clk_50~input ;
-; Maximum fan-out                             ; 274            ;
-; Total fan-out                               ; 4964           ;
-; Average fan-out                             ; 3.44           ;
+; Maximum fan-out                             ; 250            ;
+; Total fan-out                               ; 2814           ;
+; Average fan-out                             ; 3.22           ;
 +---------------------------------------------+----------------+
 
 
@@ -314,46 +303,41 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                 ; Entity Name             ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
-; |FPGA_Sound                                     ; 1149 (0)            ; 234 (0)                   ; 10240       ; 0            ; 0       ; 0         ; 10   ; 0            ; |FPGA_Sound                                                                                                                                         ; FPGA_Sound              ; work         ;
-;    |NoteStepper:NoteStepsL1|                    ; 61 (10)             ; 26 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|NoteStepper:NoteStepsL1                                                                                                                 ; NoteStepper             ; work         ;
-;       |counterLdInc:Note1Hz_Counter|            ; 37 (37)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter                                                                                    ; counterLdInc            ; work         ;
-;       |counterLdInc:Note_Counter|               ; 14 (14)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|NoteStepper:NoteStepsL1|counterLdInc:Note_Counter                                                                                       ; counterLdInc            ; work         ;
-;    |NoteStepper:NoteStepsL2|                    ; 16 (2)              ; 7 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|NoteStepper:NoteStepsL2                                                                                                                 ; NoteStepper             ; work         ;
-;       |counterLdInc:Note_Counter|               ; 14 (14)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|NoteStepper:NoteStepsL2|counterLdInc:Note_Counter                                                                                       ; counterLdInc            ; work         ;
-;    |NoteStepper:NoteStepsR1|                    ; 15 (1)              ; 7 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|NoteStepper:NoteStepsR1                                                                                                                 ; NoteStepper             ; work         ;
-;       |counterLdInc:Note_Counter|               ; 14 (14)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|NoteStepper:NoteStepsR1|counterLdInc:Note_Counter                                                                                       ; counterLdInc            ; work         ;
-;    |NoteStepper:NoteStepsR2|                    ; 15 (1)              ; 7 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|NoteStepper:NoteStepsR2                                                                                                                 ; NoteStepper             ; work         ;
-;       |counterLdInc:Note_Counter|               ; 14 (14)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|NoteStepper:NoteStepsR2|counterLdInc:Note_Counter                                                                                       ; counterLdInc            ; work         ;
-;    |PolySound_Sine_Scale:PolySound|             ; 522 (79)            ; 108 (2)                   ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound                                                                                                          ; PolySound_Sine_Scale    ; work         ;
-;       |PWM_Counter:PWM|                         ; 10 (0)              ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|PWM_Counter:PWM                                                                                          ; PWM_Counter             ; work         ;
+; |FPGA_Sound                                     ; 604 (0)             ; 218 (0)                   ; 8192        ; 0            ; 0       ; 0         ; 10   ; 0            ; |FPGA_Sound                                                                                                                                         ; FPGA_Sound              ; work         ;
+;    |PolySound_Sine_Scale:PolySound|             ; 242 (74)            ; 108 (2)                   ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound                                                                                                          ; PolySound_Sine_Scale    ; work         ;
+;       |PWM_Counter:PWM|                         ; 13 (3)              ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|PWM_Counter:PWM                                                                                          ; PWM_Counter             ; work         ;
 ;          |counterLdInc:PWM_Ctr|                 ; 10 (10)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr                                                                     ; counterLdInc            ; work         ;
-;       |ScaleSineGen:sineCounterL1|              ; 44 (20)             ; 24 (0)                    ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1                                                                               ; ScaleSineGen            ; work         ;
+;       |ScaleSineGen:sineCounterL1|              ; 41 (13)             ; 24 (0)                    ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1                                                                               ; ScaleSineGen            ; work         ;
+;          |NoteSineCounterTable:NoteScalerTable| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|NoteSineCounterTable:NoteScalerTable                                          ; NoteSineCounterTable    ; work         ;
 ;          |SineTable_256:SineTblROM|             ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM                                                      ; SineTable_256           ; work         ;
 ;             |altsyncram:Mux6_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0                                ; altsyncram              ; work         ;
-;                |altsyncram_c011:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_c011:auto_generated ; altsyncram_c011         ; work         ;
+;                |altsyncram_b011:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_b011:auto_generated ; altsyncram_b011         ; work         ;
 ;          |counterLdInc:Note_Ctr|                ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr                                                         ; counterLdInc            ; work         ;
 ;          |counterLdInc:Sine_Ctr|                ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr                                                         ; counterLdInc            ; work         ;
-;       |ScaleSineGen:sineCounterL2|              ; 130 (17)            ; 24 (0)                    ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2                                                                               ; ScaleSineGen            ; work         ;
-;          |NoteSineCounterTable:NoteScalerTable| ; 89 (89)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|NoteSineCounterTable:NoteScalerTable                                          ; NoteSineCounterTable    ; work         ;
+;       |ScaleSineGen:sineCounterL2|              ; 46 (11)             ; 24 (0)                    ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2                                                                               ; ScaleSineGen            ; work         ;
+;          |NoteSineCounterTable:NoteScalerTable| ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|NoteSineCounterTable:NoteScalerTable                                          ; NoteSineCounterTable    ; work         ;
 ;          |SineTable_256:SineTblROM|             ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM                                                      ; SineTable_256           ; work         ;
 ;             |altsyncram:Mux6_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0                                ; altsyncram              ; work         ;
-;                |altsyncram_d011:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_d011:auto_generated ; altsyncram_d011         ; work         ;
+;                |altsyncram_c011:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_c011:auto_generated ; altsyncram_c011         ; work         ;
 ;          |counterLdInc:Note_Ctr|                ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|counterLdInc:Note_Ctr                                                         ; counterLdInc            ; work         ;
 ;          |counterLdInc:Sine_Ctr|                ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|counterLdInc:Sine_Ctr                                                         ; counterLdInc            ; work         ;
-;       |ScaleSineGen:sineCounterR1|              ; 130 (17)            ; 24 (0)                    ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1                                                                               ; ScaleSineGen            ; work         ;
-;          |NoteSineCounterTable:NoteScalerTable| ; 89 (89)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|NoteSineCounterTable:NoteScalerTable                                          ; NoteSineCounterTable    ; work         ;
+;       |ScaleSineGen:sineCounterR1|              ; 31 (7)              ; 24 (0)                    ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1                                                                               ; ScaleSineGen            ; work         ;
 ;          |SineTable_256:SineTblROM|             ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM                                                      ; SineTable_256           ; work         ;
 ;             |altsyncram:Mux6_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0                                ; altsyncram              ; work         ;
-;                |altsyncram_e011:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_e011:auto_generated ; altsyncram_e011         ; work         ;
+;                |altsyncram_d011:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_d011:auto_generated ; altsyncram_d011         ; work         ;
 ;          |counterLdInc:Note_Ctr|                ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|counterLdInc:Note_Ctr                                                         ; counterLdInc            ; work         ;
 ;          |counterLdInc:Sine_Ctr|                ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|counterLdInc:Sine_Ctr                                                         ; counterLdInc            ; work         ;
-;       |ScaleSineGen:sineCounterR2|              ; 129 (17)            ; 24 (0)                    ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2                                                                               ; ScaleSineGen            ; work         ;
-;          |NoteSineCounterTable:NoteScalerTable| ; 88 (88)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|NoteSineCounterTable:NoteScalerTable                                          ; NoteSineCounterTable    ; work         ;
+;       |ScaleSineGen:sineCounterR2|              ; 37 (12)             ; 24 (0)                    ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2                                                                               ; ScaleSineGen            ; work         ;
+;          |NoteSineCounterTable:NoteScalerTable| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|NoteSineCounterTable:NoteScalerTable                                          ; NoteSineCounterTable    ; work         ;
 ;          |SineTable_256:SineTblROM|             ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM                                                      ; SineTable_256           ; work         ;
 ;             |altsyncram:Mux6_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0                                ; altsyncram              ; work         ;
-;                |altsyncram_f011:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_f011:auto_generated ; altsyncram_f011         ; work         ;
+;                |altsyncram_e011:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_e011:auto_generated ; altsyncram_e011         ; work         ;
 ;          |counterLdInc:Note_Ctr|                ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|counterLdInc:Note_Ctr                                                         ; counterLdInc            ; work         ;
 ;          |counterLdInc:Sine_Ctr|                ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|counterLdInc:Sine_Ctr                                                         ; counterLdInc            ; work         ;
+;    |ROM_Player:Player|                          ; 58 (12)             ; 31 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|ROM_Player:Player                                                                                                                       ; ROM_Player              ; work         ;
+;       |JesusLovesMe:Music_Score|                ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|ROM_Player:Player|JesusLovesMe:Music_Score                                                                                              ; JesusLovesMe            ; work         ;
+;       |counterLdInc:Note1Hz_Counter|            ; 26 (26)             ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|ROM_Player:Player|counterLdInc:Note1Hz_Counter                                                                                          ; counterLdInc            ; work         ;
+;       |counterLdInc:Note_Counter|               ; 10 (10)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|ROM_Player:Player|counterLdInc:Note_Counter                                                                                             ; counterLdInc            ; work         ;
 ;    |Sound_PWM_Middle_C:SineWCounter|            ; 161 (13)            ; 19 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_PWM_Middle_C:SineWCounter                                                                                                         ; Sound_PWM_Middle_C      ; work         ;
 ;       |SineTable_256:SineWaveROM|               ; 130 (130)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|SineTable_256:SineWaveROM                                                                               ; SineTable_256           ; work         ;
 ;       |counterLdInc:PWMCounter|                 ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter                                                                                 ; counterLdInc            ; work         ;
@@ -362,16 +346,10 @@ https://fpgasoftware.intel.com/eula.
 ;    |Sound_SQWave_Middle_C:SQWCounter|           ; 43 (14)             ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_SQWave_Middle_C:SQWCounter                                                                                                        ; Sound_SQWave_Middle_C   ; work         ;
 ;       |counterLdInc:SquareWaveCounter|          ; 29 (29)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_SQWave_Middle_C:SQWCounter|counterLdInc:SquareWaveCounter                                                                         ; counterLdInc            ; work         ;
 ;    |Sound_Sawtooth_Middle_C:SawWCounter|        ; 9 (9)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sawtooth_Middle_C:SawWCounter                                                                                                     ; Sound_Sawtooth_Middle_C ; work         ;
-;    |Sound_Sine_Scale:SineScale|                 ; 96 (9)              ; 1 (1)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sine_Scale:SineScale                                                                                                              ; Sound_Sine_Scale        ; work         ;
-;       |PWM_Counter:PWM|                         ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sine_Scale:SineScale|PWM_Counter:PWM                                                                                              ; PWM_Counter             ; work         ;
-;       |ScaleSineGen:sineCounter|                ; 84 (0)              ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter                                                                                     ; ScaleSineGen            ; work         ;
-;          |NoteSineCounterTable:NoteScalerTable| ; 84 (84)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|NoteSineCounterTable:NoteScalerTable                                                ; NoteSineCounterTable    ; work         ;
-;          |SineTable_256:SineTblROM|             ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|SineTable_256:SineTblROM                                                            ; SineTable_256           ; work         ;
-;             |altsyncram:Mux6_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0                                      ; altsyncram              ; work         ;
-;                |altsyncram_b011:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_b011:auto_generated       ; altsyncram_b011         ; work         ;
-;    |Sound_Square_Scale:SquareScale|             ; 175 (9)             ; 21 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Square_Scale:SquareScale                                                                                                          ; Sound_Square_Scale      ; work         ;
-;       |SoundTable01:NoteSquareSoundTable|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Square_Scale:SquareScale|SoundTable01:NoteSquareSoundTable                                                                        ; SoundTable01            ; work         ;
-;       |counterLdInc:PreScale_Counter|           ; 164 (164)           ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter                                                                            ; counterLdInc            ; work         ;
+;    |Sound_Sine_Scale:SineScale|                 ; 9 (9)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Sine_Scale:SineScale                                                                                                              ; Sound_Sine_Scale        ; work         ;
+;    |Sound_Square_Scale:SquareScale|             ; 46 (9)              ; 21 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Square_Scale:SquareScale                                                                                                          ; Sound_Square_Scale      ; work         ;
+;       |SoundTable01:NoteSquareSoundTable|       ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Square_Scale:SquareScale|SoundTable01:NoteSquareSoundTable                                                                        ; SoundTable01            ; work         ;
+;       |counterLdInc:PreScale_Counter|           ; 29 (29)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter                                                                            ; counterLdInc            ; work         ;
 ;    |Sound_Triangle_Middle_C:TriangleMiddleC|    ; 36 (19)             ; 17 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Triangle_Middle_C:TriangleMiddleC                                                                                                 ; Sound_Triangle_Middle_C ; work         ;
 ;       |CounterUpDnLdCnt:RampCounter|            ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Triangle_Middle_C:TriangleMiddleC|CounterUpDnLdCnt:RampCounter                                                                    ; CounterUpDnLdCnt        ; work         ;
 ;       |counterLdInc:PWMCounter|                 ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA_Sound|Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PWMCounter                                                                         ; counterLdInc            ; work         ;
@@ -384,172 +362,110 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------------------------+
 ; Name                                                                                                                                               ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                            ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------------------------+
-; PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_c011:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; FPGA_Sound.FPGA_Sound1.rtl.mif ;
-; PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_d011:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; FPGA_Sound.FPGA_Sound2.rtl.mif ;
-; PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_e011:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; FPGA_Sound.FPGA_Sound3.rtl.mif ;
-; PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_f011:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; FPGA_Sound.FPGA_Sound4.rtl.mif ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_b011:auto_generated|ALTSYNCRAM       ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; FPGA_Sound.FPGA_Sound0.rtl.mif ;
+; PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_b011:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; FPGA_Sound.FPGA_Sound0.rtl.mif ;
+; PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_c011:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; FPGA_Sound.FPGA_Sound1.rtl.mif ;
+; PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_d011:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; FPGA_Sound.FPGA_Sound2.rtl.mif ;
+; PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_e011:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; FPGA_Sound.FPGA_Sound3.rtl.mif ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; Sound_SQWave_Middle_C:SQWCounter|w_SQWave          ; GND                 ; yes                    ;
-; Sound_Triangle_Middle_C:TriangleMiddleC|w_Up       ; GND                 ; yes                    ;
-; Number of user-specified and inferred latches = 2  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
++-------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                   ;
++--------------------------------------------------------+---------------------+------------------------+
+; Latch Name                                             ; Latch Enable Signal ; Free of Timing Hazards ;
++--------------------------------------------------------+---------------------+------------------------+
+; Sound_SQWave_Middle_C:SQWCounter|w_SQWave              ; GND                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[8] ; VCC                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[7] ; VCC                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[6] ; VCC                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[5] ; VCC                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[4] ; VCC                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[3] ; VCC                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[2] ; VCC                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[1] ; VCC                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[8] ; VCC                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[7] ; VCC                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[6] ; VCC                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[5] ; VCC                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[4] ; VCC                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[3] ; VCC                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[2] ; VCC                 ; yes                    ;
+; PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[1] ; VCC                 ; yes                    ;
+; Sound_Triangle_Middle_C:TriangleMiddleC|w_Up           ; GND                 ; yes                    ;
+; Number of user-specified and inferred latches = 18     ;                     ;                        ;
++--------------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                          ;
-+-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
-; Register name                                                                       ; Reason for Removal                                                                                    ;
-+-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[7]                ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[7]                          ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[6]                ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[6]                          ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[5]                ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[5]                          ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[4]                ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[4]                          ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[3]                ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[3]                          ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[2]                ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[2]                          ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[1]                ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[1]                          ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[0]                ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[0]                          ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[7]               ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[7]                      ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[6]               ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[6]                      ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[5]               ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[5]                      ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[4]               ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[4]                      ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[3]               ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[3]                      ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[2]               ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[2]                      ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[1]               ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[1]                      ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[0]               ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[0]                      ;
-; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[9]            ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[9]              ;
-; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[8]            ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[8]              ;
-; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[7]            ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[7]              ;
-; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[6]            ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[6]              ;
-; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[5]            ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[5]              ;
-; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[4]            ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[4]              ;
-; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[3]            ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[3]              ;
-; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[2]            ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[2]              ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PreScale_Counter|Pre_Q[1]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter|Pre_Q[1]                    ;
-; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PreScale_Counter|Pre_Q[0]          ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter|Pre_Q[0]                    ;
-; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[1]            ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[1]              ;
-; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[0]            ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[0]              ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[25]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[25]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[25]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[25]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[25]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[25]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[24]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[24]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[24]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[24]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[24]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[24]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[23]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[23]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[23]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[23]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[23]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[23]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[22]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[22]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[22]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[22]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[22]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[22]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[21]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[21]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[21]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[21]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[21]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[21]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[20]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[20]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[20]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[20]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[20]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[20]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[19]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[19]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[19]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[19]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[19]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[19]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[18]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[18]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[18]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[18]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[18]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[18]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[17]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[17]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[17]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[17]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[17]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[17]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[16]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[16]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[16]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[16]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[16]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[16]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[15]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[15]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[15]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[15]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[15]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[15]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[14]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[14]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[14]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[14]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[14]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[14]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[13]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[13]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[13]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[13]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[13]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[13]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[12]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[12]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[12]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[12]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[12]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[12]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[11]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[11]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[11]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[11]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[11]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[11]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[10]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[10]                            ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[10]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[10]                            ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[10]                      ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[10]                            ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[9]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[9]                             ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[9]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[9]                             ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[9]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[9]                             ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[8]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[8]                             ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[8]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[8]                             ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[8]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[8]                             ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[7]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[7]                             ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[7]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[7]                             ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[7]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[7]                             ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[6]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[6]                             ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[6]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[6]                             ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[6]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[6]                             ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[5]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[5]                             ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[5]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[5]                             ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[5]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[5]                             ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[4]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[4]                             ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[4]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[4]                             ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[4]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[4]                             ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[3]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[3]                             ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[3]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[3]                             ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[3]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[3]                             ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[2]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[2]                             ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[2]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[2]                             ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[2]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[2]                             ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[1]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[1]                             ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[1]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[1]                             ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[1]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[1]                             ;
-; NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter|Pre_Q[0]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[0]                             ;
-; NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter|Pre_Q[0]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[0]                             ;
-; NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter|Pre_Q[0]                       ; Merged with NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[0]                             ;
-; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PreScale_Counter|Pre_Q[0]      ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[0]              ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[0]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[0]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[1]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[1]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[2]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[2]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[3]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[3]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[4]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[4]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[5]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[5]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[6]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[6]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[7]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[7]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[15] ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[15] ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[14] ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[14] ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[13] ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[13] ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[12] ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[12] ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[11] ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[11] ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[10] ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[10] ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[9]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[9]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[8]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[8]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[7]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[7]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[6]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[6]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[5]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[5]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[4]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[4]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[3]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[3]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[2]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[2]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[1]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[1]  ;
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[0]  ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[0]  ;
-; NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[0]                       ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[0]              ;
-; NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[1]                       ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[1]              ;
-; NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[2]                       ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[2]              ;
-; NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[3]                       ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[3]              ;
-; NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[4]                       ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[4]              ;
-; NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[5]                       ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[5]              ;
-; NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter|Pre_Q[6]                       ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[6]              ;
-; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PreScale_Counter|Pre_Q[1]      ; Stuck at GND due to stuck port data_in                                                                ;
-; Total Number of Removed Registers = 139                                             ;                                                                                                       ;
-+-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                      ;
++-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+; Register name                                                                             ; Reason for Removal                                                                                          ;
++-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[7]                      ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[7]                                ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[6]                      ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[6]                                ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[5]                      ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[5]                                ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[4]                      ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[4]                                ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[3]                      ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[3]                                ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[2]                      ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[2]                                ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[1]                      ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[1]                                ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PWMCounter|Pre_Q[0]                      ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PWMCounter|Pre_Q[0]                                ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[7]                     ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[7]                            ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[6]                     ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[6]                            ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[5]                     ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[5]                            ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[4]                     ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[4]                            ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[3]                     ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[3]                            ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[2]                     ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[2]                            ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[1]                     ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[1]                            ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:RampCounter|Pre_Q[0]                     ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:ROMAddrCounter|Pre_Q[0]                            ;
+; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[9]                  ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[9]                    ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|OutReg_Nbits:RegHoldTableVal|Q_tmp[7] ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|OutReg_Nbits:RegHoldTableVal|Q_tmp[7] ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|OutReg_Nbits:RegHoldTableVal|Q_tmp[6] ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|OutReg_Nbits:RegHoldTableVal|Q_tmp[6] ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|OutReg_Nbits:RegHoldTableVal|Q_tmp[2] ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|OutReg_Nbits:RegHoldTableVal|Q_tmp[2] ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|OutReg_Nbits:RegHoldTableVal|Q_tmp[0] ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|OutReg_Nbits:RegHoldTableVal|Q_tmp[0] ;
+; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[8]                  ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[8]                    ;
+; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[7]                  ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[7]                    ;
+; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[6]                  ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[6]                    ;
+; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[5]                  ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[5]                    ;
+; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[4]                  ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[4]                    ;
+; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[3]                  ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[3]                    ;
+; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[2]                  ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[2]                    ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PreScale_Counter|Pre_Q[1]                ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter|Pre_Q[1]                          ;
+; Sound_Sawtooth_Middle_C:SawWCounter|counterLdInc:PreScale_Counter|Pre_Q[0]                ; Merged with Sound_PWM_Middle_C:SineWCounter|counterLdInc:PreScale_Counter|Pre_Q[0]                          ;
+; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[1]                  ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[1]                    ;
+; Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[0]                  ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[0]                    ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[7]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[7]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[6]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[6]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[5]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[5]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[4]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[4]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[3]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[3]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[2]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[2]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[1]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[1]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Sine_Ctr|Pre_Q[0]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Sine_Ctr|Pre_Q[0]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[15]       ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[15]       ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[14]       ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[14]       ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[13]       ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[13]       ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[12]       ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[12]       ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[11]       ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[11]       ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[10]       ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[10]       ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[9]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[9]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[8]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[8]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[7]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[7]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[6]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[6]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[5]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[5]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[4]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[4]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[3]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[3]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[2]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[2]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[1]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[1]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|counterLdInc:Note_Ctr|Pre_Q[0]        ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|counterLdInc:Note_Ctr|Pre_Q[0]        ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|OutReg_Nbits:RegHoldTableVal|Q_tmp[5] ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|OutReg_Nbits:RegHoldTableVal|Q_tmp[5] ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|OutReg_Nbits:RegHoldTableVal|Q_tmp[4] ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|OutReg_Nbits:RegHoldTableVal|Q_tmp[4] ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|OutReg_Nbits:RegHoldTableVal|Q_tmp[3] ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|OutReg_Nbits:RegHoldTableVal|Q_tmp[3] ;
+; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|OutReg_Nbits:RegHoldTableVal|Q_tmp[1] ; Merged with PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|OutReg_Nbits:RegHoldTableVal|Q_tmp[1] ;
+; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PreScale_Counter|Pre_Q[0]            ; Merged with PolySound_Sine_Scale:PolySound|PWM_Counter:PWM|counterLdInc:PWM_Ctr|Pre_Q[0]                    ;
+; Sound_Triangle_Middle_C:TriangleMiddleC|counterLdInc:PreScale_Counter|Pre_Q[1]            ; Stuck at GND due to stuck port data_in                                                                      ;
+; Total Number of Removed Registers = 62                                                    ;                                                                                                             ;
++-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -557,9 +473,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 234   ;
-; Number of registers using Synchronous Clear  ; 64    ;
-; Number of registers using Synchronous Load   ; 20    ;
+; Total registers                              ; 218   ;
+; Number of registers using Synchronous Clear  ; 90    ;
+; Number of registers using Synchronous Load   ; 21    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 57    ;
@@ -572,7 +488,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------+
 ; Register Name                                                                                      ; Megafunction                                                                                  ; Type ;
 +----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------+
-; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|OutReg_Nbits:RegHoldTableVal|Q_tmp[0..7]       ; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|SineTable_256:SineTblROM|Mux6_rtl_0       ; ROM  ;
 ; PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|OutReg_Nbits:RegHoldTableVal|Q_tmp[0..7] ; PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|Mux6_rtl_0 ; ROM  ;
 ; PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|OutReg_Nbits:RegHoldTableVal|Q_tmp[0..7] ; PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|Mux6_rtl_0 ; ROM  ;
 ; PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|OutReg_Nbits:RegHoldTableVal|Q_tmp[0..7] ; PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|Mux6_rtl_0 ; ROM  ;
@@ -580,32 +495,20 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------+
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |FPGA_Sound|NoteStepper:NoteStepsL1|counterLdInc:Note_Counter|Pre_Q[0]             ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |FPGA_Sound|NoteStepper:NoteStepsL2|counterLdInc:Note_Counter|Pre_Q[5]             ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |FPGA_Sound|NoteStepper:NoteStepsR1|counterLdInc:Note_Counter|Pre_Q[0]             ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |FPGA_Sound|NoteStepper:NoteStepsR2|counterLdInc:Note_Counter|Pre_Q[2]             ;
-; 88:1               ; 19 bits   ; 1102 LEs      ; 1102 LEs             ; 0 LEs                  ; Yes        ; |FPGA_Sound|Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[12] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[2]                 ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[8]                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_b011:auto_generated ;
-+---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                                                         ;
-+---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                          ;
-+---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |FPGA_Sound|ROM_Player:Player|counterLdInc:Note_Counter|Pre_Q[4]                  ;
+; 9:1                ; 9 bits    ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; Yes        ; |FPGA_Sound|Sound_Square_Scale:SquareScale|counterLdInc:PreScale_Counter|Pre_Q[0] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[8]                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |FPGA_Sound|PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[3]                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_c011:auto_generated ;
+; Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_b011:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                                               ;
 +---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------+
@@ -614,7 +517,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_d011:auto_generated ;
+; Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_c011:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                                               ;
 +---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------+
@@ -623,7 +526,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_e011:auto_generated ;
+; Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_d011:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                                               ;
 +---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------+
@@ -632,7 +535,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_f011:auto_generated ;
+; Source assignments for PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0|altsyncram_e011:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                                               ;
 +---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------+
@@ -790,83 +693,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter ;
-+----------------+-------+--------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                     ;
-+----------------+-------+--------------------------------------------------------------------------+
-; n              ; 26    ; Signed Integer                                                           ;
-+----------------+-------+--------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROM_Player:Player|counterLdInc:Note1Hz_Counter ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; n              ; 26    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: NoteStepper:NoteStepsL1|counterLdInc:Note_Counter ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; n              ; 7     ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: NoteStepper:NoteStepsL2|counterLdInc:Note1Hz_Counter ;
-+----------------+-------+--------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                     ;
-+----------------+-------+--------------------------------------------------------------------------+
-; n              ; 26    ; Signed Integer                                                           ;
-+----------------+-------+--------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: NoteStepper:NoteStepsL2|counterLdInc:Note_Counter ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; n              ; 7     ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: NoteStepper:NoteStepsR1|counterLdInc:Note1Hz_Counter ;
-+----------------+-------+--------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                     ;
-+----------------+-------+--------------------------------------------------------------------------+
-; n              ; 26    ; Signed Integer                                                           ;
-+----------------+-------+--------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: NoteStepper:NoteStepsR1|counterLdInc:Note_Counter ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; n              ; 7     ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: NoteStepper:NoteStepsR2|counterLdInc:Note1Hz_Counter ;
-+----------------+-------+--------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                     ;
-+----------------+-------+--------------------------------------------------------------------------+
-; n              ; 26    ; Signed Integer                                                           ;
-+----------------+-------+--------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: NoteStepper:NoteStepsR2|counterLdInc:Note_Counter ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; n              ; 7     ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROM_Player:Player|counterLdInc:Note_Counter ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; n              ; 5     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1000,69 +843,69 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0 ;
-+------------------------------------+--------------------------------+-------------------------------------------------------------------------------+
-; Parameter Name                     ; Value                          ; Type                                                                          ;
-+------------------------------------+--------------------------------+-------------------------------------------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                              ; Untyped                                                                       ;
-; AUTO_CARRY_CHAINS                  ; ON                             ; AUTO_CARRY                                                                    ;
-; IGNORE_CARRY_BUFFERS               ; OFF                            ; IGNORE_CARRY                                                                  ;
-; AUTO_CASCADE_CHAINS                ; ON                             ; AUTO_CASCADE                                                                  ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                            ; IGNORE_CASCADE                                                                ;
-; WIDTH_BYTEENA                      ; 1                              ; Untyped                                                                       ;
-; OPERATION_MODE                     ; ROM                            ; Untyped                                                                       ;
-; WIDTH_A                            ; 8                              ; Untyped                                                                       ;
-; WIDTHAD_A                          ; 8                              ; Untyped                                                                       ;
-; NUMWORDS_A                         ; 256                            ; Untyped                                                                       ;
-; OUTDATA_REG_A                      ; UNREGISTERED                   ; Untyped                                                                       ;
-; ADDRESS_ACLR_A                     ; NONE                           ; Untyped                                                                       ;
-; OUTDATA_ACLR_A                     ; NONE                           ; Untyped                                                                       ;
-; WRCONTROL_ACLR_A                   ; NONE                           ; Untyped                                                                       ;
-; INDATA_ACLR_A                      ; NONE                           ; Untyped                                                                       ;
-; BYTEENA_ACLR_A                     ; NONE                           ; Untyped                                                                       ;
-; WIDTH_B                            ; 1                              ; Untyped                                                                       ;
-; WIDTHAD_B                          ; 1                              ; Untyped                                                                       ;
-; NUMWORDS_B                         ; 1                              ; Untyped                                                                       ;
-; INDATA_REG_B                       ; CLOCK1                         ; Untyped                                                                       ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                         ; Untyped                                                                       ;
-; RDCONTROL_REG_B                    ; CLOCK1                         ; Untyped                                                                       ;
-; ADDRESS_REG_B                      ; CLOCK1                         ; Untyped                                                                       ;
-; OUTDATA_REG_B                      ; UNREGISTERED                   ; Untyped                                                                       ;
-; BYTEENA_REG_B                      ; CLOCK1                         ; Untyped                                                                       ;
-; INDATA_ACLR_B                      ; NONE                           ; Untyped                                                                       ;
-; WRCONTROL_ACLR_B                   ; NONE                           ; Untyped                                                                       ;
-; ADDRESS_ACLR_B                     ; NONE                           ; Untyped                                                                       ;
-; OUTDATA_ACLR_B                     ; NONE                           ; Untyped                                                                       ;
-; RDCONTROL_ACLR_B                   ; NONE                           ; Untyped                                                                       ;
-; BYTEENA_ACLR_B                     ; NONE                           ; Untyped                                                                       ;
-; WIDTH_BYTEENA_A                    ; 1                              ; Untyped                                                                       ;
-; WIDTH_BYTEENA_B                    ; 1                              ; Untyped                                                                       ;
-; RAM_BLOCK_TYPE                     ; AUTO                           ; Untyped                                                                       ;
-; BYTE_SIZE                          ; 8                              ; Untyped                                                                       ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                      ; Untyped                                                                       ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ           ; Untyped                                                                       ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ           ; Untyped                                                                       ;
-; INIT_FILE                          ; FPGA_Sound.FPGA_Sound0.rtl.mif ; Untyped                                                                       ;
-; INIT_FILE_LAYOUT                   ; PORT_A                         ; Untyped                                                                       ;
-; MAXIMUM_DEPTH                      ; 0                              ; Untyped                                                                       ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL                         ; Untyped                                                                       ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                         ; Untyped                                                                       ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                         ; Untyped                                                                       ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                         ; Untyped                                                                       ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                ; Untyped                                                                       ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                ; Untyped                                                                       ;
-; ENABLE_ECC                         ; FALSE                          ; Untyped                                                                       ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                          ; Untyped                                                                       ;
-; WIDTH_ECCSTATUS                    ; 3                              ; Untyped                                                                       ;
-; DEVICE_FAMILY                      ; Cyclone 10 LP                  ; Untyped                                                                       ;
-; CBXI_PARAMETER                     ; altsyncram_b011                ; Untyped                                                                       ;
-+------------------------------------+--------------------------------+-------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0 ;
++------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
+; Parameter Name                     ; Value                          ; Type                                                                                ;
++------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                              ; Untyped                                                                             ;
+; AUTO_CARRY_CHAINS                  ; ON                             ; AUTO_CARRY                                                                          ;
+; IGNORE_CARRY_BUFFERS               ; OFF                            ; IGNORE_CARRY                                                                        ;
+; AUTO_CASCADE_CHAINS                ; ON                             ; AUTO_CASCADE                                                                        ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                            ; IGNORE_CASCADE                                                                      ;
+; WIDTH_BYTEENA                      ; 1                              ; Untyped                                                                             ;
+; OPERATION_MODE                     ; ROM                            ; Untyped                                                                             ;
+; WIDTH_A                            ; 8                              ; Untyped                                                                             ;
+; WIDTHAD_A                          ; 8                              ; Untyped                                                                             ;
+; NUMWORDS_A                         ; 256                            ; Untyped                                                                             ;
+; OUTDATA_REG_A                      ; UNREGISTERED                   ; Untyped                                                                             ;
+; ADDRESS_ACLR_A                     ; NONE                           ; Untyped                                                                             ;
+; OUTDATA_ACLR_A                     ; NONE                           ; Untyped                                                                             ;
+; WRCONTROL_ACLR_A                   ; NONE                           ; Untyped                                                                             ;
+; INDATA_ACLR_A                      ; NONE                           ; Untyped                                                                             ;
+; BYTEENA_ACLR_A                     ; NONE                           ; Untyped                                                                             ;
+; WIDTH_B                            ; 1                              ; Untyped                                                                             ;
+; WIDTHAD_B                          ; 1                              ; Untyped                                                                             ;
+; NUMWORDS_B                         ; 1                              ; Untyped                                                                             ;
+; INDATA_REG_B                       ; CLOCK1                         ; Untyped                                                                             ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                         ; Untyped                                                                             ;
+; RDCONTROL_REG_B                    ; CLOCK1                         ; Untyped                                                                             ;
+; ADDRESS_REG_B                      ; CLOCK1                         ; Untyped                                                                             ;
+; OUTDATA_REG_B                      ; UNREGISTERED                   ; Untyped                                                                             ;
+; BYTEENA_REG_B                      ; CLOCK1                         ; Untyped                                                                             ;
+; INDATA_ACLR_B                      ; NONE                           ; Untyped                                                                             ;
+; WRCONTROL_ACLR_B                   ; NONE                           ; Untyped                                                                             ;
+; ADDRESS_ACLR_B                     ; NONE                           ; Untyped                                                                             ;
+; OUTDATA_ACLR_B                     ; NONE                           ; Untyped                                                                             ;
+; RDCONTROL_ACLR_B                   ; NONE                           ; Untyped                                                                             ;
+; BYTEENA_ACLR_B                     ; NONE                           ; Untyped                                                                             ;
+; WIDTH_BYTEENA_A                    ; 1                              ; Untyped                                                                             ;
+; WIDTH_BYTEENA_B                    ; 1                              ; Untyped                                                                             ;
+; RAM_BLOCK_TYPE                     ; AUTO                           ; Untyped                                                                             ;
+; BYTE_SIZE                          ; 8                              ; Untyped                                                                             ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                      ; Untyped                                                                             ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ           ; Untyped                                                                             ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ           ; Untyped                                                                             ;
+; INIT_FILE                          ; FPGA_Sound.FPGA_Sound0.rtl.mif ; Untyped                                                                             ;
+; INIT_FILE_LAYOUT                   ; PORT_A                         ; Untyped                                                                             ;
+; MAXIMUM_DEPTH                      ; 0                              ; Untyped                                                                             ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                         ; Untyped                                                                             ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                         ; Untyped                                                                             ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                         ; Untyped                                                                             ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                         ; Untyped                                                                             ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                ; Untyped                                                                             ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                ; Untyped                                                                             ;
+; ENABLE_ECC                         ; FALSE                          ; Untyped                                                                             ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                          ; Untyped                                                                             ;
+; WIDTH_ECCSTATUS                    ; 3                              ; Untyped                                                                             ;
+; DEVICE_FAMILY                      ; Cyclone 10 LP                  ; Untyped                                                                             ;
+; CBXI_PARAMETER                     ; altsyncram_b011                ; Untyped                                                                             ;
++------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0 ;
+; Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0 ;
 +------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
 ; Parameter Name                     ; Value                          ; Type                                                                                ;
 +------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
@@ -1123,7 +966,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0 ;
+; Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0 ;
 +------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
 ; Parameter Name                     ; Value                          ; Type                                                                                ;
 +------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
@@ -1184,7 +1027,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0 ;
+; Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0 ;
 +------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
 ; Parameter Name                     ; Value                          ; Type                                                                                ;
 +------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
@@ -1244,84 +1087,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0 ;
-+------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
-; Parameter Name                     ; Value                          ; Type                                                                                ;
-+------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                              ; Untyped                                                                             ;
-; AUTO_CARRY_CHAINS                  ; ON                             ; AUTO_CARRY                                                                          ;
-; IGNORE_CARRY_BUFFERS               ; OFF                            ; IGNORE_CARRY                                                                        ;
-; AUTO_CASCADE_CHAINS                ; ON                             ; AUTO_CASCADE                                                                        ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                            ; IGNORE_CASCADE                                                                      ;
-; WIDTH_BYTEENA                      ; 1                              ; Untyped                                                                             ;
-; OPERATION_MODE                     ; ROM                            ; Untyped                                                                             ;
-; WIDTH_A                            ; 8                              ; Untyped                                                                             ;
-; WIDTHAD_A                          ; 8                              ; Untyped                                                                             ;
-; NUMWORDS_A                         ; 256                            ; Untyped                                                                             ;
-; OUTDATA_REG_A                      ; UNREGISTERED                   ; Untyped                                                                             ;
-; ADDRESS_ACLR_A                     ; NONE                           ; Untyped                                                                             ;
-; OUTDATA_ACLR_A                     ; NONE                           ; Untyped                                                                             ;
-; WRCONTROL_ACLR_A                   ; NONE                           ; Untyped                                                                             ;
-; INDATA_ACLR_A                      ; NONE                           ; Untyped                                                                             ;
-; BYTEENA_ACLR_A                     ; NONE                           ; Untyped                                                                             ;
-; WIDTH_B                            ; 1                              ; Untyped                                                                             ;
-; WIDTHAD_B                          ; 1                              ; Untyped                                                                             ;
-; NUMWORDS_B                         ; 1                              ; Untyped                                                                             ;
-; INDATA_REG_B                       ; CLOCK1                         ; Untyped                                                                             ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                         ; Untyped                                                                             ;
-; RDCONTROL_REG_B                    ; CLOCK1                         ; Untyped                                                                             ;
-; ADDRESS_REG_B                      ; CLOCK1                         ; Untyped                                                                             ;
-; OUTDATA_REG_B                      ; UNREGISTERED                   ; Untyped                                                                             ;
-; BYTEENA_REG_B                      ; CLOCK1                         ; Untyped                                                                             ;
-; INDATA_ACLR_B                      ; NONE                           ; Untyped                                                                             ;
-; WRCONTROL_ACLR_B                   ; NONE                           ; Untyped                                                                             ;
-; ADDRESS_ACLR_B                     ; NONE                           ; Untyped                                                                             ;
-; OUTDATA_ACLR_B                     ; NONE                           ; Untyped                                                                             ;
-; RDCONTROL_ACLR_B                   ; NONE                           ; Untyped                                                                             ;
-; BYTEENA_ACLR_B                     ; NONE                           ; Untyped                                                                             ;
-; WIDTH_BYTEENA_A                    ; 1                              ; Untyped                                                                             ;
-; WIDTH_BYTEENA_B                    ; 1                              ; Untyped                                                                             ;
-; RAM_BLOCK_TYPE                     ; AUTO                           ; Untyped                                                                             ;
-; BYTE_SIZE                          ; 8                              ; Untyped                                                                             ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                      ; Untyped                                                                             ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ           ; Untyped                                                                             ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ           ; Untyped                                                                             ;
-; INIT_FILE                          ; FPGA_Sound.FPGA_Sound4.rtl.mif ; Untyped                                                                             ;
-; INIT_FILE_LAYOUT                   ; PORT_A                         ; Untyped                                                                             ;
-; MAXIMUM_DEPTH                      ; 0                              ; Untyped                                                                             ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL                         ; Untyped                                                                             ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                         ; Untyped                                                                             ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                         ; Untyped                                                                             ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                         ; Untyped                                                                             ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                ; Untyped                                                                             ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                ; Untyped                                                                             ;
-; ENABLE_ECC                         ; FALSE                          ; Untyped                                                                             ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                          ; Untyped                                                                             ;
-; WIDTH_ECCSTATUS                    ; 3                              ; Untyped                                                                             ;
-; DEVICE_FAMILY                      ; Cyclone 10 LP                  ; Untyped                                                                             ;
-; CBXI_PARAMETER                     ; altsyncram_f011                ; Untyped                                                                             ;
-+------------------------------------+--------------------------------+-------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                                                                                     ;
 +-------------------------------------------+----------------------------------------------------------------------------------------------------------+
 ; Name                                      ; Value                                                                                                    ;
 +-------------------------------------------+----------------------------------------------------------------------------------------------------------+
-; Number of entity instances                ; 5                                                                                                        ;
-; Entity Instance                           ; Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0       ;
-;     -- OPERATION_MODE                     ; ROM                                                                                                      ;
-;     -- WIDTH_A                            ; 8                                                                                                        ;
-;     -- NUMWORDS_A                         ; 256                                                                                                      ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                                             ;
-;     -- WIDTH_B                            ; 1                                                                                                        ;
-;     -- NUMWORDS_B                         ; 1                                                                                                        ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                                   ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                                             ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                                     ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                                ;
+; Number of entity instances                ; 4                                                                                                        ;
 ; Entity Instance                           ; PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0 ;
 ;     -- OPERATION_MODE                     ; ROM                                                                                                      ;
 ;     -- WIDTH_A                            ; 8                                                                                                        ;
@@ -1369,85 +1140,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+----------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Port Connectivity Checks: "NoteStepper:NoteStepsR2" ;
-+-------------------+-------+----------+--------------+
-; Port              ; Type  ; Severity ; Details      ;
-+-------------------+-------+----------+--------------+
-; i_startnote[4..3] ; Input ; Info     ; Stuck at GND ;
-; i_startnote[1..0] ; Input ; Info     ; Stuck at GND ;
-; i_startnote[6]    ; Input ; Info     ; Stuck at GND ;
-; i_startnote[5]    ; Input ; Info     ; Stuck at VCC ;
-; i_startnote[2]    ; Input ; Info     ; Stuck at VCC ;
-; i_endnote[5..4]   ; Input ; Info     ; Stuck at VCC ;
-; i_endnote[3..2]   ; Input ; Info     ; Stuck at GND ;
-; i_endnote[6]      ; Input ; Info     ; Stuck at GND ;
-; i_endnote[1]      ; Input ; Info     ; Stuck at VCC ;
-; i_endnote[0]      ; Input ; Info     ; Stuck at GND ;
-+-------------------+-------+----------+--------------+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "ROM_Player:Player|counterLdInc:Note_Counter" ;
++----------+-------+----------+-------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                   ;
++----------+-------+----------+-------------------------------------------+
+; i_datain ; Input ; Info     ; Stuck at GND                              ;
++----------+-------+----------+-------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Port Connectivity Checks: "NoteStepper:NoteStepsR1" ;
-+-------------------+-------+----------+--------------+
-; Port              ; Type  ; Severity ; Details      ;
-+-------------------+-------+----------+--------------+
-; i_startnote[2..0] ; Input ; Info     ; Stuck at VCC ;
-; i_startnote[4..3] ; Input ; Info     ; Stuck at GND ;
-; i_startnote[6]    ; Input ; Info     ; Stuck at GND ;
-; i_startnote[5]    ; Input ; Info     ; Stuck at VCC ;
-; i_endnote[5..4]   ; Input ; Info     ; Stuck at VCC ;
-; i_endnote[3..1]   ; Input ; Info     ; Stuck at GND ;
-; i_endnote[6]      ; Input ; Info     ; Stuck at GND ;
-; i_endnote[0]      ; Input ; Info     ; Stuck at VCC ;
-+-------------------+-------+----------+--------------+
-
-
-+-----------------------------------------------------+
-; Port Connectivity Checks: "NoteStepper:NoteStepsL2" ;
-+-------------------+-------+----------+--------------+
-; Port              ; Type  ; Severity ; Details      ;
-+-------------------+-------+----------+--------------+
-; i_startnote[2..1] ; Input ; Info     ; Stuck at VCC ;
-; i_startnote[4..3] ; Input ; Info     ; Stuck at GND ;
-; i_startnote[6]    ; Input ; Info     ; Stuck at GND ;
-; i_startnote[5]    ; Input ; Info     ; Stuck at VCC ;
-; i_startnote[0]    ; Input ; Info     ; Stuck at GND ;
-; i_endnote[5..4]   ; Input ; Info     ; Stuck at VCC ;
-; i_endnote[2..1]   ; Input ; Info     ; Stuck at VCC ;
-; i_endnote[6]      ; Input ; Info     ; Stuck at GND ;
-; i_endnote[3]      ; Input ; Info     ; Stuck at GND ;
-; i_endnote[0]      ; Input ; Info     ; Stuck at GND ;
-+-------------------+-------+----------+--------------+
-
-
-+----------------------------------------------------------------------------------+
-; Port Connectivity Checks: "NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter" ;
-+----------+-------+----------+----------------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                            ;
-+----------+-------+----------+----------------------------------------------------+
-; i_datain ; Input ; Info     ; Stuck at GND                                       ;
-; i_inc    ; Input ; Info     ; Stuck at VCC                                       ;
-+----------+-------+----------+----------------------------------------------------+
-
-
-+-----------------------------------------------------+
-; Port Connectivity Checks: "NoteStepper:NoteStepsL1" ;
-+-------------------+-------+----------+--------------+
-; Port              ; Type  ; Severity ; Details      ;
-+-------------------+-------+----------+--------------+
-; i_startnote[4..3] ; Input ; Info     ; Stuck at GND ;
-; i_startnote[6]    ; Input ; Info     ; Stuck at GND ;
-; i_startnote[5]    ; Input ; Info     ; Stuck at VCC ;
-; i_startnote[2]    ; Input ; Info     ; Stuck at VCC ;
-; i_startnote[1]    ; Input ; Info     ; Stuck at GND ;
-; i_startnote[0]    ; Input ; Info     ; Stuck at VCC ;
-; i_endnote[5..4]   ; Input ; Info     ; Stuck at VCC ;
-; i_endnote[1..0]   ; Input ; Info     ; Stuck at GND ;
-; i_endnote[6]      ; Input ; Info     ; Stuck at GND ;
-; i_endnote[3]      ; Input ; Info     ; Stuck at GND ;
-; i_endnote[2]      ; Input ; Info     ; Stuck at VCC ;
-+-------------------+-------+----------+--------------+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "ROM_Player:Player|counterLdInc:Note1Hz_Counter" ;
++----------+-------+----------+----------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                      ;
++----------+-------+----------+----------------------------------------------+
+; i_datain ; Input ; Info     ; Stuck at GND                                 ;
+; i_inc    ; Input ; Info     ; Stuck at VCC                                 ;
++----------+-------+----------+----------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------+
@@ -1596,25 +1305,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 10                          ;
-; cycloneiii_ff         ; 234                         ;
+; cycloneiii_ff         ; 218                         ;
 ;     ENA               ; 57                          ;
-;     SCLR              ; 64                          ;
-;     SLD               ; 20                          ;
-;     plain             ; 93                          ;
-; cycloneiii_lcell_comb ; 1149                        ;
-;     arith             ; 261                         ;
-;         2 data inputs ; 188                         ;
-;         3 data inputs ; 73                          ;
-;     normal            ; 888                         ;
+;     SCLR              ; 90                          ;
+;     SLD               ; 21                          ;
+;     plain             ; 50                          ;
+; cycloneiii_lcell_comb ; 604                         ;
+;     arith             ; 242                         ;
+;         2 data inputs ; 170                         ;
+;         3 data inputs ; 72                          ;
+;     normal            ; 362                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 20                          ;
-;         2 data inputs ; 56                          ;
-;         3 data inputs ; 50                          ;
-;         4 data inputs ; 760                         ;
-; cycloneiii_ram_block  ; 40                          ;
+;         2 data inputs ; 32                          ;
+;         3 data inputs ; 21                          ;
+;         4 data inputs ; 287                         ;
+; cycloneiii_ram_block  ; 32                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.60                        ;
-; Average LUT depth     ; 4.45                        ;
+; Max LUT depth         ; 8.70                        ;
+; Average LUT depth     ; 3.80                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1623,7 +1332,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:10     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -1633,7 +1342,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Fri Sep  2 07:29:53 2022
+    Info: Processing started: Fri Sep  2 16:23:54 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FPGA_Sound -c FPGA_Sound
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file polysound/polysound_sine_scale.vhd
@@ -1643,8 +1352,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file scalesi
     Info (12022): Found design unit 1: ScaleSineGen-behv File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/ScaleSineGen.vhd Line: 35
     Info (12023): Found entity 1: ScaleSineGen File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/ScaleSineGen.vhd Line: 24
 Info (12021): Found 2 design units, including 1 entities, in source file middlecsine/sinetable_256.vhd
-    Info (12022): Found design unit 1: SineTable_256-behavior File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSine/SineTable_256.vhd Line: 20
-    Info (12023): Found entity 1: SineTable_256 File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSine/SineTable_256.vhd Line: 12
+    Info (12022): Found design unit 1: SineTable_256-behavior File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSine/SineTable_256.vhd Line: 18
+    Info (12023): Found entity 1: SineTable_256 File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSine/SineTable_256.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file registers/outreg_nbits.vhd
     Info (12022): Found design unit 1: OutReg_Nbits-behv File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Registers/OutReg_Nbits.vhd Line: 22
     Info (12023): Found entity 1: OutReg_Nbits File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Registers/OutReg_Nbits.vhd Line: 10
@@ -1680,14 +1389,20 @@ Info (12021): Found 2 design units, including 1 entities, in source file noteste
     Info (12022): Found design unit 1: NoteStepper-struct File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/NoteStepper.vhd Line: 21
     Info (12023): Found entity 1: NoteStepper File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/NoteStepper.vhd Line: 12
 Info (12021): Found 2 design units, including 1 entities, in source file scalesine/notesinecountertable.vhd
-    Info (12022): Found design unit 1: NoteSineCounterTable-behavior File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/NoteSineCounterTable.vhd Line: 20
-    Info (12023): Found entity 1: NoteSineCounterTable File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/NoteSineCounterTable.vhd Line: 12
+    Info (12022): Found design unit 1: NoteSineCounterTable-behavior File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/NoteSineCounterTable.vhd Line: 21
+    Info (12023): Found entity 1: NoteSineCounterTable File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/NoteSineCounterTable.vhd Line: 13
 Info (12021): Found 2 design units, including 1 entities, in source file scalesine/sound_sine_scale.vhd
     Info (12022): Found design unit 1: Sound_Sine_Scale-behv File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/Sound_Sine_Scale.vhd Line: 43
     Info (12023): Found entity 1: Sound_Sine_Scale File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/Sound_Sine_Scale.vhd Line: 32
 Info (12021): Found 2 design units, including 1 entities, in source file pwm_counter.vhd
     Info (12022): Found design unit 1: PWM_Counter-behv File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PWM_Counter.vhd Line: 29
     Info (12023): Found entity 1: PWM_Counter File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PWM_Counter.vhd Line: 19
+Info (12021): Found 2 design units, including 1 entities, in source file music/vhdl/jesuslovesme.vhd
+    Info (12022): Found design unit 1: JesusLovesMe-behavior File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Music/VHDL/JesusLovesMe.vhd Line: 19
+    Info (12023): Found entity 1: JesusLovesMe File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/Music/VHDL/JesusLovesMe.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file rom_player/rom_player.vhd
+    Info (12022): Found design unit 1: ROM_Player-struct File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ROM_Player/ROM_Player.vhd Line: 23
+    Info (12023): Found entity 1: ROM_Player File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ROM_Player/ROM_Player.vhd Line: 13
 Info (12127): Elaborating entity "FPGA_Sound" for the top level hierarchy
 Info (12128): Elaborating entity "Sound_SQWave_Middle_C" for hierarchy "Sound_SQWave_Middle_C:SQWCounter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 68
 Info (10041): Inferred latch for "w_SQWave" at Sound_SQWave_Middle_C.vhd(54) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/MiddleCSquare/Sound_SQWave_Middle_C.vhd Line: 54
@@ -1709,18 +1424,19 @@ Info (12128): Elaborating entity "counterLdInc" for hierarchy "Sound_Sine_Scale:
 Info (12128): Elaborating entity "OutReg_Nbits" for hierarchy "Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|OutReg_Nbits:RegHoldTableVal" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/ScaleSineGen.vhd Line: 82
 Info (12128): Elaborating entity "PWM_Counter" for hierarchy "Sound_Sine_Scale:SineScale|PWM_Counter:PWM" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ScaleSine/Sound_Sine_Scale.vhd Line: 61
 Info (12128): Elaborating entity "counterLdInc" for hierarchy "Sound_Sine_Scale:SineScale|PWM_Counter:PWM|counterLdInc:PWM_Ctr" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PWM_Counter.vhd Line: 39
-Info (12128): Elaborating entity "NoteStepper" for hierarchy "NoteStepper:NoteStepsL1" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 118
-Info (12128): Elaborating entity "counterLdInc" for hierarchy "NoteStepper:NoteStepsL1|counterLdInc:Note1Hz_Counter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/NoteStepper.vhd Line: 35
-Info (12128): Elaborating entity "counterLdInc" for hierarchy "NoteStepper:NoteStepsL1|counterLdInc:Note_Counter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/NoteStepper.vhd Line: 49
-Info (12128): Elaborating entity "PolySound_Sine_Scale" for hierarchy "PolySound_Sine_Scale:PolySound" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 153
-Info (10041): Inferred latch for "w_SineSampleLatchedR[1]" at PolySound_Sine_Scale.vhd(143) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Info (10041): Inferred latch for "w_SineSampleLatchedR[2]" at PolySound_Sine_Scale.vhd(143) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Info (10041): Inferred latch for "w_SineSampleLatchedR[3]" at PolySound_Sine_Scale.vhd(143) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Info (10041): Inferred latch for "w_SineSampleLatchedR[4]" at PolySound_Sine_Scale.vhd(143) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Info (10041): Inferred latch for "w_SineSampleLatchedR[5]" at PolySound_Sine_Scale.vhd(143) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Info (10041): Inferred latch for "w_SineSampleLatchedR[6]" at PolySound_Sine_Scale.vhd(143) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Info (10041): Inferred latch for "w_SineSampleLatchedR[7]" at PolySound_Sine_Scale.vhd(143) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Info (10041): Inferred latch for "w_SineSampleLatchedR[8]" at PolySound_Sine_Scale.vhd(143) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
+Info (12128): Elaborating entity "ROM_Player" for hierarchy "ROM_Player:Player" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 153
+Info (12128): Elaborating entity "counterLdInc" for hierarchy "ROM_Player:Player|counterLdInc:Note1Hz_Counter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ROM_Player/ROM_Player.vhd Line: 40
+Info (12128): Elaborating entity "counterLdInc" for hierarchy "ROM_Player:Player|counterLdInc:Note_Counter" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ROM_Player/ROM_Player.vhd Line: 53
+Info (12128): Elaborating entity "JesusLovesMe" for hierarchy "ROM_Player:Player|JesusLovesMe:Music_Score" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/ROM_Player/ROM_Player.vhd Line: 63
+Info (12128): Elaborating entity "PolySound_Sine_Scale" for hierarchy "PolySound_Sine_Scale:PolySound" File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/FPGA_Sound.vhd Line: 162
+Info (10041): Inferred latch for "w_SineSampleLatchedR[1]" at PolySound_Sine_Scale.vhd(144) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 144
+Info (10041): Inferred latch for "w_SineSampleLatchedR[2]" at PolySound_Sine_Scale.vhd(144) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 144
+Info (10041): Inferred latch for "w_SineSampleLatchedR[3]" at PolySound_Sine_Scale.vhd(144) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 144
+Info (10041): Inferred latch for "w_SineSampleLatchedR[4]" at PolySound_Sine_Scale.vhd(144) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 144
+Info (10041): Inferred latch for "w_SineSampleLatchedR[5]" at PolySound_Sine_Scale.vhd(144) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 144
+Info (10041): Inferred latch for "w_SineSampleLatchedR[6]" at PolySound_Sine_Scale.vhd(144) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 144
+Info (10041): Inferred latch for "w_SineSampleLatchedR[7]" at PolySound_Sine_Scale.vhd(144) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 144
+Info (10041): Inferred latch for "w_SineSampleLatchedR[8]" at PolySound_Sine_Scale.vhd(144) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 144
 Info (10041): Inferred latch for "w_SineSampleLatchedL[1]" at PolySound_Sine_Scale.vhd(120) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
 Info (10041): Inferred latch for "w_SineSampleLatchedL[2]" at PolySound_Sine_Scale.vhd(120) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
 Info (10041): Inferred latch for "w_SineSampleLatchedL[3]" at PolySound_Sine_Scale.vhd(120) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
@@ -1729,47 +1445,7 @@ Info (10041): Inferred latch for "w_SineSampleLatchedL[5]" at PolySound_Sine_Sca
 Info (10041): Inferred latch for "w_SineSampleLatchedL[6]" at PolySound_Sine_Scale.vhd(120) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
 Info (10041): Inferred latch for "w_SineSampleLatchedL[7]" at PolySound_Sine_Scale.vhd(120) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
 Info (10041): Inferred latch for "w_SineSampleLatchedL[8]" at PolySound_Sine_Scale.vhd(120) File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[3]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[4]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[5]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[6]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[7]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[8]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[2]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[3]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[4]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[5]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[6]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[7]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[8]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[1]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[2]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[1]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[8]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[7]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[6]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[5]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[4]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[3]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[2]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedL[1]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 120
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[8]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[7]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[6]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[5]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[4]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[3]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[2]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Warning (14026): LATCH primitive "PolySound_Sine_Scale:PolySound|w_SineSampleLatchedR[1]" is permanently enabled File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/PolySound/PolySound_Sine_Scale.vhd Line: 143
-Info (19000): Inferred 5 megafunctions from design logic
-    Info (276031): Inferred altsyncram megafunction from the following design logic: "Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|SineTable_256:SineTblROM|Mux6_rtl_0"
-        Info (286033): Parameter OPERATION_MODE set to ROM
-        Info (286033): Parameter WIDTH_A set to 8
-        Info (286033): Parameter WIDTHAD_A set to 8
-        Info (286033): Parameter NUMWORDS_A set to 256
-        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
-        Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
-        Info (286033): Parameter INIT_FILE set to FPGA_Sound.FPGA_Sound0.rtl.mif
+Info (19000): Inferred 4 megafunctions from design logic
     Info (276031): Inferred altsyncram megafunction from the following design logic: "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|Mux6_rtl_0"
         Info (286033): Parameter OPERATION_MODE set to ROM
         Info (286033): Parameter WIDTH_A set to 8
@@ -1777,7 +1453,7 @@ Info (19000): Inferred 5 megafunctions from design logic
         Info (286033): Parameter NUMWORDS_A set to 256
         Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
         Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
-        Info (286033): Parameter INIT_FILE set to FPGA_Sound.FPGA_Sound1.rtl.mif
+        Info (286033): Parameter INIT_FILE set to FPGA_Sound.FPGA_Sound0.rtl.mif
     Info (276031): Inferred altsyncram megafunction from the following design logic: "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|Mux6_rtl_0"
         Info (286033): Parameter OPERATION_MODE set to ROM
         Info (286033): Parameter WIDTH_A set to 8
@@ -1785,7 +1461,7 @@ Info (19000): Inferred 5 megafunctions from design logic
         Info (286033): Parameter NUMWORDS_A set to 256
         Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
         Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
-        Info (286033): Parameter INIT_FILE set to FPGA_Sound.FPGA_Sound2.rtl.mif
+        Info (286033): Parameter INIT_FILE set to FPGA_Sound.FPGA_Sound1.rtl.mif
     Info (276031): Inferred altsyncram megafunction from the following design logic: "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|Mux6_rtl_0"
         Info (286033): Parameter OPERATION_MODE set to ROM
         Info (286033): Parameter WIDTH_A set to 8
@@ -1793,7 +1469,7 @@ Info (19000): Inferred 5 megafunctions from design logic
         Info (286033): Parameter NUMWORDS_A set to 256
         Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
         Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
-        Info (286033): Parameter INIT_FILE set to FPGA_Sound.FPGA_Sound3.rtl.mif
+        Info (286033): Parameter INIT_FILE set to FPGA_Sound.FPGA_Sound2.rtl.mif
     Info (276031): Inferred altsyncram megafunction from the following design logic: "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|Mux6_rtl_0"
         Info (286033): Parameter OPERATION_MODE set to ROM
         Info (286033): Parameter WIDTH_A set to 8
@@ -1801,9 +1477,9 @@ Info (19000): Inferred 5 megafunctions from design logic
         Info (286033): Parameter NUMWORDS_A set to 256
         Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
         Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
-        Info (286033): Parameter INIT_FILE set to FPGA_Sound.FPGA_Sound4.rtl.mif
-Info (12130): Elaborated megafunction instantiation "Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0"
-Info (12133): Instantiated megafunction "Sound_Sine_Scale:SineScale|ScaleSineGen:sineCounter|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0" with the following parameter:
+        Info (286033): Parameter INIT_FILE set to FPGA_Sound.FPGA_Sound3.rtl.mif
+Info (12130): Elaborated megafunction instantiation "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0"
+Info (12133): Instantiated megafunction "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
     Info (12134): Parameter "WIDTH_A" = "8"
     Info (12134): Parameter "WIDTHAD_A" = "8"
@@ -1813,8 +1489,8 @@ Info (12133): Instantiated megafunction "Sound_Sine_Scale:SineScale|ScaleSineGen
     Info (12134): Parameter "INIT_FILE" = "FPGA_Sound.FPGA_Sound0.rtl.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_b011.tdf
     Info (12023): Found entity 1: altsyncram_b011 File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/db/altsyncram_b011.tdf Line: 28
-Info (12130): Elaborated megafunction instantiation "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0"
-Info (12133): Instantiated megafunction "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0" with the following parameter:
+Info (12130): Elaborated megafunction instantiation "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0"
+Info (12133): Instantiated megafunction "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
     Info (12134): Parameter "WIDTH_A" = "8"
     Info (12134): Parameter "WIDTHAD_A" = "8"
@@ -1824,8 +1500,8 @@ Info (12133): Instantiated megafunction "PolySound_Sine_Scale:PolySound|ScaleSin
     Info (12134): Parameter "INIT_FILE" = "FPGA_Sound.FPGA_Sound1.rtl.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_c011.tdf
     Info (12023): Found entity 1: altsyncram_c011 File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/db/altsyncram_c011.tdf Line: 28
-Info (12130): Elaborated megafunction instantiation "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0"
-Info (12133): Instantiated megafunction "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterL2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0" with the following parameter:
+Info (12130): Elaborated megafunction instantiation "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0"
+Info (12133): Instantiated megafunction "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
     Info (12134): Parameter "WIDTH_A" = "8"
     Info (12134): Parameter "WIDTHAD_A" = "8"
@@ -1835,8 +1511,8 @@ Info (12133): Instantiated megafunction "PolySound_Sine_Scale:PolySound|ScaleSin
     Info (12134): Parameter "INIT_FILE" = "FPGA_Sound.FPGA_Sound2.rtl.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_d011.tdf
     Info (12023): Found entity 1: altsyncram_d011 File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/db/altsyncram_d011.tdf Line: 28
-Info (12130): Elaborated megafunction instantiation "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0"
-Info (12133): Instantiated megafunction "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR1|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0" with the following parameter:
+Info (12130): Elaborated megafunction instantiation "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0"
+Info (12133): Instantiated megafunction "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
     Info (12134): Parameter "WIDTH_A" = "8"
     Info (12134): Parameter "WIDTHAD_A" = "8"
@@ -1846,29 +1522,18 @@ Info (12133): Instantiated megafunction "PolySound_Sine_Scale:PolySound|ScaleSin
     Info (12134): Parameter "INIT_FILE" = "FPGA_Sound.FPGA_Sound3.rtl.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_e011.tdf
     Info (12023): Found entity 1: altsyncram_e011 File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/db/altsyncram_e011.tdf Line: 28
-Info (12130): Elaborated megafunction instantiation "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0"
-Info (12133): Instantiated megafunction "PolySound_Sine_Scale:PolySound|ScaleSineGen:sineCounterR2|SineTable_256:SineTblROM|altsyncram:Mux6_rtl_0" with the following parameter:
-    Info (12134): Parameter "OPERATION_MODE" = "ROM"
-    Info (12134): Parameter "WIDTH_A" = "8"
-    Info (12134): Parameter "WIDTHAD_A" = "8"
-    Info (12134): Parameter "NUMWORDS_A" = "256"
-    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
-    Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
-    Info (12134): Parameter "INIT_FILE" = "FPGA_Sound.FPGA_Sound4.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_f011.tdf
-    Info (12023): Found entity 1: altsyncram_f011 File: C:/Users/HPz420/Documents/GitHub/land-boards/FPGA_Sound/db/altsyncram_f011.tdf Line: 28
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1199 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 646 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 1149 logic cells
-    Info (21064): Implemented 40 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
-    Info: Peak virtual memory: 4845 megabytes
-    Info: Processing ended: Fri Sep  2 07:30:30 2022
-    Info: Elapsed time: 00:00:37
-    Info: Total CPU time (on all processors): 00:00:47
+    Info (21061): Implemented 604 logic cells
+    Info (21064): Implemented 32 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4857 megabytes
+    Info: Processing ended: Fri Sep  2 16:24:15 2022
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:42
 
 

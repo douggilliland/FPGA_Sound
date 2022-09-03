@@ -115,40 +115,49 @@ SineScale : entity work.Sound_Sine_Scale
 	);
 
 -- Step through Grand Piano scale 1 note every second
-NoteStepsL1 : entity work.NoteStepper
-	port map (
-		i_clk_50			=> i_clk_50,
-		i_StartNote		=> "0100101",
-		i_EndNote		=> "0110100",
-		o_Note			=> w_NoteCounterL1	-- Piano key index
-	);
+--NoteStepsL1 : entity work.NoteStepper
+--	port map (
+--		i_clk_50			=> i_clk_50,
+--		i_StartNote		=> "0100101",
+--		i_EndNote		=> "0110100",
+--		o_Note			=> w_NoteCounterL1	-- Piano key index
+--	);
 
 -- Step through Grand Piano scale 1 note every second
-NoteStepsL2 : entity work.NoteStepper
-	port map (
-		i_clk_50			=> i_clk_50,
-		i_StartNote		=> "0100110",
-		i_EndNote		=> "0110110",
-		o_Note			=> w_NoteCounterL2	-- Piano key index
-	);
+--NoteStepsL2 : entity work.NoteStepper
+--	port map (
+--		i_clk_50			=> i_clk_50,
+--		i_StartNote		=> "0100110",
+--		i_EndNote		=> "0110110",
+--		o_Note			=> w_NoteCounterL2	-- Piano key index
+--	);
 
 -- Step through Grand Piano scale 1 note every second
-NoteStepsR1 : entity work.NoteStepper
-	port map (
-		i_clk_50			=> i_clk_50,
-		i_StartNote		=> "0100111",
-		i_EndNote		=> "0110001",
-		o_Note			=> w_NoteCounterR1	-- Piano key index
-	);
+--NoteStepsR1 : entity work.NoteStepper
+--	port map (
+--		i_clk_50			=> i_clk_50,
+--		i_StartNote		=> "0100111",
+--		i_EndNote		=> "0110001",
+--		o_Note			=> w_NoteCounterR1	-- Piano key index
+--	);
 
 -- Step through Grand Piano scale 1 note every second
-NoteStepsR2 : entity work.NoteStepper
+--NoteStepsR2 : entity work.NoteStepper
+--	port map (
+--		i_clk_50			=> i_clk_50,
+--		i_StartNote		=> "0100100",
+--		i_EndNote		=> "0110010",
+--		o_Note			=> w_NoteCounterR2	-- Piano key index
+--	);
+
+Player : entity work.ROM_Player
 	port map (
 		i_clk_50			=> i_clk_50,
-		i_StartNote		=> "0100100",
-		i_EndNote		=> "0110010",
-		o_Note			=> w_NoteCounterR2	-- Piano key index
-	);
+		o_NoteL1			=> w_NoteCounterL1,
+		o_NoteL2			=> w_NoteCounterL2,
+		o_NoteR1			=> w_NoteCounterR1,
+		o_NoteR2			=> w_NoteCounterR2
+	);	
 
 PolySound : entity work.PolySound_Sine_Scale
 port map (	
