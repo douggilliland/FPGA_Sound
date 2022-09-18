@@ -4,7 +4,7 @@
 -- FPGA card uses QMTECH Cyclone 10 - 10CL006YU256C8G
 --		http://land-boards.com/blwiki/index.php?title=QMTECH_Cyclone_10CL006_FPGA_Card
 -- Base board is:
---		http://land-boards.com/blwiki/index.php?title=FPGA-ITX-01
+--		http://land-boards.com/blwiki/index.php?title=RETRO-65C816
 --	I/O on J1 connector
 -- Separate outputs for each implementation
 -- Squarewave - Middle C

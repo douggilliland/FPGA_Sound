@@ -81,16 +81,16 @@ set_location_assignment PIN_J6 -to i_play_n
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to i_play_n
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to o_Sine_Wave
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to o_Sq_Wave
-set_location_assignment PIN_T11 -to o_Saw_Wave
-set_location_assignment PIN_R11 -to o_Tri_Wave
-set_location_assignment PIN_T12 -to o_Square_Scale
-set_location_assignment PIN_R12 -to o_Sine_Scale
+set_location_assignment PIN_R9 -to o_Saw_Wave
+set_location_assignment PIN_T11 -to o_Tri_Wave
+set_location_assignment PIN_R11 -to o_Square_Scale
+set_location_assignment PIN_T9 -to o_Sine_Scale
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to o_Sine_Scale
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to o_Saw_Wave
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to o_Square_Scale
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to o_Tri_Wave
-set_location_assignment PIN_M9 -to o_PolyLeft
-set_location_assignment PIN_N9 -to o_PolyRight
+set_location_assignment PIN_G2 -to o_PolyLeft
+set_location_assignment PIN_G1 -to o_PolyRight
 set_global_assignment -name VHDL_FILE PolySound/PolySound_Sine_Scale.vhd
 set_global_assignment -name VHDL_FILE ScaleSine/ScaleSineGen.vhd
 set_global_assignment -name VHDL_FILE MiddleCSine/SineTable_256.vhd
